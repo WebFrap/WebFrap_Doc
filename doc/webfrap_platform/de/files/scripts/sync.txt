@@ -1,0 +1,195 @@
+<?php
+/*******************************************************************************
+ ____      ____  ________  ______   ________  _______          _       _______
+|_  _|    |_  _||_   __  ||_   _ \ |_   __  ||_   __ \        / \     |_   __ \
+  \ \  /\  / /    | |_ \_|  | |_) |  | |_ \_|  | |__) |      / _ \      | |__) |
+   \ \/  \/ /     |  _| _   |  __'.  |  _|     |  __ /      / ___ \     |  ___/
+    \  /\  /     _| |__/ | _| |__) |_| |_     _| |  \ \_  _/ /   \ \_  _| |_
+     \/  \/     |________||_______/|_____|   |____| |___||____| |____||_____|
+
+                                       __.;:-+=;=_.
+                                    ._=~ -...    -~:
+                     .:;;;:.-=si_=s%+-..;===+||=;. -:
+                  ..;::::::..<mQmQW>  :::.::;==+||.:;        ..:-..
+               .:.:::::::::-_qWWQWe .=:::::::::::::::   ..:::-.  . -:_
+             .:...:.:::;:;.:jQWWWE;.+===;;;;:;::::.=ugwmp;..:=====.  -
+           .=-.-::::;=;=;-.wQWBWWE;:++==+========;.=WWWWk.:|||||ii>...
+         .vma. ::;:=====.<mWmWBWWE;:|+||++|+|||+|=:)WWBWE;=liiillIv; :
+       .=3mQQa,:=====+==wQWBWBWBWh>:+|||||||i||ii|;=$WWW#>=lvvvvIvv;.
+      .--+3QWWc:;=|+|+;=3QWBWBWWWmi:|iiiiiilllllll>-3WmW#>:IvlIvvv>` .
+     .=___<XQ2=<|++||||;-9WWBWWWWQc:|iilllvIvvvnvvsi|*?Y1=:{IIIIi+- .
+     ivIIiidWe;voi+|illi|.+9WWBWWWm>:<llvvvvnnnnnnn}~     - =++-
+     +lIliidB>:+vXvvivIvli_."$WWWmWm;:<Ilvvnnnnonnv> .          .- .
+      ~|i|IXG===inovillllil|=:"HW###h>:<lIvvnvnnvv>- .
+        -==|1i==|vni||i|i|||||;:+Y1""*i=|IIvvvv}+-  .
+           ----:=|l=+|+|+||+=:+|-      - --++--. .-
+                  .  -=||||ii:. .              - .
+                       -+ilI+ .;..
+                         ---.::....
+
+********************************************************************************
+*
+* @author      : Dominik Bonsch <dominik.bonsch@webfrap.de>
+* @date        :
+* @copyright   : Webfrap Developer Network <contact@webfrap.de>
+* @project     : Webfrap Web Frame Application
+* @projectUrl  : http://webfrap.de
+*
+* Dual licenced, if you want to develop free Software you can use WebFrap
+* with the conditions of GPLv3.
+* If GPLv3 is nothing for you contact us: <contact@webfrap.de>.
+* Depeding on what you want to do we have some commercial licences
+* from free of cost use to enterprise versions or conditions by negotiation.
+*
+* @licence     : (GNU GENERAL PUBLIC LICENSE 3.0) see: LICENCE/GPLv3.txt
+* @licence     : WebFrap Commercial <contact@webfrap.de>
+*
+* @version: @package_version@  Revision: @package_revision@
+*
+* Changes:
+*
+*******************************************************************************/
+
+// die Basis Logik einbinden
+include './deploy_core.php';
+
+Console::out( "<h1>Start sync ".date('Y-m-d')."</h1>" );
+
+$lokal = '/srv/mercurial/';
+$hgbin = 'hg';
+
+$display_name	= 'syncservice_display';
+$repo_user 	  = 'syncservice_user';
+$repo_pwd  	  = 'syncservice_pwd';
+
+$commitMessage  = '"- this is an auto commit for synchronizing the repository with the master"';
+$contactMail    = 'contact@your_domain.de';
+
+
+$reposPaths = array
+(
+  'demo'        => $lokal.'demo/',
+  'webfrap'    	=> $lokal.'webfrap/',
+);
+
+$repos = array
+(
+  'demo' => array
+  (
+    'Demo_Mod_Core'    => 'https://'.$repo_user.':'.$repo_pwd.'@hg.webfrap-servers.de/demo/' ,
+    'Demo_Mod_Project' => 'https://'.$repo_user.':'.$repo_pwd.'@hg.other-server.de/demo/' ,
+    'Demo_Gw_Main'     => 'https://'.$repo_user.':'.$repo_pwd.'@hg.customer.de/app/' 
+  ),
+  'webfrap' => array
+  (
+    'WebFrap'     => 'https://'.$repo_user.':'.$repo_pwd.'@hg.webfrap-servers.de/webfrap/' ,
+    'WebFrap_Wgt' => 'https://'.$repo_user.':'.$repo_pwd.'@hg.webfrap-servers.de/webfrap_net/' ,
+  ),
+);
+
+$hgRc = <<<CODE
+
+[ui]
+username = {$display_name}
+
+[web]
+name = {$repo_user}
+
+[trusted]
+users = *
+groups = *
+
+#[http_proxy]
+#host = proxy.url
+#user = {$repo_user}
+#passwd = {$repo_pwd}
+
+[auth]
+
+CODE;
+
+foreach( $repos as $repoKey => $listRepos )
+{
+  foreach( $listRepos as $repo => $tmpUrl )
+  {
+
+    $key = str_replace('-','_',$repoKey);
+
+    $hgRc .= <<<CODE
+
+{$repo}_{$repoKey}.prefix = {$reposPaths[$repoKey]}{$repo}
+{$repo}_{$repoKey}.username = {$repo_user}
+{$repo}_{$repoKey}.password = {$repo_pwd}
+{$repo}_{$repoKey}.schemes = https
+
+CODE;
+
+  }
+}
+
+file_put_contents( $lokal.'.hgrc' , $hgRc  );
+putenv("HGRCPATH={$lokal}.hgrc");
+
+
+function syscall($command)
+{
+  $result = '';
+  if ($proc = popen("($command)2>&1","r"))
+  {
+    while (!feof($proc))
+      $result .= fgets($proc, 1024);
+
+    pclose($proc);
+    Console::out( $result );
+  }
+}
+
+
+foreach( $repos as $repoKey => $listRepos )
+{
+  foreach( $listRepos as $repoName => $repoUrl )
+  {
+    if( file_exists($reposPaths[$repoKey].'/'.$repoName) )
+    {
+      Console::out( "<h2>Sync {$repoName} ".date('Y-m-d')."</h2>" );
+      Console::out( "<pre>" );
+      chdir( $reposPaths[$repoKey].$repoName );
+      
+      Console::out( 'pull "'.$repoUrl.$repoName.'"<br />' );
+      syscall( $hgbin.' pull "'.$repoUrl.$repoName.'"' );
+
+      Console::out( 'push -f "'.$repoUrl.$repoName.'"<br />' );
+      syscall( $hgbin.' push -f "'.$repoUrl.$repoName.'"' );
+      
+      Console::out( "</pre>" );
+    }
+    else
+    {
+      Console::out( "<h2>Clone {$repoName} ".date('Y-m-d')."</h2>" );
+      Console::out( "<pre>" );
+      chdir( $reposPaths[$repoKey] );
+      syscall( "clone {$repoUrl}{$repoName}<br />" );
+      syscall( $hgbin.' clone "https://'.$repoUrl.$repoName.'" "'.$reposPaths[$repoKey].'/'.$repoName.'"' );
+      syscall( 'echo "'.$repoName.' = ' .$reposPaths[$repoKey].'/'.$repoName.'" >> hgweb.config' );
+      syscall( 'echo "[web]" > ./'.$repoName.'/.hg/hgrc'  );
+      syscall( 'echo "contact = '.$contactMail.'" >> ./'.$repoName.'/.hg/hgrc'  );
+      syscall( 'echo "allow_archive = gz, zip, bz" >> ./'.$repoName.'/.hg/hgrc'  );
+      syscall( 'echo "allow_push = *'  );
+      Console::out( "</pre>" );
+    }
+  }
+}
+
+syscall( 'chown -R wwwrun:root '.$lokal );
+
+Console::out( "<h1 style=\"color:red\" >Finished Deployment ".date('Y-m-d')."</h1>" );
+
+
+
+
+
+
+
+
+
+

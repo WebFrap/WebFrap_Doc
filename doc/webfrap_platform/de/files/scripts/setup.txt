@@ -1,0 +1,94 @@
+<?php 
+
+define('NL',"\n");
+
+class Console
+{
+  static function out( $text )
+  {
+    echo $text."\n";
+    flush();
+  }
+}
+
+class Process
+{
+  
+  static function run( $command )
+  {
+    $result = '';
+    if ($proc = popen("($command)2>&1","r") )
+    {
+      while (!feof($proc))
+        echo fgets($proc, 1000);
+  
+      pclose($proc);
+
+    }
+  }
+  
+  static function execute( $command )
+  {
+    $result = '';
+    if ($proc = popen("($command)2>&1","r") )
+    {
+      while (!feof($proc))
+        $result .= fgets($proc, 1000);
+  
+      pclose($proc);
+  
+      return $result;
+    }
+  }
+  
+}
+
+class Fs
+{
+  
+  static function copy( $src, $target, $isFolder = true )
+  {
+    
+    if( $isFolder && !file_exists($target) )
+    {
+      Process::run("mkdir -pv $target");
+    }
+    
+    Process::run("cp -rfv $src $target");
+    
+  }
+
+  static function del( $path )
+  {    
+    Process::run("rm -rfv $path");
+    
+  }
+  
+  static function mkdir( $path )
+  {    
+    if( !file_exists($path))
+    {
+      Process::run("mkdir -pv $path");
+    }
+  }
+  
+  static function touch( $path )
+  {    
+    Process::run("touch $path");
+    
+  }
+  
+  
+  static function chown( $path , $user )
+  {    
+    Process::run("chown -R $user $path");
+    
+  }
+  
+  static function chmod( $path , $level )
+  {    
+    Process::run("chmod -R $level $path");
+    
+  }
+  
+}

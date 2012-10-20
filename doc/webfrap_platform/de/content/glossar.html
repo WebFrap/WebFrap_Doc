@@ -1,0 +1,198 @@
+<h1>Glossar</h1>
+
+
+<ul>
+  <li>
+    <h2>Applikation Flow</h2>
+    
+    <p>Der Teil der Logik von der Anfrage bis zum Aufruf des Controllers, und nach dem Controller die Ausgabe.</p>
+    
+    <ul>
+    
+    </ul>
+  
+  </li>
+
+  <li>
+    <h2>Ausgabe</h2>
+  
+    <p>
+      Anforderungen an die Ausgabe:
+      
+      <ul>
+        <li><p>Angemessener Einsatz von Resourcen auf dem Server</p>
+          <ul></ul>
+        </li>
+        <li>Trennung von Daten und Darstellung</li>
+      </ul>
+    
+    </p>
+  
+  <ul>
+    <li>
+      <h3>View</h3>
+      
+      <p>
+        Die View ist eine Kindklasse von LibTemplate.
+        Das kann ein Standard Adapter wie z.B LibTemplateHtml oder LibTemplateAjax sein,
+        oder eine Spezialisierung wie z.B. ein MainTab oder ein SubWindow.
+      </p>  
+      
+      <p>
+        Die View bestimmt welche Daten in welchen Elementen dargestellt werden.
+        Weiter wird ein Template gesetzt, in welchem das Layout und die Position 
+        der übergeben Elemente bestimmt werden.<br />
+        Mit dem Type der View wird das Ausgabeformat bestimmt.
+        <br />
+        Nicht jeder ViewType benötigt Templates, reine Datenformate wie z.B.
+        CVS, JSON, oder Binärformate wie Excel, Bilder oder PDF werden direkt
+        ohne Template gerendert.
+        ALLE Ausgabeformate die mit Markuplanguages arbeiten werden jedoch mit
+        Templates gelayoutet.
+      </p>
+      
+      <p>
+        Cookies und Header werden von der View in dem Response Objekt gesetzt, unter der 
+        Vorraussetzung, dass das Reponse Objekt vom Type HTTP ist.
+        Bei CLI Response würden diese dinge keinen Sinn machen.
+      </p>
+      
+      <p>Folgende Klassentypen sind Teil der View:</p>
+      
+      <ul>
+        <li>Alle *_View Klassen, sowie die Template Adapter</li>
+        <li>Alle *_UI Klassen ( Blöcke mit Viewlogik, für bestimmte Elemente wie z.B Tabellen )</li>
+        <li>Alle *_Form Klassen ( Formular, sind jedoch so LowLevel, dass sie nochmal gesondert, zb über eine UI Klasse eingebunden werden )</li>
+      </ul>
+      
+      
+      <p>JS im der View oder nur in den Template Elementen?</p>
+      <p>
+        Da mit der Viewklasse das Ausgabeformat bereits fest steht kann Logik welche im Client
+        ausgeführt wird über die View eingebunden werden, oder direkt in der View z.B. als Javascript
+        in einem "Container" in die Ausgabe injiziert werden.<br />
+        Das ist z.B auch bei UI Klassen Valide, da alle Klassen welche auf eine UI Klasse zugreifen per Definition
+        das Gleiche Ausgabeformat haben müssen.<br />
+        z.B.:
+        
+        <ul>
+          <li>Maintabs (neuer tab im hauptcontainer)</li>
+          <li>Frontend HTML (reine html ausgabe)</li>
+          <li>Subwindow (fenster in browser)</li>
+          <li>Mainwindow (popup ähnliches neues fenster)</li>
+          <li>Area (Fragment einer HTML Seite welches mit dem AJAX Interface über einen Selector im Client eingebunden wird)</li>
+        </ul>
+        
+        <p>
+          Für alle Szenarien ist jeweils der geiche Javascript code nötig, daher kann er in die View.
+        </p>
+       
+      </p>
+      
+      <p>View Klassen für Markup Formate dürfen folgende Dinge NICHT! enthalten:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Sonstige Informationen zur Darstellung, diese ist 100% Sache der Template Elemente</li>
+      </ul>
+      <p>
+        In nicht Markupformaten müssen diese Dinge soweit notwendig direkt in die View oder in 
+        spezielle Schema / Layoutklassen welche jedoch zur View gezählt werden.
+      </p>
+      
+  
+    </li>
+    
+    <li>
+      <h3>Ausgabe / Templates</h3>
+      
+      <p>
+        Die Aufgabe des Templates ist die Bereitstellung eines Layouts.
+        
+        <ul>
+          <li>Welche Elemente werde wo auf der Seite platziert?</li>
+          <li>In Welchen Boxen werden sie dargestellt?</li>
+          <li>Abstände und Rahmen</li>
+        </ul>
+        
+      </p>
+      
+      <p>Klassen und Dateien welche zum Template Teil gehören:</p>
+      
+      <ul>
+        <li>Alle *.tpl Dateien</li>
+        <li>Alle Wgt_* Klassen</li>
+      </ul>
+      
+      <p>
+        Templates enthalten keine absoluten Pfade auf Bilder und Icons, sondern immer solche mit
+        dynamischen Quellen, bzw. zumindest dynamischgen Pfaden zu einer definierten gleichnamigen
+        Resource, z.B. einem Icon.
+      </p>
+      
+      <p>
+        Das Markup gibt eine Standardformatierung vor. Die Seite muss ohne zusätzliche Themeklassen korrekt dargestellt werden.
+        Dies erfolgt durch den einsatz der Basis CSS Klassen aus dem in "WebFrap_Wgt/layout/" hinterlegten CSS Framework.
+        Customizing geschieht über "theme.css" Dateien in Theme Projekten.
+      </p>
+      <p>
+        Wie sind die CSS Klassen auf dem Server zu interpretieren? <br />
+        Die CSS Klassen sind nur als Semantische Information an den Client zu verstehen, was genau ein Element darstellen soll.
+        Wie und ob der Client diese Information interpretiert ist Sache des Clients, daher sollen soweit möglich keine
+        reine Style Informationen eingebunden werden.
+        Ausnahmen sind Dynamisch berechnete Dimensionen "width,height", da es sich in diesem Fall nicht vermeiden lässt Style Informationen
+        zu schicken. z.B Tabellen.
+      </p>
+      
+      <p>
+        Nicht Teil der Templates sind Dinge:
+        
+        <ul>
+          <li>Cookies und Header (Diese werden über die View in das Response Objekt übergeben, wenn das Response Objekt den richtigen Type hat)</li>
+          <li>
+            Style Informationen welche über ein notwendiges Minimum hinaus gehen.   
+            Keine Hintergrundbilder, keine Verläufe, keine abgerundeten Ecken, keine Fancy Effekte...</li>
+        </ul>
+      </p>    
+    </li>
+    
+    <li>
+      <h3>Client Applikation</h3>
+      <p>
+        Momentan ist die einzige Client Applikation, der WGT JavaScript Client aus "WebFrap_Wgt/js_src".
+        In dem Client wird über die Css Klassen 
+      </p>
+      
+    </li>
+    
+    <li>
+      <h3>Farb und Icon Themes</h3>
+      
+      <p>
+        Über Farb und Icon Themes wird das Aussehen der Applikation bestimmt.
+        Diese enthalten auf alle benötigten Hintergundbilder.
+      </p>
+      
+      <p>Welches Themes verwendet werde, wird in der Konfiguration definiert.</p>    
+  
+    </li>
+    
+    <li>
+      <h3>Response</h3>
+      <p>
+        Das Response Objekt stellt den Rückgabeweg dar.
+        Das System muss unterscheiden, ob eine Anfrage z.B per HTTP, per CLI, Socket(POP,IMAP) oder über einen andere Weg, 
+        wie z.B PHP-QT oder PHP-GTK ( beide noch nicht implementiert, aber grundsätzlich möglich) kommt.
+      </p>
+      
+      <p>
+        Über die Response werden alle Protokollinformationen wie z.B Header oder Flags geregelt.
+        Diese müssen unabhängig vom Inhalt behandelt werden, wir keine Anhängigkeit von Content und Transportweg möchten.
+      </p>
+      
+    </li>
+  
+  </ul>
+  </li>
+    
+</ul>

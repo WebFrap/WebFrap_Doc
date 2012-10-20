@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Start</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-Script-Type" content="text/javascript" />
+<meta http-equiv="content-Style-Type" content="text/css" />
+<meta http-equiv="content-language" content="de" />
+
+<link href="../documentor/style/doc.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../documentor/js/jquery.js"></script>
+<script type="text/javascript" src="../documentor/js/chili/jquery.chili-2.2.js"></script>
+<script type="text/javascript" src="../documentor/js/chili/recipes.js"></script>
+<script type="text/javascript" src="../documentor/js/documentor.js"></script>
+
+</head>
+
+<body>
+  <div class="content"  >
+
+  <h1>WebFrap Codekonvention</h1>
+  
+  <h2>Klassennamen</h2>
+
+  <div name="class_names" >
+    <p>
+      Klassennamen fangen immer mit einem Großbuchstaben an.
+      Klassenamen sind soweit möglich semantisch korrekt zu wählen.
+      Bis auf abzuklärende Ausnahmen sind Klassennamem im Singular. 
+      ( Bisher gab es keine Ausnahme die einen Pluralnamen gerechtfertig hätte. )
+      Pro Datei gibt es nur eine Klasse.
+      Klassennamen sind zwingend CaseSensitiv.
+    </p>
+    <p>
+      Wir verwenden eine Mischung aus <span class="keyword" >CamelCase</span> und Unterstriche, um eine maximale
+      Informationsdichte in der Semantik erhalten zu können.
+      
+      Mit jedem Camel Höcker beginnt ein neuer Ordner:
+      
+      Die Klasse <span class="class_name" >LibTemplateHtml</span> befindet sind in der Datei 
+      <span class="file_path" >src/lib/template/LibTemplateHtml.php</span>
+    </p>
+    <p>
+      Unterstriche werden verwendet um Architektur und Domainbeschreibung zu trennen.
+      z.B <span class="class_name" >CorePerson_Entity</span>, <span class="class_name" >CorePerson_Crud_Controller</span>
+    </p>
+    
+  </div>
+  
+  <h2>Methoden</h2>
+  
+  <div name="method_names" >
+    <p>
+      Methoden fangen immer mit einem Kleinbuchstaben an.
+      Auch hier gibt es wieder die sowohl <span class="keyword" >CamelCase</span> als auch Unterstriche um Domain und Architektur
+      besser trennen zu können.
+      Auch hier gilt Methoden sind CaseSensitiv zu benamen und aufzurufen, auch wen PHP CaseInsensitive Aufrufe erlaubt.
+      Beispiele:
+      getFubBar
+
+      setFu_bar
+      
+    </p>
+    <p>
+      Explizit NICHT erlaubt sind Typenbezeichnungen wie intGetFuu oder Unterstriche zum kenntlich machen von protected und private.
+      Für derartige Metainformationen sind in DocBlocks zu hinterlegen, so das eine vernünftige IDE diese Informationen auch
+      so anzeigen kann.
+    </p>
+    <p>
+      Mit <span class="php_key" >private</span> ist prinzipiell sparsam umzugehen, da die Architektur stark darauf ausgelegt ist durch Ableitung erweitert
+      zu werden.
+      Im Zweifel ist <span class="php_key" >protected</span> die korrekte Sichtbarkeit. 
+    </p>
+  </div>
+
+
+
+  </div>
+</body>
+</html>
