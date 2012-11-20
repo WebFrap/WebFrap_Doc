@@ -8,8 +8,9 @@
     <h2><a href="content.php?page=bdl.introduction" target="main" >Einführung</a></h2>
     <ul>
       <li><a href="content.php?page=bdl.introduction.target_group" target="main" >Zielgruppe</a></li>
-      <li><a href="content.php?page=bdl.introduction.fast_start" target="main" >Schnell Start</a></li>
-      <li><a href="content.php?page=bdl.introduction.extend_bdl" target="main" >Bdl erweitern</a></li>
+      <li><a href="content.php?page=bdl.introduction.koncept" target="main" >Konzept</a></li>
+      <li><a href="content.php?page=bdl.introduction.where_to_begin" target="main" >Wo fange ich an?</a></li>
+      <li><a href="content.php?page=bdl.introduction.extend_bdl" target="main" >BDL erweitern</a></li>
     </ul>
   </li>
   <li class="open" >
@@ -333,9 +334,7 @@
       
       <li class="closed" ><h4><a href="content.php?page=bdl.desktop.base" target="main" >Desktop</a></h4>
         <ul>
-          <li><a href="content.php?page=bdl.desktop.navigation" target="main" >Navigation</a></li>
           <li><a href="content.php?page=bdl.desktop.mainmenu" target="main" >Mainmenu</a></li>
-          <li><a href="content.php?page=bdl.desktop.tree" target="main" >Tree</a></li>
           <li><a href="content.php?page=bdl.desktop.workarea" target="main" >Workarea</a></li>
         </ul>
       </li>
@@ -347,9 +346,8 @@
       
       <li class="closed" ><h4><a href="content.php?page=bdl.entity.base" target="main" >Entity</a></h4>
         <ul>
-          <li><a href="content.php?page=bdl.entity.properties" target="main" >Properties</a></li>
-          <li><a href="content.php?page=bdl.entity.access.node" target="main" >Access</a></li>
-          <li><a href="content.php?page=bdl.entity.attributes" target="main" >Attributes</a>
+          <li><a href="content.php?page=bdl.entity.structure" target="main" >Struktur</a></li>
+          <li class="closed" ><a href="content.php?page=bdl.entity.attributes" target="main" >Attributes</a>
             <ul>
               <li class="closed" ><span>UI Elements</span>
                 <ul>
@@ -393,11 +391,10 @@
                   <li><a href="content.php?page=bdl.entity.attribute.ui_element.wysiwyg" target="main" >Wysiwyg</a></li>
                 </ul>
               </li>
+              <li><a href="content.php?page=bdl.entity.attribute.default" target="main" >Default Values</a></li>
             </ul>
           </li>
-          <li><a href="content.php?page=bdl.entity.categories" target="main" >Categories</a></li>
-          <li><a href="content.php?page=bdl.entity.concepts" target="main" >Concepts</a></li>
-          <li><a href="content.php?page=bdl.entity.references.node" target="main" >References</a>
+          <li class="closed" ><a href="content.php?page=bdl.entity.references.node" target="main" >References</a>
             <ul>
               <li><a href="content.php?page=bdl.entity.references.many_to_many.node" target="main" >Many To Many</a>
                 <ul>
@@ -420,6 +417,11 @@
               
             </ul>
           </li>
+          <li><a href="content.php?page=bdl.entity.categories" target="main" >Categories</a></li>
+          <li><a href="content.php?page=bdl.entity.properties" target="main" >Properties</a></li>
+          <li><a href="content.php?page=bdl.entity.access.node" target="main" >Access</a></li>
+          <li><a href="content.php?page=bdl.entity.concepts" target="main" >Concepts</a></li>
+          
           <li class="closed" ><a href="content.php?page=bdl.entity.ui" target="main" >Ui</a></li>
           
           <li><a href="content.php?page=bdl.entity.indices" target="main" >Indices and Keys</a></li>

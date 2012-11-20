@@ -9,16 +9,16 @@ include './access/access.php';
 <head>
 <title>Menu</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="content-Script-Type" content="text/javascript" />
+<meta http-equiv="content-Script-Type" content="application/javascript" />
 <meta http-equiv="content-Style-Type" content="text/css" />
 <meta http-equiv="content-language" content="de" />
 
 <link href="../../documentor/style/doc.css" rel="stylesheet" type="text/css" />
 <link href="../../documentor/style/jquery.treeview.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../../documentor/js/jquery.js"></script>
-<script type="text/javascript" src="../../documentor/js/jquery.treeview.js"></script>
+<script type="application/javascript" src="../../documentor/js/jquery.js"></script>
+<script type="application/javascript" src="../../documentor/js/jquery.treeview.js"></script>
 
-<script type="text/javascript" >
+<script type="application/javascript" >
 
 function show_chapter( chapter ){
   parent.menu.location="menu.php?page="+chapter;
@@ -51,7 +51,7 @@ function show_chapter( chapter ){
   <a href="http://webfrap.net" target="__new" >WebFrap (WGT)</a>
 </div>
 
-  <script type="text/javascript" >
+  <script type="application/javascript" >
     $(document).ready(function(){
       $('ul.treeMenu').treeview(); //{collapsed: true}
     });

@@ -1,9 +1,65 @@
-<h1>bdl.entity.references.node</h1>
+<h1>Referenzen</h1>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+<p>Mit den Referenzen lassen sich einfach "many to many" und "many to one" Beziehungen abbilden.</p>
 
-<h3>Hier wäre ein super Platz für ein Codebeispiel</h3>
+<h3>Simple Many to One</h3>
 <?php start_highlight(); ?>
 <_..._>
+
+<entity name="project_activity" >
+  <references>
+    <ref name="project_alias" binding="connected"  relation="manyToOne" >
+      <label>
+        <text lang="de" >Alias</text>
+        <text lang="en" >Alias</text>
+      </label>
+      <plabel>
+        <text lang="de" >Aliases</text>
+        <text lang="en" >Aliases</text>
+      </plabel>
+      <src     name="project_activity" ></src>
+      <target  name="project_alias"    id="id_project"  ></target>
+    
+    </ref>
+  </references>
+</entity>
+
+</_..._>
+<?php display_highlight( 'xml' ); ?>
+
+
+<h3>Simple Many to Many</h3>
+<?php start_highlight(); ?>
+<_..._>
+
+<entity name="project_activity" >
+  <references>
+    <ref name="human_resources" binding="free"  relation="manyToMany" >
+    	
+    	<!-- Singular Label -->
+      <label>
+        <text lang="de" >Mitarbeiter Kapazität</text>
+        <text lang="en" >Human Resource</text>
+      </label>
+      
+      <!-- Plural Label -->
+      <plabel>
+        <text lang="de" >Mitarbeiter Kapazitäten</text>
+        <text lang="en" >Human Resources</text>
+      </plabel>
+      
+      <!-- Source Tabelle  -->
+      <src        name="project_activity"  id="id_project" ></src>
+      
+      <!-- Name der Connection Tabelle -->
+      <connection name="project_task_user"  ></connection>
+      
+      <!-- Name der Zieltabelle -->
+      <target     name="wbfsys_role_user"  id="id_user" ></target>
+    
+    </ref>
+  </references>
+</entity>
+
 </_..._>
 <?php display_highlight( 'xml' ); ?>

@@ -8,15 +8,15 @@ session_start( 'SESS_SBIZ_DOCU' );
 <head>
 <title>Start</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="content-Script-Type" content="text/javascript" />
+<meta http-equiv="content-Script-Type" content="application/javascript" />
 <meta http-equiv="content-Style-Type" content="text/css" />
 <meta http-equiv="content-language" content="de" />
 
 <link href="../../documentor/style/doc.css" rel="stylesheet" type="text/css" />
 <link href="../../documentor/style/jquery.treeview.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../../documentor/js/jquery.js"></script>
-<script type="text/javascript" src="../../documentor/js/jquery.treeview.js"></script>
-<script type="text/javascript" src="../../documentor/js/documentor.js"></script>
+<script type="application/javascript" src="../../documentor/js/jquery.js"></script>
+<script type="application/javascript" src="../../documentor/js/jquery.treeview.js"></script>
+<script type="application/javascript" src="../../documentor/js/documentor.js"></script>
 
 </head>
 
@@ -73,7 +73,7 @@ session_start( 'SESS_SBIZ_DOCU' );
     ?>
   </div>
   
-  <script type="text/javascript" >
+  <script type="application/javascript" >
     $(document).ready(function(){
       $('ul.treeMenu').treeview();
     });

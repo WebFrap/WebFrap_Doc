@@ -1,11 +1,11 @@
 <h2>Attributes</h2>
 
 <p>
-Auf jeder Entity, wenn nicht anders deklariert sind Standardmäßig diverse
+Auf jeder Entity, wenn nicht anders deklariert sind standardmäßig diverse
 Metadaten Felder vorhanden.
-Der Pk wird immer automatisch angelegt, heißt <strong>rowid</strong> ist ein int wert und
-verweißt auf eine globale sequence.
-Weiter werden zusätzliche Metadaten automatisch angelegt:
+Der <span title="Primary Key" >PK</span> wird immer automatisch angelegt, heißt <strong>rowid</strong> ist ein int Wert und
+verweißt auf eine globale Sequence.<br />
+Weiter werden folgende Metadaten automatisch angelegt:
 <p>
 
 <label>Standard Attribute bzw Colums auf der Entity:</label>

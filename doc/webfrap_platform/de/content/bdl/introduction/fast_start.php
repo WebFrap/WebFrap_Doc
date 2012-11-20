@@ -1,6 +1,6 @@
-<h1>bdl.introduction.fast_start</h1>
+<h1>Fast start</h1>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+<p></p>
 
 <h3>Hier wäre ein super Platz für ein Codebeispiel</h3>
 <?php start_highlight(); ?>

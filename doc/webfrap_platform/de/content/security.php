@@ -5,7 +5,7 @@
 <head>
 <title>Start</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="content-Script-Type" content="text/javascript" />
+<meta http-equiv="content-Script-Type" content="application/javascript" />
 <meta http-equiv="content-Style-Type" content="text/css" />
 <meta http-equiv="content-language" content="de" />
 

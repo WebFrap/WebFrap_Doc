@@ -9,11 +9,11 @@ include './access/access.php';
 <head>
 <title>Menu</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="content-Script-Type" content="text/javascript" />
+<meta http-equiv="content-Script-Type" content="application/javascript" />
 <meta http-equiv="content-Style-Type" content="text/css" />
 <meta http-equiv="content-language" content="de" />
 
-<script type="text/javascript" >
+<script type="application/javascript" >
 
 function show_chapter( chapter ){
   parent.menu.location="menu.php?page="+chapter;

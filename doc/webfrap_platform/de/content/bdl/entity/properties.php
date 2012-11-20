@@ -1,4 +1,3 @@
-
 <h1>Properties</h1>
 
 <p>Eigenschaften einer Entity</p>
@@ -118,7 +117,7 @@ Default is D-1
 <label>Hier wäre ein super Platz für ein Codebeispiel</label>
 <?php start_highlight(); ?>
 <entities>
-  <entity name="" type="" relevance="d-1" >
+  <entity name="example" type="" relevance="d-1" >
   </entity>
 </entities>
 <?php display_highlight( 'xml' ); ?>

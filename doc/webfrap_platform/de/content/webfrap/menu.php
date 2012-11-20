@@ -94,7 +94,11 @@
   <li>
     <h2><a href="content.php?page=webfrap.acl" target="main" >Acls</a></h2>
     <ul>
-      <li><a href="content.php?page=webfrap.acl.access_container" target="main" >Access Container</a></li>
+      <li><a href="content.php?page=webfrap.acl.access_container" target="main" >Access Container</a>
+        <ul>
+          <li><a href="content.php?page=webfrap.acl.access_container.list" target="main" >List Acls</a></li>
+        </ul>
+      </li>
       <li><a href="content.php?page=webfrap.acl.explicit" target="main" >Explicit Permissions</a></li>
     </ul>
   </li>

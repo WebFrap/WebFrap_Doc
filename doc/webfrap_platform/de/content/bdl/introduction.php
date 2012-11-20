@@ -1,9 +1,11 @@
-<h1>Introduction</h1>
+<h1>Einführung</h1>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+<h2>Was ist BDL?</h2>
 
-<label>Hier wäre ein super Platz für ein Codebeispiel</label>
-<?php start_highlight(); ?>
-<_..._>
-</_..._>
-<?php display_highlight( 'xml' ); ?>
+<p>
+BDL steht für Business Description Language.<br />
+Ziel ist es Anwendungsfälle formal eindeutig, allerdings auf einem Abstraktionsgrad
+der
+BDL ist Sprache die aus XML und eingebundenen Codeelementen besteht.
+
+</p>

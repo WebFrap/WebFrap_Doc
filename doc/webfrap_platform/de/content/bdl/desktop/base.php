@@ -1,66 +1,30 @@
-
-
 <h2>Desktop</h2>
 
-<p>Beschreibung des Desktops</p>
+<p>Mit den Desktopnodes können Profilspezifische Startseiten definiert werden.</p>
 
+<todo>Bild eines Desktops</todo>
 
+<label>Desktop mit den Hauptelementen</label>
 <?php start_highlight(); ?>
 <desktops>
-
-  <desktop name="developer" extends="default" >
-  
-    <navigation name="developer" >
-      <body>
-        <cell name="navigation" />
-      </body>
-    </navigation>
+		
+  <desktop name="admin" extends="default" >
     
-    <tree name="developer" >
-      <body>
-      
-        <!-- Der Node kann direkt eingefügt werden -->
-        <node name="explorer">
-          <label>
-            <text lang="de">Explorer</text>
-            <text lang="en">Explorer</text>
-          </label>
-          <icon src="control/folder.png" alt="explorer" />
-          <action href="maintab.php?c=Webfrap.Navigation.explorer" />
-        </node>
-          
-        <!-- Oder als Template -->
-        <node name="wbf_explorer" template="wbf_explorer" />
-        
-        <!-- Zusätzlich können ganze Untermenüs aus Menü Templates eingefügt werden -->
-        <subtree name="wbf_developer" template="wbf_developer" />
-        <subtree name="my_data" template="my_data" />
-        <node name="wbf_logout" template="wbf_logout" />
-      </body>
-    </tree>
-
-    <workarea name="developer" >
-      <area name="navigation" >
-        <containers>
-          <container name="dash_top" size="full" >
-          
-            <widget 
-              name="my_announcement" 
-              id="my_announcement" 
-              class="my_announcement" 
-              size="full" />
-          
-            <widget 
-              name="my_message" 
-              id="my_message" 
-              class="my_message" 
-              size="full" />
-              
-           </container>
-        </containers>
-      </area>
-    </workarea>
-
+    <label />
+    
+    <!-- Wird in der Systemdoku verwendet -->
+    <docu />
+  
+    <!-- Tabs die Standardmäßig geöffnet werden sollen sobald der desktop betreten wird -->
+    <opener>
+      <tab url="maintab.php?c=Project.Activtity.listing" />
+    </opener>
+    
+    <!-- Beschreibt die oberen Navigation -->
+    <mainmenu name="admin" ></navigation>
+    
+    <!-- Beschreibt die standard Workarea -->
+    <workarea name="admin" ></workarea>
 
   </desktop>
 
@@ -69,20 +33,5 @@
 
 
 
-<?php start_highlight(); ?>
-<desktops>
-
-  <desktop name="developer" extends="default" >
-
-    <workarea name="developer" >
-      <area name="dashboard">
-        <containers type="Wallpaper" />
-      </area>
-    </workarea>
-
-  </desktop>
-
-</desktops>
-<?php display_highlight( 'xml' ); ?>
       
 

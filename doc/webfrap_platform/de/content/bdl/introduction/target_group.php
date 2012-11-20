@@ -14,6 +14,7 @@ aufgebaut werden können mit dem Sprachunfang von BDL nahezu alle BusinessSystem
 abgebildet werden.<br />
 </p>
 
+<!--  
 <p>
 Eine kleine Auswahl bisher erstellter Systeme:
 </p>
@@ -40,6 +41,7 @@ Eine kleine Auswahl bisher erstellter Systeme:
   <li>Alles in einem als ERP System</li>
   <li>eben alle Systeme mit Prozessgestüzter Datenverwaltung</li>
 </ul>
+-->
 
 <p>
 modularer Aufbau

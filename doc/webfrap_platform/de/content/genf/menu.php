@@ -27,7 +27,10 @@
   <li>
     <h2><a href="?page=start" target="main" >Cartridges & Generatoren</a></h2>
     <ul>
-      <li><a href="content.php?page=gateway.introduction" target="main" >Einführung</a></li>
+      <li><a href="content.php?page=genf.cart.introduction" target="main" >Einführung</a></li>
+      <li><a href="content.php?page=genf.cart.cart_vs_gen" target="main" >Cartridges vs Generators</a></li>
+      <li><a href="content.php?page=genf.cart.subcartridges" target="main" >Subcatridges</a></li>
+      <li><a href="content.php?page=genf.cart.protocol" target="main" >Protocol &amp; Logging</a></li>
     </ul>
   </li>
   <li>

@@ -49,7 +49,7 @@
 <div id="replace-me" >boring</div>
 <div id="replace-me2" >content</div>
 
-<script type="text/javascript" >
+<script type="application/javascript" >
 // einfaches aufrufen des Widgets
 $S('#replace-me').hello_world();
 

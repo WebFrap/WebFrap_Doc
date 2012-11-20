@@ -1,6 +1,6 @@
-<h1>bdl.entity.attribute.ui_element.autocomplete</h1>
+<h1>Autocomplete</h1>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+<p>Erzeugt ein Autocomplete feld.</p>
 
 <h3>Hier wäre ein super Platz für ein Codebeispiel</h3>
 <?php start_highlight(); ?>

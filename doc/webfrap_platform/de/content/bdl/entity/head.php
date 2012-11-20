@@ -103,3 +103,28 @@ relevant für den effizienten Aufbau von Queries, Caches, Sync Nodes etc. ist.
 </entities>
 <?php display_highlight( 'xml' ); ?>
 
+
+<h3>Die Standard Maske zum öffnen und auflisten des Datensatzes</h3>
+
+<p>
+Die Standard Maske wird verwendet, wenn nicht auf die Maske mit den Entity
+Namen verwiesen werden soll, sondern auf eine andere Maske.
+</p>
+
+<?php start_highlight(); ?>
+<entities>
+  <entity>
+    
+    <head>
+
+      <!--  urls -->
+      <urls>
+        <default key="mgmt_key" />
+      </urls>
+      
+    </head>
+    
+  </entity>
+</entities>
+<?php display_highlight( 'xml' ); ?>
+
