@@ -121,6 +121,19 @@
     </ul>
   </li>
 
+  <li class="closed" >
+    <h2><a href="content.php?page=dev_guide.tools.base" target="main" >Tools</a></h2>
+    <ul>
+      <li><a href="content.php?page=dev_guide.tools.eclipse" target="main" >Eclipse</a></li>
+      <li><a href="content.php?page=dev_guide.tools.git" target="main" >Git</a></li>
+      <li><a href="content.php?page=dev_guide.tools.gitlab" target="main" >Gitlab</a></li>
+      <li><a href="content.php?page=dev_guide.tools.gerrit" target="main" >Gerrit</a></li>
+      <li><a href="content.php?page=dev_guide.tools.jenkins" target="main" >Jenkins</a></li>
+      <li><a href="content.php?page=dev_guide.tools.postgresql" target="main" >Postgresql</a></li>
+      <li><a href="content.php?page=dev_guide.tools.pgadmin3" target="main" >Pgadmin3</a></li>
+      <li><a href="content.php?page=dev_guide.tools.firebug" target="main" >Firebug</a></li>
+    </ul>
+  </li>
 
   <li class="closed" >
     <h2><a href="content.php?page=dev_guide.prj_mgmt.base" target="main" >Project Management</a></h2>
@@ -163,15 +176,10 @@
           <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_genf_catridge_wbf" target="main" >WebFrap_Genf_Cartridge_Wbf</a></li>
           <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_42_core" target="main" >WebFrap_42_Core</a></li>
           <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_42_business" target="main" >WebFrap_42_Business</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_kb_base" target="main" >WebFrap_Kb_Base</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_kb_business" target="main" >WebFrap_Kb_Business</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_lib_bdl" target="main" >WebFrap_Lib_BDL</a></li>
         </ul>
       </li>
       <li><a href="content.php?page=dev_guide.repositories.buiz.desc" target="main" >Buiz</a>
         <ul>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_shapes" target="main" >WebFrap_Shapes</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_plutos" target="main" >WebFrap_Plutos</a></li>
           <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_finance" target="main" >WebFrap_Lib_Finance</a></li>
           <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_humlang" target="main" >WebFrap_Lib_Humlang</a></li>
           <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_measuring_units" target="main" >WebFrap_Lib_MeasuringUnit</a></li>
