@@ -1,0 +1,7 @@
+digraph prof {
+  size="6,4"; ratio = fill;
+  node [style=filled];
+  fubar -> WebfrapUser_Exception ;
+  fubar [shape=polygon,sides=5,peripheries=3,color=lightblue,style=filled,label="Exception"];
+
+}
