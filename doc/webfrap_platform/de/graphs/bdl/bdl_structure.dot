@@ -1,0 +1,41 @@
+digraph prof {
+  size="8,4"; ratio = fill;
+  node [style=filled];
+  entity -> module;
+  management -> entity;
+  management -> module;
+  process -> module;
+  process -> entity;
+  process -> management [style=dotted];
+  process -> message [style=dotted,arrowhead="inv"];
+  profile -> desktop;
+  profile -> module;
+  role -> module;
+  message -> entity;
+  message -> module;
+  message -> process [style=dotted];
+  user -> module;
+  user -> role [style=dotted,arrowhead="inv"];
+  user -> profile [style=dotted,arrowhead="inv"];
+  desktop -> module;
+  desktop -> menu [style=dotted,arrowhead="inv"];
+  action -> module;
+  action -> entity [style=dotted];
+  service -> module;
+  service -> entity;
+  document -> module;
+  document -> entity;
+  page -> module;
+  page -> entity; 
+  backup -> module;
+  backup -> entity [arrowhead="inv"];
+  enum -> module;
+  datasource -> module;
+  graph_n -> entity;
+  graph_n -> module;
+  report -> entity;
+  report -> graph_n [style=dotted,arrowhead="inv"];
+  report -> module;
+  
+
+}
