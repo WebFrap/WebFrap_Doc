@@ -57,7 +57,7 @@ function show_chapter( chapter ){
       <li>|</li>
       <li><a onclick="show_chapter( 'fourty_two' );" href="#fourty_two" >42 Datenmodell</a></li>
       <li>|</li>
-      <li><a onclick="show_chapter( 'gaia' );" href="#gaia" >Gaia</a></li>
+      <li><a onclick="show_chapter( 'gaia' );" href="#gaia" >Tools</a></li>
       <li>|</li>
       <li><a onclick="show_chapter( 'vendor_lib' );" href="#vendor_lib" >Vendor</a></li>
     </ul>

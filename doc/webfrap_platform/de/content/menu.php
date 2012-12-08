@@ -63,7 +63,7 @@
     </p>
   </li>
   <li>
-    <h2><a onclick="show_chapter( 'gaia' );" href="#gaia"  >Gaia</a></h2>
+    <h2><a onclick="show_chapter( 'gaia' );" href="#gaia"  >Tools</a></h2>
     <p>
       Setup&amp;Maintenance System
     </p>

@@ -649,6 +649,20 @@ a.domain
   color:#A54646 !important;
 }
 
+span.dir
+{
+  font-style:italic;  
+  color:#004000 !important;  
+  font-weight:normal;
+}
+
+span.file
+{
+  font-style:italic;  
+  color:#0000C0 !important;  
+  font-weight:normal;  
+}
+
 span.command,
 a.command
 {
@@ -703,3 +717,10 @@ a.important
 {
   font-weight:bold;  
 }
+
+span.access_public,
+a.access_public
+{
+  border-bottom: 2px dotted brown;  
+}
+
