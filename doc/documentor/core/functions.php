@@ -19,7 +19,7 @@ function display_highlight( $lang = 'php', $code = null )
 
   if( is_null( $code ) )
   {
-    $code = ob_get_contents();
+    $code = trim(ob_get_contents()) ;
     ob_end_clean();
   }
   

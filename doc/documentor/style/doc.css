@@ -195,7 +195,7 @@ div.content a
 pre 
 {
   border:1px solid #39aecf;
-  padding:0px;  
+  padding:5px;  
   padding-left:20px;
   font-family:sans-serif courier;
   margin-bottom:7px;
@@ -556,7 +556,8 @@ ul > li > ul {
 *******************************************************************************/
 
 .docTree,
-.doc_tree 
+.doc_tree ,
+.doc-tree 
 {
   margin-bottom:8px;
 }
@@ -572,37 +573,44 @@ ul.docTree li>p{
 .docTree li,
 .docTree li span,
 .doc_tree li,
-.doc_tree li span
+.doc_tree li span,
+.doc-tree li,
+.doc-tree li span
 {
   color:#303030;
 }
 
 .docTree li span,
-.doc_tree li span
+.doc_tree li span,
+.doc-tree li span
 {
   font-weight:bold;
 }
 
 .docTree a,
-.doc_tree a
+.doc_tree a,
+.doc-tree a
 {
   color:#64b824;
   border-bottom:1px dotted #64b824;
 }
 
-ul.doc_tree.cells
+ul.doc_tree.cells,
+ul.doc-tree.cells
 {
   width:700px;
   border-bottom: 1px dotted silver;	
 }
 
-ul.doc_tree.cells li
+ul.doc_tree.cells li.
+ul.doc-tree.cells li
 {
   border-top: 1px dotted silver;
 	clear:both;
 }
 
-ul.doc_tree.cells li div.cell
+ul.doc_tree.cells li div.cell,
+ul.doc-tree.cells li div.cell
 {
 	float:right;
   width:400px;
