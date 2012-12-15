@@ -73,11 +73,6 @@ $this->status->content
   'tripple.login'       => 'Webfrap.Auth.Form',
   'tripple.setup'       => 'Webfrap.Base.Setup',
 
-  // öh, einfach so lassen
-  // deprecated feature
-  'menu.top.annon'        => 'devconce/topmenu/annon',
-  'menu.top.user'         => 'devconce/topmenu/user',
-
   // Flag ob fehlermeldungen per http header ausgeliefert werden sollen
   // Wird z.B. wie es der Name vermuten lässt in Firephp benötigt
   'enable.firephp'    => false,

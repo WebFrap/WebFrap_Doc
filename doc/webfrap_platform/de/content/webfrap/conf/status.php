@@ -32,14 +32,7 @@
       <li><span>tripple.setup</span></li>
     </ul>
   </li>
-  
-  <li><p>Menu</p>
-    <ul>
-      <li><span>menu.top.annon</span></li>
-      <li><span>menu.top.user</span></li>
-    </ul>
-  </li>
-  
+
   <li><p>Key</p>
     <ul>
       <li><span>key.js</span></li>
@@ -125,9 +118,6 @@ $this->status->content
 
   'tripple.login'       => 'Webfrap.Auth.Form',
   'tripple.setup'       => 'Webfrap.Base.Setup',
-
-  'menu.top.annon'        => 'devconce/topmenu/annon',
-  'menu.top.user'         => 'devconce/topmenu/user',
 
   'enable.firephp'    => false,
   //'enable.debugpwd'   => 'hanswurst', // CHANGE ME if enabled
