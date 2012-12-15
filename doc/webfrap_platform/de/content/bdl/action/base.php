@@ -59,7 +59,7 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
   /**
   *
   */
-  public function toCall()
+  public function toCall( $params, $environment )
   {
     // do some stuff
   }
@@ -72,7 +72,7 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
   /**
   * @param $entity Entity
   */
-  public function toCall( Entity $entity )
+  public function toCall( Entity $entity, $params, $environment )
   {
     // do some stuff with the entity
   }
@@ -87,7 +87,7 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
   /**
   * @param $tableName string "in_lower_case"
   */
-  public function toCall( $tableName )
+  public function toCall( $tableName, $params, $environment )
   {
     // do some stuff on the Table
   }
@@ -103,7 +103,7 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
   /**
   * @param $domainKey string "in_lower_case" 
   */
-  public function toCall( $domainKey )
+  public function toCall( $domainKey, $params, $environment )
   {
     // do some stuff on the Table
   }
@@ -117,7 +117,7 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
   * @param $process Process
   * @param $entity Entity
   */
-  public function toCall( $process, $entity )
+  public function toCall( $process, $entity, $params, $environment )
   {
     // do some stuff on the Table
   }
