@@ -53,12 +53,76 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
 <p>Es gibt eine reihe verschiedenen Interfaces</p>
 
 <ul class="doc_tree" >
-  <li><span class="key_word" >plain</span> Wird ohne Parameter aufgerufen </li>
-  <li><span class="key_word" >dataset</span> Es wird nur der aktive Datensatz übergeben</li>
+  <li><span class="key_word" >plain</span> Wird ohne Parameter aufgerufen 
+
+<?php start_highlight(); ?>
+  /**
+  *
+  */
+  public function toCall()
+  {
+    // do some stuff
+  }
+<?php display_highlight( 'php' ); ?>
+  
+  </li>
+  <li><span class="key_word" >dataset</span> Es wird nur der aktive Datensatz übergeben
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $entity Entity
+  */
+  public function toCall( Entity $entity )
+  {
+    // do some stuff with the entity
+  }
+<?php display_highlight( 'php' ); ?>
+  
+  </li>
   <li><span class="key_word" >datasource</span> Es wird nur der Name einer Datenquelle übergeben.
     Wird in der Regel verwendet, wenn die Action nicht relativ zu einem Datensatz
-    sonder zu einer Tabelle / anderen Datenquelle aufgerufen wird</li>
-  <li><span class="key_word" >process</span> Es werden die aktive Entity und eine Prozessintstanz übergeben</li>
+    sonder zu einer Tabelle / anderen Datenquelle aufgerufen wird
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $tableName string "in_lower_case"
+  */
+  public function toCall( $tableName )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >domain_list</span> Der Key der aktuellen Domain.
+    Diese Funktion wird im Kontext eines management nodes aufgerufen.
+    Sie betrifft nur Datensätze die innerhalb der Sichtbarkeit der definierten Filter
+    dieser Maske liegen.
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $domainKey string "in_lower_case" 
+  */
+  public function toCall( $domainKey )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >process</span> Es werden die aktive Entity und eine Prozessintstanz übergeben
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $process Process
+  * @param $entity Entity
+  */
+  public function toCall( $process, $entity )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+  </li>
 </ul>
 
 

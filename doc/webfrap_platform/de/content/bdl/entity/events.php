@@ -68,7 +68,7 @@ Key wird im Code als Domainname des Action Objektes verwendet.
 <p>
 Es gibt eine ganze Reihe von Action Interfaces, das macht Sinn, da
 sonst jeder Action alle möglicherweise nötigen Informationen übergeben werden müssten.
-<a href="content.php?page=bdl.action.introduction#interface-types" target="main" >Siehe Liste der Action Interfaces</a>
+<a href="content.php?page=bdl.action.base#interface-types" target="main" >Siehe Liste der Action Interfaces</a>
 </p>
 
 
