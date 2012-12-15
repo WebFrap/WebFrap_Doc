@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bdl version="1.0" >
+  <modules>
+
+    <module name="example" >
+
+      <label>
+        <text lang="de" >Beispiel Module</text>
+        <text lang="en" >Example module</text>
+      </label>
+      
+      <docu>
+        <text lang="en" >This is jut an example module for a better understanding of BDL.</text>
+      </docu>
+
+    </module>
+
+  </modules>
+</bdl>

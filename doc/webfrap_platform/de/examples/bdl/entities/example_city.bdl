@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bdl version="0.3" >
+  <entities>
+
+  <entity name="example_city" relevance="s-3" >
+  
+    <label>
+      <text lang="de" >Stadt</text>
+      <text lang="en" >City</text>
+    </label>
+
+		<description>
+		  <text lang="de" >Alle Städte</text>
+		  <text lang="en" >list with all existing cities</text>
+		</description>
+
+    <attributes>
+
+	    <attribute is_a="name" required="true" ></attribute>
+	    
+      <attribute name="postalcode" type="text" size="10"    >
+
+        <display>
+          <table />
+          <selection />
+        </display>
+
+        <label>
+          <text lang="de" >Postleitzahl</text>
+          <text lang="en" >Postalcode</text>
+        </label>
+
+      </attribute>
+      
+      <attribute name="id_country" target="core_country" required="true" >
+        <uiElement type="selectbox" />
+      </attribute>
+
+    </attributes>
+
+
+
+  </entity>
+
+  </entities>
+
+</bdl>

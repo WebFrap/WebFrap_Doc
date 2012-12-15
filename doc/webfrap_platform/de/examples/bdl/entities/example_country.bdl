@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bdl>
+  <entities>
+
+  <entity name="example_country" relevance="s-3" >
+
+      <label>
+        <text lang="de" >Land</text>
+        <text lang="en" >Country</text>
+      </label>
+
+    <attributes>
+
+	    <attribute is_a="name" required="true" ></attribute>
+      
+	    <attribute is_a="access_key" required="true" ></attribute>
+      
+      <attribute is_a="access_key" name="key3" ></attribute>
+      
+      <attribute name="country_number" type="char" size="3" ></attribute>
+
+      <attribute name="flag" type="text" size="120" >
+        <label>
+          <text lang="de" >Fahne</text>
+          <text lang="en" >Flag</text>
+        </label>
+      </attribute>
+
+      <attribute is_a="category" >
+      
+      </attribute>
+
+	    <attribute name="short" type="text" size="5" >
+        <label>
+          <text lang="de" >Kürzel</text>
+          <text lang="en" >Shortname</text>
+        </label>
+      
+				<display type="exclude" />
+				<search type="true"  />
+	    </attribute>
+
+
+    </attributes>
+
+  </entity>
+
+  </entities>
+
+
+
+
+</bdl>

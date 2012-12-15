@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bdl>
+  <entities>
+
+	  <!-- Will create a default management core_person if not yet exists -->
+	  <entity name="example_person" relevance="d-1"   >
+	
+			<label>
+			  <text lang="de">Person</text>
+			  <text lang="en">Person</text>
+			</label>
+			
+			<description>
+			  <text lang="de" >einfache Beschreibung einer Person</text>
+			  <text lang="en" >a simple person</text>
+			</description>
+	
+	    <semantic>
+	
+	      <tags>
+	        <tag lang="de" >person</tag>
+	      </tags>
+	
+	    </semantic>
+	
+	    <attributes>
+	
+		    <categories>
+		      <category name="default" >
+	          <label>
+	            <text lang="en" >Base Data</text>
+	            <text lang="de" >Base Data</text>
+	          </label>
+	        </category>
+		    </categories>
+	
+		    <attribute name="gender" type="eid"  >
+		      <uiElement type="selectbox" hardcoded="true" src="base_gender" ></uiElement>
+		    </attribute>
+	      
+		    <attribute name="academic_title"  type="text" size="50" >
+	        <label>
+	          <text lang="de" >Akademischer Titel</text>
+	          <text lang="en" >Academic Title</text> 
+	        </label>
+	      </attribute>
+		    
+		    <attribute name="firstname"  is_a="name"   >
+	        <label>
+	          <text lang="de" >Vorname</text>
+	          <text lang="en" >Firstname</text>
+	        </label>
+	      </attribute>
+		    
+		    <attribute name="lastname"   is_a="name"   >
+	        <label>
+	          <text lang="de" >Nachname</text>
+	          <text lang="en" >Lastname</text>
+	        </label>
+	        <search>
+	          <begin />
+	        </search>
+	      </attribute>
+	      
+		    <attribute name="birthday"   type="date"  >
+	        <label>
+	          <text lang="de" >Geburtstag</text>
+	          <text lang="en" >Birthday</text>
+	        </label>
+	      </attribute>
+	      
+	      <attribute name="photo"  is_a="image"   >
+	        <label>
+	          <text lang="de" >Photo</text>
+	          <text lang="en" >Photo</text>
+	        </label>
+	      </attribute>
+	      
+		    <attribute name="birth_city" type="text" size="120"    >
+	        <label>
+	          <text lang="de" >Geburtsstadt</text>
+	          <text lang="en" >Birth City</text>
+	        </label>
+		      <uiElement type="autocomplete" target="example_city" ></uiElement>
+	        <categories main="personal_data" ></categories>
+		    </attribute>
+	
+	
+		    <attribute name="id_nationality" target="example_country"   >
+	        <uiElement type="selectbox" ></uiElement>
+	        <categories main="personal_data" ></categories>
+	      </attribute>
+	
+	    </attributes>
+	  
+	
+	  </entity>
+
+  </entities>
+
+
+
+</bdl>

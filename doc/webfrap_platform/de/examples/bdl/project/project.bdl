@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SDB_SBiz" title="SDB SBiz" >
+
+  <author><![CDATA[author name <author@mail.com>]]></author>
+  <copyright><![CDATA[copyright Information]]></copyright>
+  <licence>Target Licence for the code</licence>
+  <url>http://project.url</url>
+  <name>Project Name</name>
+  <key>projec_name_key</key>
+  <header>{$PATH_ROOT}WebFrap_Genf/data/header/code-header.tpl</header>
+  <sandbox>false</sandbox>
+  
+  <!--  
+    Target Group for the generated Code.
+    Can be used to tag the modell elements, so you can diversify between
+    Apps for sme oder corp / enterprise applications
+  -->
+  <target_group>kmu</target_group>
+  
+   <!-- Mockup Code mitgenerieren  -->
+  <mockup>false</mockup>
+ 
+
+  <version>1</version>
+  <revision>1</revision>
+  
+  <!-- 
+    Don't change unless you define and integrate an other modell language than BDL.
+    No Version Infor required yet
+  -->
+  <model version="" key="bdl" ></model>
+  
+  <!-- 
+  The Class Key of you architecture / cartriges
+  Hint: Don't set a Version yet
+   -->
+  <architecture version="" key="example" > </architecture>
+
+
+  <description><![CDATA[Project Description]]></description>
+  
+  <!-- Define Global Concepts -->
+  <concepts>
+    <concept name="protocol" ></concept>
+  </concepts>
+
+  <languages default="en" code="en"  >
+    <lang>de</lang>
+    <lang>en</lang>
+  </languages>
+
+  <path>
+    <path_gw>{$PATH_PROJECT}</path_gw>
+    <path_output>{$PATH_OUTPUT}</path_output>
+    <path_deploy>{$PATH_DEPLOY}</path_deploy>
+    <path_root>{$PATH_ROOT}</path_root>
+    <path_include_list>{$PATH_PROJECT}conf/include/gmod/</path_include_list>
+  </path>
+
+  <repositories>
+    <repository name="example" >{$PATH_42_EXAMPLE}</repository>
+  </repositories>
+
+  <var name="PATH_PROJECT"      value="{$PATH_ROOT}WebFrap_Mod_Example/" />
+  <var name="PATH_42_EXAMPLE"   value="{$PATH_ROOT}WebFrap_Genf/example/bdl/" />
+
+  <var name="PATH_OUTPUT"   value="{$PATH_ROOT}cache/genf/example/" />
+  <var name="PATH_DEPLOY"   value="{$PATH_ROOT}WebFrap_Mod_Example/" />
+
+
+  <databases>
+
+    <connection driver="Postgresql" type="Postgresql" name="sdb_all" >
+      <host>localhost</host>
+      <db>sdb_gw_sbiz</db>
+      <port>5432</port>
+      <dataschema>your_schema</dataschema>
+      <owner>your_db</owner>
+      <user>your_dbuser</user>
+      <pwd>your_dbpwd</pwd>
+    </connection>
+    
+
+  </databases>
+
+  <import>
+  
+    <namespace name="example" deploy="custom" >
+      <repositories>
+        <repository name="example" />
+      </repositories>
+      <use>
+        <module />
+        <entities />
+      </use>
+    </namespace>
+  
+  </import>
+
+  <deployment>
+    <!-- <mod name="*" overwrite="all" >{$PATH_DEPLOY}</mod>--><!-- Alles in den Projektpfad deployen -->
+    
+    <mod name="example" key="WebFrap_Mod_Example" overwrite="all"  >      
+      <path>{$PATH_ROOT}WebFrap_Mod_Example/</path>
+    </mod>
+    
+    <mod name="doc" key="WebFrap_Mod_Example" overwrite="all" >      
+      <path>{$PATH_ROOT}WebFrap_Mod_Example/</path>
+    </mod>
+    
+  </deployment>
+
+  <nodes>
+    <node>entity</node>
+    <node>module</node>
+  </nodes>
+
+  <cartridges>
+      
+    
+    <!-- ## Metadata ## -->
+    <cartridge class="ExampleModule"           type="Module" />
+    <cartridge class="ExampleEntity"           type="Entity" />
+    
+  
+    <!--
+    <cartridge class="DdlPostgresql"  type="Ddl"  >
+      <owner>sdb_gw_sbiz</owner>
+      <schema>production</schema>
+      <appendDump>{$PATH_ROOT}WebFrap_Genf/example/ddl/example.sql</appendDump>
+    </cartridge>
+    
+    <cartridge class="DokuErd" type="Entity"   >
+      <owner>example</owner>
+      <schema>example</schema>
+    </cartridge>
+    -->
+
+    <!--
+    <cartridge class="DocApi" type="Documentation"   >
+      <owner>example</owner>
+      <schema>example</schema>
+
+      <style>
+        <css></css>
+        <header></header>
+        <logic></logic>
+      </style>
+
+      <path>{$PATH_ROOT}WebFrap_Genf/templates/doc/erd/</path>
+    </cartridge>
+     -->
+
+  </cartridges>
+
+</project>
