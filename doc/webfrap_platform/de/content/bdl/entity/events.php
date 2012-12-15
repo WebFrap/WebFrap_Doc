@@ -78,5 +78,225 @@ In den Events kann 3GL Code platziert werden.
 Es ist jedoch unbedingt darauf zu achten, dass in diesem Fall
 für alle Zielarchitekturen Code hinterlegt werden sollte.
 </p>
-          
+
+<h3>Liste der Events</h3>
+
+<h4>CRUD Controller</h4>
+
+<span>crud_controller</span>
+
+<ul>
+  <li><span>create</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>edit</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>edit_where</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>show</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>data</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>append</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>item</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>insert</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>update</span>
+    <ul>
+      <li>check_access</li>
+      <li>check_method_param</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>listing</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>selection</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>search</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>filter</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>delete</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>text_by_key</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>automplete</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>change_order</span>
+    <ul>
+      <li>check_access</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD Model</h4>
+
+<span>crud_model</span>
+
+<ul>
+  <li><span>insert</span>
+    <ul>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+      <li>check_method_param</li>
+      <li>validate</li>
+    </ul>
+  </li>
+  <li><span>update</span>
+    <ul>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+      <li>check_method_param</li>
+      <li>validate</li>
+    </ul>
+  </li>
+  <li><span>delete</span>
+    <ul>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD Ref Model</h4>
+
+<span>crud_model_ref</span>
+<ul>
+  <li><span>delete</span>
+    <ul>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+</ul>
+
           
