@@ -26,17 +26,18 @@ gebrochen wird.
         class="crud_model"
         method="update"
         on="success" >
-      </event>
       
-      <action 
-        name="some_action" 
-        class="some_log_action_class_name" 
-        key="shorter_name_for_code" >
+        <action 
+          name="some_action" 
+          class="some_log_action_class_name" 
+          key="shorter_name_for_code" >
+          
+          <interface type="type_of_the_interface" />
+          <call method="method_on_action_to_call" />
+          
+        </action>
         
-        <interface type="type_of_the_interface" />
-        <call method="method_on_action_to_call" />
-        
-      </action>
+      </event>
       
     </events>
 

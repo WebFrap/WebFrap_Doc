@@ -57,9 +57,10 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
 
 <?php start_highlight(); ?>
   /**
-  *
+  * @param $context Context
+  * @param $env Base
   */
-  public function toCall( $params, $environment )
+  public function toCall( $context, $env )
   {
     // do some stuff
   }
@@ -71,39 +72,163 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
 <?php start_highlight(); ?>
   /**
   * @param $entity Entity
+  * @param $context Context
+  * @param $env Base
   */
-  public function toCall( Entity $entity, $params, $environment )
+  public function toCall( Entity $entity, $context, $env )
   {
     // do some stuff with the entity
   }
 <?php display_highlight( 'php' ); ?>
   
   </li>
-  <li><span class="key_word" >datasource</span> Es wird nur der Name einer Datenquelle übergeben.
+  <li><span class="key_word" >management_dataset</span> Es wird nur der aktive Datensatz übergeben
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $entity Entity
+  * @param $domainNode DomainNode
+  * @param $context Context
+  * @param $env Base
+  */
+  public function toCall( Entity $entity, $domainNode, $context, $env )
+  {
+    // do some stuff with the entity
+  }
+<?php display_highlight( 'php' ); ?>
+  
+  </li>
+  <li><span class="key_word" >entity</span> Es wird nur der Name einer Datenquelle übergeben.
     Wird in der Regel verwendet, wenn die Action nicht relativ zu einem Datensatz
     sonder zu einer Tabelle / anderen Datenquelle aufgerufen wird
   
 <?php start_highlight(); ?>
   /**
   * @param $tableName string "in_lower_case"
+  * @param $context Context
+  * @param $env Base
   */
-  public function toCall( $tableName, $params, $environment )
+  public function toCall( $tableName, $context, $env )
   {
     // do some stuff on the Table
   }
 <?php display_highlight( 'php' ); ?>
     
-  </li>
-  <li><span class="key_word" >domain_list</span> Der Key der aktuellen Domain.
+  </li><li><span class="key_word" >management</span> Der Key der aktuellen Domain.
     Diese Funktion wird im Kontext eines management nodes aufgerufen.
     Sie betrifft nur Datensätze die innerhalb der Sichtbarkeit der definierten Filter
     dieser Maske liegen.
   
 <?php start_highlight(); ?>
   /**
+  * @param $ids array Liste mit IDs von Datensätzen
   * @param $domainKey string "in_lower_case" 
+  * @param $context Context
+  * @param $env Base
   */
-  public function toCall( $domainKey, $params, $environment )
+  public function toCall( $ids, $domainKey, $context, $env )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >entity_list</span> Der Key der aktuellen Domain.
+    Diese Funktion wird im Kontext eines management nodes aufgerufen.
+    Sie betrifft nur Datensätze die innerhalb der Sichtbarkeit der definierten Filter
+    dieser Maske liegen.
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $ids array Liste mit IDs von Datensätzen
+  * @param $domainKey string "in_lower_case" 
+  * @param $context Context
+  * @param $env Base
+  */
+  public function toCall( $ids, $table, $context, $env )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >management_list</span> Der Key der aktuellen Domain.
+    Diese Funktion wird im Kontext eines management nodes aufgerufen.
+    Sie betrifft nur Datensätze die innerhalb der Sichtbarkeit der definierten Filter
+    dieser Maske liegen.
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $ids array Liste mit IDs von Datensätzen
+  * @param $domainKey string "in_lower_case" 
+  * @param $context Context
+  * @param $env Base
+  */
+  public function toCall( $ids, $domainKey, $context, $env )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >entity_ref</span> 
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $ids array Liste mit IDs von Datensätzen
+  * @param $domainKey string "in_lower_case" 
+  * @param $context Context
+  * @param $env Base
+  */
+  public function toCall( $refId, $context, $env )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >management_ref</span> 
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $refId int die ID des Datensatzes auf welchen referenziert wird
+  * @param $domainKey string "in_lower_case" 
+  * @param $context Context
+  * @param $env Base
+  */
+  public function toCall( $refId, $domainKey, $context, $env )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >entity_ref_dset</span> 
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $ids array Liste mit IDs von Datensätzen
+  * @param $domainKey string "in_lower_case" 
+  * @param $context Context
+  * @param $env Base
+  */
+  public function toCall( $refId, $entity, $context, $env )
+  {
+    // do some stuff on the Table
+  }
+<?php display_highlight( 'php' ); ?>
+    
+  </li>
+  <li><span class="key_word" >management_ref_dset</span> 
+  
+<?php start_highlight(); ?>
+  /**
+  * @param $refId int die ID des Datensatzes auf welchen referenziert wird
+  * @param $domainKey string "in_lower_case" 
+  * @param $context Context
+  * @param $env Base
+  */
+  public function toCall( $refId, $domainKey, $entity, $context, $env )
   {
     // do some stuff on the Table
   }
@@ -116,8 +241,10 @@ jedoch mit dem Wert <span class="value" >false</span> unterbunden werden.
   /**
   * @param $process Process
   * @param $entity Entity
+  * @param $context Context
+  * @param $env Base
   */
-  public function toCall( $process, $entity, $params, $environment )
+  public function toCall( $process, $entity, $context, $env )
   {
     // do some stuff on the Table
   }
