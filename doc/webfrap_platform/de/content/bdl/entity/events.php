@@ -366,6 +366,78 @@ für alle Zielarchitekturen Code hinterlegt werden sollte.
   </li>
 </ul>
 
+<h4>CRUD Maintab Edit Menu</h4>
+
+<span>crud_maintab_edit_menu</span>
+<ul>
+  <li><span>build_menu</span>
+    <ul>
+      <li>entries</li>
+      <li>end_main_buttons</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD View Edit Menu</h4>
+
+<span>crud_view_edit_menu</span>
+<ul>
+  <li><span>build_menu</span>
+    <ul>
+      <li>entries</li>
+      <li>end_main_buttons</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD Maintab Create Menu</h4>
+
+<span>crud_maintab_create_menu</span>
+<ul>
+  <li><span>build_menu</span>
+    <ul>
+      <li>entries</li>
+      <li>end_main_buttons</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD View Create Menu</h4>
+
+<span>crud_view_create_menu</span>
+<ul>
+  <li><span>build_menu</span>
+    <ul>
+      <li>entries</li>
+      <li>end_main_buttons</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD Maintab Show Menu</h4>
+
+<span>crud_maintab_show_menu</span>
+<ul>
+  <li><span>build_menu</span>
+    <ul>
+      <li>entries</li>
+      <li>end_main_buttons</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD View Show Menu</h4>
+
+<span>crud_view_show_menu</span>
+<ul>
+  <li><span>build_menu</span>
+    <ul>
+      <li>entries</li>
+      <li>end_main_buttons</li>
+    </ul>
+  </li>
+</ul>
+
 <h4>CRUD Multi Model</h4>
 
 <span>multi_model</span>
