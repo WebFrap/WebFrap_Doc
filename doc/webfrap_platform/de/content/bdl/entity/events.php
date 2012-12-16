@@ -299,4 +299,119 @@ für alle Zielarchitekturen Code hinterlegt werden sollte.
   </li>
 </ul>
 
-          
+<h4>CRUD Multi Controller</h4>
+
+<span>multi_controller</span>
+<ul>
+  <li><span>save</span>
+    <ul>
+      <li>invalid_request</li>
+      <li>check_access</li>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>insert</span>
+    <ul>
+      <li>invalid_request</li>
+      <li>check_access</li>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>update</span>
+    <ul>
+      <li>invalid_request</li>
+      <li>check_access</li>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>delete</span>
+    <ul>
+      <li>invalid_request</li>
+      <li>check_access</li>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>delete_all</span>
+    <ul>
+      <li>invalid_request</li>
+      <li>check_access</li>
+      <li>before</li>
+      <li>begin_transaction</li>
+      <li>end_transaction</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>CRUD Multi Model</h4>
+
+<span>multi_model</span>
+<ul>
+  <li><span>save</span>
+    <ul>
+      <li>before_insert</li>
+      <li>after_insert</li>
+      <li>success_insert</li>
+      <li>fail_insert</li>
+      <li>before_update</li>
+      <li>after_update</li>
+      <li>success_update</li>
+      <li>fail_update</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>insert</span>
+    <ul>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>update</span>
+    <ul>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+  <li><span>delete_all</span>
+    <ul>
+      <li>before_delete</li>
+      <li>after_delete</li>
+      <li>success_delete</li>
+      <li>fail_delete</li>
+      <li>before</li>
+      <li>after</li>
+      <li>success</li>
+      <li>fail</li>
+    </ul>
+  </li>
+</ul>
+
