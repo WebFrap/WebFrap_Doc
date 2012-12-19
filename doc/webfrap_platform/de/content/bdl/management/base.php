@@ -7,6 +7,11 @@ Datenbank.
 Eine Node hat immer einen Hauptdatenquelle auf den er sich bezieht.
 </p>
 
+<p>In der folgende Abschnitt wird ersichtlich wie Managemement Nodes eingesetzt werden um verschiedenen Masken für
+unterschiedliche UseCases aufzusetzen.</p>
+
+<img src="images/bdl/management/managements.png" alt="Beispiel mit einige Management Nodes" />
+
 <p>
 Die Informationen können in Node eingeschränkt oder durch zusätzliche Datenquellen / Relationen
 erweitert werden. Die zusätzlichen Informationen sind immer Relativ zum Eintrag der Hauptdatenquelle.
@@ -29,8 +34,9 @@ erweitert werden. Die zusätzlichen Informationen sind immer Relativ zum Eintrag
   <management 
     name="example_mask" 
     src="example_entity" 
-    module="example"
+    module=""
     relevance="d-1"
+    type=""
     >
     
     <label></label>
@@ -47,13 +53,16 @@ erweitert werden. Die zusätzlichen Informationen sind immer Relativ zum Eintrag
 <?php display_highlight( 'xml' ); ?>
 
 
-<p>Erklärung der Attribute:</p>
+<h3 class="example" >Erklärung der Attribute</h3>
 
 <ul class="doc_tree" >
   <li><span class="attribute" >name</span> Domainname der Action</li>
    <li><span class="attribute" >src</span> Name der Haupt-Entity <a href="content.php?page=bdl.entity.base" target="main" class="bdl" >entity</a></li>
   <li><span class="attribute opt" >module</span> Das Module zu welchem der Management Node gehört. Ist theoretisch
     optional wird jedoch benötigt wenn der erste Teil des Namens vom Modulnamen abweicht.</li>
-  <li><span class="attribute" >relevance</span> Relevanz des Management nodes. Steuert welche Architekturelemente generiert werden.</li>
+  <li><span class="attribute opt" >relevance</span> Relevanz des Management nodes. Steuert welche Architekturelemente generiert werden.</li>
+  <li><span class="attribute opt" >type</span> Type des Managament Nodes. Manche Nodes stellen z.B nur Listen, Exports etc bereit.</li>
 </ul>
+
+<h3 class="example" >Management Types</h3>
 

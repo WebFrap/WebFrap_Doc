@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<xs:schema 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://webfrap.net/bdl"
+  xmlns="http://webfrap.net/bdl"
+  elementFormDefault="unqualified"
+  >
+
+<xs:element name="bdl" >
+  <xs:complexType>
+    <xs:sequence>
+			<xs:element name="managements" minOccurs="1" maxOccurs="1" >
+			  <xs:complexType>
+			    <xs:sequence>
+			      <xs:element name="management" type="management" />
+			    </xs:sequence>
+			  </xs:complexType>
+			</xs:element>
+      <xs:element name="entities" minOccurs="1" maxOccurs="1" >
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="entity" type="entity" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="version" type="xs:string" />
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="management">
+	<xs:sequence>
+	  <xs:element name="label" type="i18n_text" maxOccurs="1" />
+    <xs:element name="plabel" type="i18n_text" maxOccurs="1" />
+    <xs:element name="description" type="i18n_text" maxOccurs="1"  />
+    <xs:element name="docu" type="i18n_text" maxOccurs="1" />
+    <xs:element name="access" type="access" maxOccurs="1" />
+    <xs:element name="ui" type="ui" maxOccurs="1" />
+	</xs:sequence>
+  <xs:attribute name="name" type="xs:string" use="required" />
+  <xs:attribute name="src" type="xs:string" use="required" />
+  <xs:attribute name="relevance" type="xs:string" />
+  <xs:attribute name="module" type="xs:string" />
+  <xs:attribute name="type" type="xs:string" />
+</xs:complexType>
+
+<xs:complexType name="entity">
+  <xs:sequence>
+    <xs:element name="label" type="i18n_text" maxOccurs="1" />
+    <xs:element name="plabel" type="i18n_text" maxOccurs="1" />
+    <xs:element name="description" type="i18n_text" maxOccurs="1"  />
+    <xs:element name="docu" type="i18n_text" maxOccurs="1" />
+    <xs:element name="access" type="access" maxOccurs="1" />
+    <xs:element name="ui" type="ui" maxOccurs="1" />
+  </xs:sequence>
+  <xs:attribute name="name" type="xs:string" use="required" />
+  <xs:attribute name="relevance" type="xs:string" />
+  <xs:attribute name="module" type="xs:string" />
+</xs:complexType>
+
+
+<xs:complexType name="i18n_text" >
+  <xs:sequence>
+    <xs:element name="text" type="xs:string" >
+      <xs:complexType>
+        <xs:attribute name="lang" type="xs:string" use="required" />
+      </xs:complexType>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="access" >
+  <xs:sequence>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ui" >
+  <xs:sequence>
+  </xs:sequence>
+</xs:complexType>
+
+
+</xs:schema>
+
