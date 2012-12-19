@@ -30,19 +30,30 @@ erweitert werden. Die zusätzlichen Informationen sind immer Relativ zum Eintrag
     name="example_mask" 
     src="example_entity" 
     module="example"
+    relevance="d-1"
     >
     
-    <!-- Label  -->
     <label></label>
-    
+    <plabel></plabel>
     <description></description>
-    
     <docu></docu>
-    
+    <access></access>
+    <concepts></concepts>
     <events></events>
-    
-    <events></events>
+    <ui></ui>
 
   </management>
 </managements>
 <?php display_highlight( 'xml' ); ?>
+
+
+<p>Erklärung der Attribute:</p>
+
+<ul class="doc_tree" >
+  <li><span class="attribute" >name</span> Domainname der Action</li>
+   <li><span class="attribute" >src</span> Name der Haupt-Entity <a href="content.php?page=bdl.entity.base" target="main" class="bdl" >entity</a></li>
+  <li><span class="attribute opt" >module</span> Das Module zu welchem der Management Node gehört. Ist theoretisch
+    optional wird jedoch benötigt wenn der erste Teil des Namens vom Modulnamen abweicht.</li>
+  <li><span class="attribute" >relevance</span> Relevanz des Management nodes. Steuert welche Architekturelemente generiert werden.</li>
+</ul>
+

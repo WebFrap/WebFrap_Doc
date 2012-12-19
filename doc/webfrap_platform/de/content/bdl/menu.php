@@ -417,6 +417,7 @@
               
             </ul>
           </li>
+          <li><a href="content.php?page=bdl.entity.relevance" target="main" >Relevance</a></li>
           <li><a href="content.php?page=bdl.entity.categories" target="main" >Categories</a></li>
           <li><a href="content.php?page=bdl.entity.properties" target="main" >Properties</a></li>
           <li><a href="content.php?page=bdl.entity.access.node" target="main" >Access</a></li>
