@@ -26,6 +26,9 @@ Listenelemente für Formulare.
     <!-- Das Attribute welches als Value / bzw. Reference ID verwendet werden soll -->
     <id name="rowid" />
     
+    <!-- Wenn vorhanden bekommen die Selectboxen noch einen textkey -->
+    <key name="access_key" />
+    
     <!-- Das / Die Felder welche später angezeigt werden.
     Wenn mehrere Felder angegeben werden, werden sie in der Selectbox
     Kommasepariert dargestellt -->
