@@ -1,5 +1,11 @@
 <h1>Box: Tabs</h1>
 
+<a class="go_back" href="content.php?page=bdl.ui.elem" >Zurück zur Übersicht</a>
+
+<img src="./images/bdl/ui/ui_element_box_tab.png" />
+
+<div class="clear medium" >&nbsp;</div>
+
 <p>Mit den Tabboxen können in Viewports.</p>
 
 <?php start_highlight(); ?>

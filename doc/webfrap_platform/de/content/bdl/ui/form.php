@@ -1,69 +1,15 @@
 <h1>Form UI</h1>
 
 <p>
-Customizing der Formulare
+Anpassen der Create, Edit und Show Masken.
 </p>
 
-<h3>Example</h3>
+<h3>Umfangreiches Beispiel</h3>
 <?php start_highlight(); ?>
 <_..._>
   <ui>
     <form>      
-  
-      <create>
-        <layout>
-          <tabs>
-            <body>
-             <tab name="default" >
-               <body>
-               
-                  <group name="page" cols="2" >
-                    <body>
-                      <field name="title" ></field>
-                      <field name="caption" ></field>
-                      <field name="access_key" ></field>
-                      <field name="type" ></field>
-                      <field name="id_category" ></field>
-                    </body>
-                  </group>
-                  
-                  <group name="template" cols="2" >
-                    <body>
-                      <field name="id_template" ></field>
-                      <field name="id_parent" ></field>
-                      <field name="id_project" ></field>
-                      <field name="id_age_rating"  ></field>
-                    </body>
-                  </group>
-              
-                  <group name="content" cols="1" >
-                    <body>
-                      <field name="page_content" ></field>
-                    </body>
-                  </group>
-  
-                  <category name="meta" />
-                </body>
-              </tab>
-          
-              <tab name="description"  >
-                <label>
-                  <text lang="en" >Description</text>
-                </label>
-                <body>
-                  <group class="description" >
-                    <body>
-                      <field name="description"  ></field>
-                    </body>
-                  </group>
-                </body>
-              </tab>
-  
-            </body>
-          </tabs>
-        </layout>
-      </create>
-        
+
       <edit>
         <layout>
           <tabs>

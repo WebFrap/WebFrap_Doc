@@ -71,7 +71,7 @@
             </ul>
           </li>
           
-          <li class="closed" ><a href="content.php?page=bdl.ui" target="main" ><h4>UI</h4></a>
+          <li class="closed" ><a href="content.php?page=bdl.ui.desc" target="main" ><h4>UI</h4></a>
           <ul>
             <li><a href="content.php?page=bdl.ui.menu" target="main" >Menu</a></li>
             <li><a href="content.php?page=bdl.ui.visibility" target="main" >Visibility</a></li>

@@ -2,7 +2,10 @@
 
 <p>Das Maskenmenü mit eigenen Einträgen erweitern</p>
 
-<h3>Hier wäre ein super Platz für ein Codebeispiel</h3>
+<label>Render Beispiel</label>
+<img src="./images/bdl/ui/ui_mask_menu.png" />
+
+<h3>Codebeispiel</h3>
 <?php start_highlight(); ?>
 <_..._>
   <ui>
