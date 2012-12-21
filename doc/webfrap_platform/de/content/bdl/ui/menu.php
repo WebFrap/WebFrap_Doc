@@ -2,6 +2,13 @@
 
 <p>Das Maskenmenü mit eigenen Einträgen erweitern</p>
 
+
+<ul class="doc-tree" >
+  <li><span class="bdl" >entry</span></li>
+  <li><span class="bdl" >masks</span></li>
+  <li><span class="bdl" >actions</span></li>
+</ul>
+
 <label>Render Beispiel</label>
 <img src="./images/bdl/ui/ui_mask_menu.png" />
 
@@ -23,66 +30,22 @@
           </access>
         
           <body>
-            <node name="import_cpro"  >
+            <node name="import_extern"  >
               <label>
-                <text lang="de" >Import CPro</text>
-                <text lang="en" >Import CPro</text>
+                <text lang="de" >Import</text>
+                <text lang="en" >Import</text>
               </label>
-              <icon key="importCpro" alt="import" ><![CDATA[sap/sync_cpro.png]]></icon>
-              <action type="win" context="import" ><![CDATA[window.php?c=Import.Direct.Formcpro&amp;objid={$objid}]]></action>
+              <icon key="someImport" alt="import" ><![CDATA[utils/import.png]]></icon>
+              <action type="modal" context="import" ><![CDATA[modal.php?c=Import.Service.All&amp;objid={$objid}]]></action>
             </node>
-            <node name="sync_capa" >
+            <node name="sync_extern" >
               <label>
-                <text lang="de" >Sync Capa</text>
-                <text lang="en" >Sync Capa</text>
+                <text lang="de" >Sync</text>
+                <text lang="en" >Sync</text>
               </label>
-              <icon key="syncCapa" alt="import" ><![CDATA[sap/sync_capa.png]]></icon>
-              <action type="win" context="import" ><![CDATA[window.php?c=Sync.Capaold.sync&amp;objid={$objid}]]></action>
+              <icon key="someSync" alt="import" ><![CDATA[utils/sync.png]]></icon>
+              <action type="modal" context="import" ><![CDATA[modal.php?c=Sync.Service.All&amp;objid={$objid}]]></action>
             </node>
-          </body>
-        </entry>
-        
-        <entry name="ext_reports" key="main/export"  position="after" >
-        
-          <access>
-            <roles>
-              <role name="project_manager" />
-              <role name="project_manager_deputy" />
-            </roles>
-          </access>
-        
-        <body>
-            <subtree name="project_reports"  >
-              <label>
-                <text lang="de" >Reports</text>
-                <text lang="en" >Reports</text>
-              </label>
-              <icon key="report" alt="import" ><![CDATA[control/report.png]]></icon>
-              <body>
-                
-                <node name="report1" >
-                  <label>
-                    <text lang="de" >Effort by WP</text>
-                    <text lang="en" >Effort by WP</text>
-                  </label>
-                  <ui type="document" />
-                  <icon key="report" alt="report" ><![CDATA[control/report.png]]></icon>
-                  <action type="document" target="report" context="report" ><![CDATA[document.php?c=Project.Project_Report.reportprojecteffort&wp=1&amp;objid={$objid}]]></action>
-                </node>
-                
-                <node name="report3" >
-                  <label>
-                    <text lang="de" >Effort by Emp</text>
-                    <text lang="en" >Effort by Emp</text>
-                  </label>
-                  <ui type="document" />
-                  <icon key="report" alt="report" ><![CDATA[control/report.png]]></icon>
-                  <action type="document" target="report"  context="report" ><![CDATA[document.php?c=Project.Project_Report.reportprojecteffort&wp=0&amp;objid={$objid}]]></action>
-                </node>
-                
-              </body>
-            </subtree>
-            
           </body>
         </entry>
         

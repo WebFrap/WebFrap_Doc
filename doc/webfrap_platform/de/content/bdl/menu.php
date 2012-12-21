@@ -73,9 +73,17 @@
           
           <li class="closed" ><a href="content.php?page=bdl.ui.desc" target="main" ><h4>UI</h4></a>
           <ul>
-            <li><a href="content.php?page=bdl.ui.menu" target="main" >Menu</a></li>
+            <li><a href="content.php?page=bdl.ui.menu" target="main" >Menu</a>
+              <ul>
+                <li><a href="content.php?page=bdl.ui.menu.entry" target="main" >Entry</a></li>
+                <li><a href="content.php?page=bdl.ui.menu.masks" target="main" >Masks</a></li>
+                <li><a href="content.php?page=bdl.ui.menu.actions" target="main" >Actions</a></li>
+              </ul>
+            </li>
             <li><a href="content.php?page=bdl.ui.visibility" target="main" >Visibility</a></li>
             <li><a href="content.php?page=bdl.ui.actions" target="main" >Actions</a></li>
+            <li><a href="content.php?page=bdl.ui.panel" target="main" >Panel</a></li>
+            <li><a href="content.php?page=bdl.ui.toolbar" target="main" >Toolbar</a></li>
             <li><a href="content.php?page=bdl.ui.list" target="main" >List</a>
               <ul>
                 <li><a href="content.php?page=bdl.ui.list.types" target="main" >Types</a>

@@ -4,6 +4,11 @@
 Anpassen der Create, Edit und Show Masken.
 </p>
 
+<ul>
+  <li><span class="bdl" >layout</span></li>
+  <li><span class="bdl" ></span></li>
+</ul>
+
 <h3>Umfangreiches Beispiel</h3>
 <?php start_highlight(); ?>
 <_..._>
