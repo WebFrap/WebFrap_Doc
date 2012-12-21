@@ -1,5 +1,8 @@
 <h2>Actions</h2>
 
+<a class="go_back" href="content.php?page=bdl.ui.desc" >Zurück zum UI Node</a>
+
+
 <p>Welche Actions stehen auf dem generierten Crud Controller zur Verfügung?</p>
 <p>Auf den CRUD Controller sind per default folgende Actions vorhanden:</p>
 

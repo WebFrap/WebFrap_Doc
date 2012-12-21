@@ -1,5 +1,7 @@
 <h1>Entry</h1>
 
+<a class="go_back" href="content.php?page=bdl.ui.menu" >Zurück zum Menü</a>
+
 <p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
 
 <h3>Codebeispiel</h3>

@@ -1,6 +1,4 @@
-<h1>Actions</h1>
-
-<a class="go_back" href="content.php?page=bdl.ui.menu" >Zurück zum Menü</a>
+<h1>Footer</h1>
 
 <p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
 

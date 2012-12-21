@@ -1,5 +1,7 @@
 <h1>Masks</h1>
 
+<a class="go_back" href="content.php?page=bdl.ui.menu" >Zurück zum Menü</a>
+
 <p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
 
 <label>Hier wäre ein super Platz für ein Codebeispiel</label>

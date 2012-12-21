@@ -1,5 +1,7 @@
 <h1>Panel</h1>
 
+<a class="go_back" href="content.php?page=bdl.ui.desc" >Zurück zum UI Node</a>
+
 <p>Beeinflusst das Panel bei Listen von Referenzen</p>
 
 TODO: Pfade hinzufügen

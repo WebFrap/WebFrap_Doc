@@ -84,6 +84,8 @@
             <li><a href="content.php?page=bdl.ui.actions" target="main" >Actions</a></li>
             <li><a href="content.php?page=bdl.ui.panel" target="main" >Panel</a></li>
             <li><a href="content.php?page=bdl.ui.toolbar" target="main" >Toolbar</a></li>
+            <li><a href="content.php?page=bdl.ui.controls" target="main" >Controls</a></li>
+            <li><a href="content.php?page=bdl.ui.footer" target="main" >Footer</a></li>
             <li><a href="content.php?page=bdl.ui.list" target="main" >List</a>
               <ul>
                 <li><a href="content.php?page=bdl.ui.list.types" target="main" >Types</a>

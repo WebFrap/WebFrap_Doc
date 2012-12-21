@@ -1,5 +1,7 @@
 <h1>Menu</h1>
 
+<a class="go_back" href="content.php?page=bdl.ui.desc" >Zurück zum UI Node</a>
+
 <p>Das Maskenmenü mit eigenen Einträgen erweitern</p>
 
 
