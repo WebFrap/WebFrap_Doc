@@ -8,9 +8,9 @@
   /**
    * @param ProjectActivityMaskProduct_Ref_ProjectTask_Treetable_Query $query
    * @param string $condition
-   * @param TFlag $params
+   * @param TFlag $rqtContext
    */
-  public function fetchListTreetableDefault( $query, $condition, $params )
+  public function fetchListTreetableDefault( $query, $condition, $rqtContext )
   {
 
     // laden der benötigten Resource Objekte
@@ -29,7 +29,7 @@
       'inner_acl.rowid',
       'max( inner_acl."acl-level" ) as "acl-level"'
     ));
-    $query->injectLimit( $envelop, $params );
+    $query->injectLimit( $envelop, $rqtContext );
     $envelop->groupBy( 'inner_acl.rowid' );
 
     $criteria->select( array( 'project_task.rowid as rowid' )  );
@@ -66,9 +66,9 @@ SQL;
     $criteria->selectAlso( $greatest  );
 
     $query->setTables( $criteria );
-    $query->appendConditions( $criteria, $condition, $params );
-    $query->injectAclOrder( $criteria, $envelop, $params );
-    $query->appendFilter( $criteria, $condition, $params );
+    $query->appendConditions( $criteria, $condition, $rqtContext );
+    $query->injectAclOrder( $criteria, $envelop, $rqtContext );
+    $query->appendFilter( $criteria, $condition, $rqtContext );
 
     $criteria->join
     (
@@ -93,7 +93,7 @@ SQL;
     
     $this->ids = array_keys($ids);
     
-    $query->setCalcQuery( $criteria, $params );
+    $query->setCalcQuery( $criteria, $rqtContext );
     
     return $ids;
 

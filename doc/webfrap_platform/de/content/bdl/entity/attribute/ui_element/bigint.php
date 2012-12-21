@@ -17,10 +17,10 @@
 
  /**
   * create the ui element for field some_bigint
-  * @param TFlag $params named parameters
+  * @param TFlag $rqtContext named parameters
   * @return void
   */
-  public function input_SrcEntity_SomeBigint( $params )
+  public function input_SrcEntity_SomeBigint( $rqtContext )
   {
     $i18n     = $this->view->i18n;
 

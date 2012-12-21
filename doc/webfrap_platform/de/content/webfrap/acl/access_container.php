@@ -29,10 +29,10 @@ class ProjectMilestone_Crud_Access_Edit
 {
 
   /**
-   * @param TFlag $params
+   * @param TFlag $rqtContext
    * @param ProjectMilestone_Entity $entity
    */
-  public function loadDefault( $params, $entity = null )
+  public function loadDefault( $rqtContext, $entity = null )
   {
 
     // laden der benötigten Resource Objekte
@@ -48,19 +48,19 @@ class ProjectMilestone_Crud_Access_Edit
     // dann befinden wir uns im root und brauchen keine pfadafrage
     // um potentielle fehler abzufangen wird auch direkt der richtige Root gesetzt
     // nicht das hier einer einen falschen pfad injected
-    if( is_null($params->aclRoot) || 1 == $params->aclLevel )
+    if( is_null($rqtContext->aclRoot) || 1 == $rqtContext->aclLevel )
     {
-      $params->isAclRoot     = true;
-      $params->aclRoot       = 'mgmt-project_milestone';
-      $params->aclRootId     = $entityId; // die aktive entity ist der root
-      $params->aclKey        = 'mgmt-project_milestone';
-      $params->aclNode       = 'mgmt-project_milestone';
-      $params->aclLevel      = 1;
+      $rqtContext->isAclRoot     = true;
+      $rqtContext->aclRoot       = 'mgmt-project_milestone';
+      $rqtContext->aclRootId     = $entityId; // die aktive entity ist der root
+      $rqtContext->aclKey        = 'mgmt-project_milestone';
+      $rqtContext->aclNode       = 'mgmt-project_milestone';
+      $rqtContext->aclLevel      = 1;
     }
 
     // wenn wir in keinem pfad sind nehmen wir einfach die normalen
     // berechtigungen
-    if( $params->isAclRoot )
+    if( $rqtContext->isAclRoot )
     {
       // da wir die zugriffsrechte mehr als nur einmal brauchen holen wir uns
       // direkt einen acl container
@@ -78,12 +78,12 @@ class ProjectMilestone_Crud_Access_Edit
       // direkt das zugriffslevel
       $acl->getPathPermission
       (
-        $params->aclRoot,
-        $params->aclRootId,
-        $params->aclLevel,
-        $params->aclKey,
-        $params->refId,
-        $params->aclNode,
+        $rqtContext->aclRoot,
+        $rqtContext->aclRootId,
+        $rqtContext->aclLevel,
+        $rqtContext->aclKey,
+        $rqtContext->refId,
+        $rqtContext->aclNode,
         $entity,
         true,     // rechte der referenzen mit laden
         $this    // sich selbst als container mit übergeben

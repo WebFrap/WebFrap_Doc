@@ -45,13 +45,13 @@ $formUi = $env->getFormUi( 'create' );
 if( $formUi )
 {
 
-  $params->prop1  = $formUi->property( 'prop_name' );
-  if( !$params->prop1 )
+  $rqtContext->prop1  = $formUi->property( 'prop_name' );
+  if( !$rqtContext->prop1 )
   {
-    $params->prop1 = 'Def Value';
+    $rqtContext->prop1 = 'Def Value';
   }
   
-  $params->prop2  = $formUi->property( 'other_prop', 'some_attr'  );
+  $rqtContext->prop2  = $formUi->property( 'other_prop', 'some_attr'  );
 
 }
 <?php display_highlight( 'php' ); ?>
