@@ -2,7 +2,7 @@
 
 <a class="go_back" href="content.php?page=bdl.ui.menu" >Zurück zum Menü</a>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+<p>Mask switcher</p>
 
 <label>Hier wäre ein super Platz für ein Codebeispiel</label>
 <?php start_highlight(); ?>
@@ -10,7 +10,7 @@
 <ui>
   <menu>
     <edit>
-      <masks>
+      <masks inherit="" >
         <mask name="identifier" >
           <!-- 
           name des MGMT Nodes
