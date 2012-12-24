@@ -103,9 +103,8 @@
           <li><a href="content.php?page=wgt.src.request.handler" target="main" >Handler</a>
             <ul>
               <li><a href="content.php?page=wgt.src.request.handler.area" target="main" >Area</a></li>
-              <li><a href="content.php?page=wgt.src.request.handler.subwindow" target="main" >Subwindow</a></li>
               <li><a href="content.php?page=wgt.src.request.handler.tab" target="main" >Tab</a></li>
-              <li><a href="content.php?page=wgt.src.request.handler.window" target="main" >Window</a></li>
+              <li><a href="content.php?page=wgt.src.request.handler.modal" target="main" >Modal</a></li>
             </ul>
           </li>
         </ul>
@@ -303,30 +302,36 @@
         <ul>
           <li><a href="content.php?page=wgt.vendor.jquery.jquery_ui" target="main" >jQuery UI</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.appear" target="main" >Appear</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.chilli" target="main" >Chilli (Code Syntax Highlighting)</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.colorpicker" target="main" >Colorpicker</a></li>
-          <li><a href="content.php?page=wgt.vendor.jquery.dropmenu" target="main" >Dropmenu</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.cookie" target="main" >Cookie</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.dynatree" target="main" >Dynatree</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.datetimepicker" target="main" >Datetimepicker</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.fullcalendar" target="main" >Fullcalendar</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.gallerific" target="main" >Gallerfific</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.gantt_view" target="main" >Gantt View</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.history" target="main" >History</a></li>
-          <li><a href="content.php?page=wgt.vendor.jquery.layout" target="main" >Layout</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.hover_intent" target="main" >Hover Intent</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.jsplumb" target="main" >jsplump</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.listnav" target="main" >listnav</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.megamenu" target="main" >Megamenu</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.simplemodal" target="main" >Simplemodal</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.monthpicker" target="main" >Monthpicker</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.multiselect" target="main" >Multiselect</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.opacity_rollover" target="main" >Opacity Rollover</a></li>
-          <li><a href="content.php?page=wgt.vendor.jquery.rating" target="main" >Rating</a></li>
-          <li><a href="content.php?page=wgt.vendor.jquery.sizes" target="main" >Sizes</a></li>
+          <li><a href="content.php?page=wgt.vendor.jquery.star_rating" target="main" >Star Rating</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.sparkline" target="main" >Sparkline</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.template" target="main" >Template</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.timepicker" target="main" >Timepicker</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.toaster" target="main" >Toaster</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.tooltip" target="main" >Tooltip</a></li>
           <li><a href="content.php?page=wgt.vendor.jquery.treetable" target="main" >Treetable</a></li>
-          <li><a href="content.php?page=wgt.vendor.jquery.treeview" target="main" >Treeview</a></li>
         </ul>
       </li>
       <li><a href="content.php?page=wgt.vendor.the_jit" target="main" >The JIT</a></li>
       <li><a href="content.php?page=wgt.vendor.date_js" target="main" >Date.Js</a></li>
       <li><a href="content.php?page=wgt.vendor.excanvas" target="main" >Excanvas</a></li>
-      <li><a href="content.php?page=wgt.vendor.jquery" target="main" >TinyMCE</a></li>
+      <li><a href="content.php?page=wgt.vendor.tiny_mce" target="main" >TinyMCE</a></li>
     </ul>
   </li>
   
