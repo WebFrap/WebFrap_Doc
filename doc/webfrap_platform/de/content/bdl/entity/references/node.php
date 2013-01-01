@@ -63,3 +63,32 @@
 
 </_..._>
 <?php display_highlight( 'xml' ); ?>
+
+
+
+
+<h3>Simple One to One</h3>
+<?php start_highlight(); ?>
+<_..._>
+
+<entity name="project_activity" >
+  <references>
+    <ref name="root_task" base="src" binding="connected" relation="oneToOne" >
+      <exclude>
+        <table />
+      </exclude>
+      <description>
+        <text lang="de" >1 zu 1 Verknüpfung zwischen project_activity und project_task</text>
+        <text lang="en" >1 to 1 Reference between project_activity and project_task</text>
+      </description>
+      <src name="project_activity" />
+      <target name="project_task" id="id_activity" />
+    </ref>
+  </references>
+</entity>
+
+</_..._>
+<?php display_highlight( 'xml' ); ?>
+
+
+
