@@ -199,6 +199,7 @@ pre
   padding-left:20px;
   font-family:sans-serif courier;
   margin-bottom:7px;
+  border-radius: 5px;  
 }
 
 pre a

@@ -17,7 +17,8 @@
 
 pre 
 {
-  border:1px solid #39aecf;
+  border:1px solid #silver;
+  border-radius: 9px;  
   color: #4D4D4D;
   background-color:#f3f3f3;
   font-size:1em;
