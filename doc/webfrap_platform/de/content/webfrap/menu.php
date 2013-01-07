@@ -13,7 +13,7 @@
       <li><a href="../../apidoc/webfrap/html" target="_api_doc" >API Doc</a></li>
     </ul>
   </li>
-  
+
   <!-- Basics -->
   <li>
     <h2><a href="content.php?page=webfrap.basics" target="main" >Basics</a></h2>
@@ -30,11 +30,11 @@
       </li>
     </ul>
   </li>
-  
+
   <!-- Architecture -->
   <li>
     <h2><a href="content.php?page=webfrap.architecture.base" target="main" >Architecture</a></h2>
-    
+
     <ul>
       <li>
         <a href="content.php?page=webfrap.architecture.resource_encapsulation" target="main" >Resource Encapsulation</a>
@@ -277,7 +277,7 @@
       </li>
     </ul>
   </li>
-  
+
   <li><h2><a href="content.php?page=webfrap.process.base" target="main" >Process</a></h2></li>
   <li>
     <h2><a href="content.php?page=webfrap.search.base" target="main" >Search</a></h2>
@@ -365,6 +365,7 @@
               <li><a href="content.php?page=webfrap.wgt.list.type.grid" target="main" >Grid</a></li>
               <li><a href="content.php?page=webfrap.wgt.list.type.treetable" target="main" >Treetable</a></li>
               <li><a href="content.php?page=webfrap.wgt.list.type.tree" target="main" >Tree</a></li>
+              <li><a href="content.php?page=webfrap.wgt.list.type.matrix" target="main" >Matrix</a></li>
             </ul>
           </li>
           <li><a href="content.php?page=webfrap.wgt.list.controls" target="main" >Controls</a></li>
@@ -475,7 +476,7 @@
       <li><a href="content.php?page=webfrap.interface.t_object" target="main" >ITObject</a></li>
     </ul>
   </li>
-  
+
 <ul>
 
 
