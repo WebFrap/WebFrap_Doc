@@ -10,13 +10,9 @@ in einer Matrix verwendet werden.</p>
 <?php start_highlight(); ?>
 
 $matrix = new WgtMatrixBuilder( $this );
-$matrix->title = 'Task Matrix';
 $matrix->id = "wgt-matrix-project-tasks";
 $matrix->searchURL = "ajax.php?c=fubar";
 $matrix->addURL = "ajax.php?c=fubar";
-$matrix->cellRenderer = new WgtMatrix_Cell_Value( $this );
-$matrix->cellRenderer->keyField = 'project_task-project_rowid';
-$matrix->cellRenderer->labelField = 'project_task-project_title';
 
 $matrix->variantList = array(
   'counter' => 'Counter',
@@ -33,9 +29,19 @@ $matrix->fAxisX = 'project_milestone_name';
 $matrix->fAxisY = 'project_task_category_name';
 
 
+$matrix->cellRenderer = new WgtMatrix_Cell_Value( $this );
+$matrix->cellRenderer->keyField = 'project_task-project_rowid';
+$matrix->cellRenderer->labelField = 'project_task-project_title';
+
+
 $matrix->data = $ELEMENT->treetableProjectTask->data;
 
-echo $matrix->build( );
+$panel = new WgtPanelListing_Splitbutton( $matrix );
+$panel->title = 'Task Matrix';
+$panel->listType = 'matrix';
+$panel->searchKey = 'matrix-project-tasks';
+
+echo $matrix->render( );
 
 <?php display_highlight( 'php' ); ?>
 
