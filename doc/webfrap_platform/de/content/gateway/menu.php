@@ -24,7 +24,7 @@
   <li>
     <h2><a href="content.php?page=gateway.bootstrap.base" target="main" >Bootstrap</a></h2>
     <ul>
-      <li><a href="content.php?page=gateway.bootstrap.normal" target="main" >Normal</a></li>
+      <li><a href="content.php?page=gateway.bootstrap.web" target="main" >Web</a></li>
       <li><a href="content.php?page=gateway.bootstrap.cli" target="main" >Cli</a></li>
       <li><a href="content.php?page=gateway.bootstrap.plain" target="main" >Plain</a></li>
     </ul>
@@ -35,13 +35,13 @@
       <li><a href="content.php?page=gateway.conf.conf_php" target="main" >Die conf.php Datei</a></li>
       <li><a href="content.php?page=gateway.conf.path_php" target="main" >Die path.php Datei</a></li>
       <li><a href="content.php?page=gateway.conf.shutdown_php" target="main" >Die shutdown.php Datei</a></li>
-      
+
       <li><a href="content.php?page=gateway.conf.includes" target="main" >Includes</a>
         <ul>
           <li><a href="content.php?page=gateway.conf.includes.css" target="main" >css</a></li>
           <li><a href="content.php?page=gateway.conf.includes.javascript" target="main" >javascript</a></li>
           <li><a href="content.php?page=gateway.conf.includes.theme" target="main" >theme</a></li>
-          
+
           <li><a href="content.php?page=gateway.conf.includes.42_repo" target="main" >42_repo</a></li>
           <li><a href="content.php?page=gateway.conf.includes.available_gmod" target="main" >available_gmod</a></li>
           <li><a href="content.php?page=gateway.conf.includes.available_module" target="main" >available_module</a></li>
@@ -53,15 +53,8 @@
       </li>
     </ul>
   </li>
-  <li><h2><a href="content.php?page=gateway.js_conf" target="main" >JsConf</a></h2></li>
-  <li><h2><a href="content.php?page=gateway.folders" target="main" >Folders</a></h2>
-    <ul>
-      <li><a href="content.php?page=gateway.folders.files" target="main" >Files</a></li>
-      <li><a href="content.php?page=gateway.folders.data" target="main" >Data</a></li>
-      <li><a href="content.php?page=gateway.folders.cache" target="main" >Cache</a></li>
-      <li><a href="content.php?page=gateway.folders.tmp" target="main" >Tmp</a></li>
-    </ul>
-  </li>
+  <li><h2><a href="content.php?page=gateway.base.js_conf" target="main" >JsConf</a></h2></li>
+  <li><a href="content.php?page=gateway.base.folders" target="main" >Folders</a></li>
   <li>
     <h2><a href="content.php?page=gateway.interface" target="main" >Interfaces</a></h2>
     <ul>
