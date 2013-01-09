@@ -1,22 +1,16 @@
+<h1>State Forms</h1>
 
-<h1>User Form</h1>
+<p>Über Stateforms lassen sich basierend auf einem Status key Datensätez von referenzierten
+Tabellen als Form einbinden.</p>
 
-<p>Das User Form Item.</p>
-
-<label>Code Beispiel mit Integration</label>
+<label>Hier wäre ein super Platz für ein Codebeispiel</label>
 <?php start_highlight(); ?>
-<_...>
-  <!-- 
-    name:
-    type:
-    source:
-    class:
-   -->
+<_..._>
   <item
     name="my_form"
     type="user_form"
-    target="project_story_rating"
-    target_id="id_story"
+    source="project_story_rating"
+    source_id="id_story"
     user_attr="id_user"
     class="personal_rating" >
 
@@ -41,5 +35,5 @@
     </layout>
 
   </item>
-</_...>
+</_..._>
 <?php display_highlight( 'xml' ); ?>

@@ -482,6 +482,7 @@
           <li><a href="content.php?page=bdl.item.tag_cloud" target="main" >Tag Cloud</a></li>
           <li><a href="content.php?page=bdl.item.roles" target="main" >Roles</a></li>
           <li><a href="content.php?page=bdl.item.user_forms" target="main" >User Forms</a></li>
+          <li><a href="content.php?page=bdl.item.state_forms" target="main" >State Forms</a></li>
         </ul>
       </li>
       
