@@ -1,5 +1,4 @@
-
-<h1>User Form</h1>
+<h1>State Form</h1>
 
 <p>Das User Form Item.</p>
 
@@ -13,13 +12,15 @@
     class:
    -->
   <item
-    name="my_form"
-    type="user_form"
-    target="project_story_rating"
-    target_id="id_story"
-    user_attr="id_user"
-    class="personal_rating" >
+    name="actual_phase"
+    type="state_form"
+    class="task_state_data" >
 
+    <source path="id_status.id_actual_node.access_key" />
+    <target path="project_phase.state_key" />
+    <user field="id_user" />
+
+    <!-- Standard Layout element  -->
     <layout>
 
       <fieldset>
