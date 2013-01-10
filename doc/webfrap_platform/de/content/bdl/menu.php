@@ -68,52 +68,159 @@
           <li><a href="content.php?page=bdl.base_elements.label" target="main" >Label</a></li>
           <li><a href="content.php?page=bdl.base_elements.responsibles" target="main" >Responsibles</a></li>
           
+        </ul>
+      </li>
+          
+      <li class="closed" ><a href="content.php?page=bdl.ui" target="main" ><h4>UI</h4></a>
+      <ul>
+        <li><a href="content.php?page=bdl.ui.menu" target="main" >Menu</a></li>
+        <li><a href="content.php?page=bdl.ui.visibility" target="main" >Visibility</a></li>
+        <li><a href="content.php?page=bdl.ui.actions" target="main" >Actions</a></li>
+        <li><a href="content.php?page=bdl.ui.list" target="main" >List</a>
+          <ul>
+            <li><a href="content.php?page=bdl.ui.list.types" target="main" >Types</a>
+              <ul>
+                <li><a href="content.php?page=bdl.ui.list.types.table" target="main" >Table</a></li>
+                <li><a href="content.php?page=bdl.ui.list.types.treetable" target="main" >Treetable</a></li>
+                <li><a href="content.php?page=bdl.ui.list.types.selection" target="main" >Selection</a></li>
+              </ul>
+            </li>
+            <li><a href="content.php?page=bdl.ui.list.actions" target="main" >Actions</a></li>
+            <li><a href="content.php?page=bdl.ui.list.color_source" target="main" >Color Source</a></li>
+            <li><a href="content.php?page=bdl.ui.list.controls" target="main" >Controls</a></li>
+            <li><a href="content.php?page=bdl.filter.node" target="main" >Filter (Siehe Filter)</a></li>
+            <li><a href="content.php?page=bdl.ui.list.context_filter" target="main" >Context Filter</a></li>
+            <li><a href="content.php?page=bdl.ui.list.layout" target="main" >Layout</a></li>
+            <li><a href="content.php?page=bdl.ui.list.menu" target="main" >Menu</a></li>
+            <li><a href="content.php?page=bdl.ui.list.order" target="main" >Order</a></li>
+            <li><a href="content.php?page=bdl.ui.list.panel" target="main" >Panel</a></li>
+            <li><a href="content.php?page=bdl.ui.list.properties" target="main" >Properties</a></li>
+            <li><a href="content.php?page=bdl.ui.list.search" target="main" >Search</a></li>
+            <li><a href="content.php?page=bdl.ui.list.visibility" target="main" >Visibility</a></li>
+          </ul>
+        </li>
+        <li><a href="content.php?page=bdl.ui.form" target="main" >Form</a>
+          <ul>
+            <li><a href="content.php?page=bdl.ui.form.properties" target="main" >Properties</a></li>
+            <li><a href="content.php?page=bdl.ui.form.layout" target="main" >Layout</a>
+              <ul>
+                <li><a href="content.php?page=bdl.ui.form.layout.fields" target="main" >Fields</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+            
+      </ul>
+    </li>
+      
+      <li><h4><a href="content.php?page=bdl.layout.node" target="main" >Layout</a></h4>
+        <ul>
+          <li class="closed" ><a href="content.php?page=bdl.layout.box" target="main" >Boxes</a>
+            <ul>
+              <li><a href="content.php?page=bdl.layout.box.fieldset" target="main" >Fieldset</a></li>
+              <li><a href="content.php?page=bdl.layout.box.tab" target="main" >Tab</a></li>
+              <li><a href="content.php?page=bdl.layout.box.nice_box" target="main" >Nice Box</a></li>
             </ul>
           </li>
-          
-          <li class="closed" ><a href="content.php?page=bdl.ui" target="main" ><h4>UI</h4></a>
-          <ul>
-            <li><a href="content.php?page=bdl.ui.menu" target="main" >Menu</a></li>
-            <li><a href="content.php?page=bdl.ui.visibility" target="main" >Visibility</a></li>
-            <li><a href="content.php?page=bdl.ui.actions" target="main" >Actions</a></li>
-            <li><a href="content.php?page=bdl.ui.list" target="main" >List</a>
-              <ul>
-                <li><a href="content.php?page=bdl.ui.list.types" target="main" >Types</a>
-                  <ul>
-                    <li><a href="content.php?page=bdl.ui.list.types.table" target="main" >Table</a></li>
-                    <li><a href="content.php?page=bdl.ui.list.types.treetable" target="main" >Treetable</a></li>
-                    <li><a href="content.php?page=bdl.ui.list.types.selection" target="main" >Selection</a></li>
-                  </ul>
-                </li>
-                <li><a href="content.php?page=bdl.ui.list.actions" target="main" >Actions</a></li>
-                <li><a href="content.php?page=bdl.ui.list.color_source" target="main" >Color Source</a></li>
-                <li><a href="content.php?page=bdl.ui.list.controls" target="main" >Controls</a></li>
-                <li><a href="content.php?page=bdl.filter.node" target="main" >Filter (Siehe Filter)</a></li>
-                <li><a href="content.php?page=bdl.ui.list.context_filter" target="main" >Context Filter</a></li>
-                <li><a href="content.php?page=bdl.ui.list.layout" target="main" >Layout</a></li>
-                <li><a href="content.php?page=bdl.ui.list.menu" target="main" >Menu</a></li>
-                <li><a href="content.php?page=bdl.ui.list.order" target="main" >Order</a></li>
-                <li><a href="content.php?page=bdl.ui.list.panel" target="main" >Panel</a></li>
-                <li><a href="content.php?page=bdl.ui.list.properties" target="main" >Properties</a></li>
-                <li><a href="content.php?page=bdl.ui.list.search" target="main" >Search</a></li>
-                <li><a href="content.php?page=bdl.ui.list.visibility" target="main" >Visibility</a></li>
-              </ul>
-            </li>
-            <li><a href="content.php?page=bdl.ui.form" target="main" >Form</a>
-              <ul>
-                <li><a href="content.php?page=bdl.ui.form.properties" target="main" >Properties</a></li>
-                <li><a href="content.php?page=bdl.ui.form.layout" target="main" >Layout</a>
-                  <ul>
-                    <li><a href="content.php?page=bdl.ui.form.layout.fields" target="main" >Fields</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="closed" ><a href="content.php?page=bdl.ui.elem" target="main" >Layout Elements</a>
-
-              
+          <li class="closed" ><a href="content.php?page=bdl.layout.tag" target="main" >Tags</a>
+            <ul>
+              <li><a href="content.php?page=bdl.layout.tag.box" target="main" >Box</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.button" target="main" >Button</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.category" target="main" >Category</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.checkbox" target="main" >Checkbox</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.clear" target="main" >Clear</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.div" target="main" >Div</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.dyntext" target="main" >Dyntext</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.field" target="main" >Field</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.fieldset" target="main" >Fieldset</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.form" target="main" >Form</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.group" target="main" >Group</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.h1" target="main" >H1</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.h2" target="main" >H2</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.h3" target="main" >H3</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.h4" target="main" >H4</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.h5" target="main" >H5</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.h6" target="main" >H6</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.html" target="main" >Html</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.icon" target="main" >Icon</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.image" target="main" >Image</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.item" target="main" >Item</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.label" target="main" >Label</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.legend" target="main" >Legend</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.li" target="main" >Li</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.link" target="main" >Link</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.menu" target="main" >Menu</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.html" target="main" >Html</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.nl" target="main" >Nl</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.ol" target="main" >Ol</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.pre" target="main" >Pre</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.radio_button" target="main" >RadioButton</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.ref" target="main" >Ref</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.ref_category" target="main" >Refcategory</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.reference" target="main" >Reference</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.richtext" target="main" >Richtext</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.roles" target="main" >Roles</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.selectbox" target="main" >Selectbox</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.source_code" target="main" >SourceCode</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.space" target="main" >Space</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.span" target="main" >Span</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.strong" target="main" >Strong</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.sub" target="main" >Sub</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.sup" target="main" >Sup</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.tab" target="main" >Tab</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.table" target="main" >Table</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.tabs" target="main" >Tabs</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.tbody" target="main" >Tbody</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.textarea" target="main" >Textarea</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.textblock" target="main" >Textblock</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.tfoot" target="main" >Tfoot</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.thead" target="main" >Thead</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.ul" target="main" >Ul</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.upload" target="main" >Upload</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.value" target="main" >Value</a></li>
+            </ul>
           </li>
-          
+          <li class="closed" ><a href="content.php?page=bdl.layout.ref" target="main" >List Elements</a>
+            <ul>
+              <li><a href="content.php?page=bdl.layout.ref.block" target="main" >Block</a></li>
+              <li><a href="content.php?page=bdl.layout.ref.blocklist" target="main" >Blocklist</a></li>
+              <li><a href="content.php?page=bdl.layout.ref.matrix" target="main" >Matrix</a></li>
+              <li><a href="content.php?page=bdl.layout.ref.table" target="main" >Table</a></li>
+              <li><a href="content.php?page=bdl.layout.ref.tile" target="main" >Tile</a></li>
+              <li><a href="content.php?page=bdl.layout.ref.tree" target="main" >Tree</a></li>
+              <li><a href="content.php?page=bdl.layout.ref.treetable" target="main" >Treetable</a></li>
+            </ul>
+          </li>
+          <li class="closed" ><a href="content.php?page=bdl.layout.item" target="main" >Items</a>
+            <ul>
+              <li><a href="content.php?page=bdl.layout.item.attachment_list" target="main" >Attachment List</a></li>
+              <li><a href="content.php?page=bdl.layout.item.calendar" target="main" >Calendar</a></li>
+              <li><a href="content.php?page=bdl.layout.item.comment_tree" target="main" >Comment Tree</a></li>
+              <li><a href="content.php?page=bdl.layout.item.contact_item" target="main" >Contact Item</a></li>
+              <li><a href="content.php?page=bdl.layout.item.dbl_list_selector" target="main" >Double List Selector</a></li>
+              <li><a href="content.php?page=bdl.layout.item.role_list" target="main" >RoleList</a></li>
+              <li><a href="content.php?page=bdl.layout.item.skill_cloud" target="main" >Skill Cloud</a></li>
+              <li><a href="content.php?page=bdl.layout.item.tag_cloud" target="main" >Tag Cloud</a></li>
+              <li><a href="content.php?page=bdl.layout.item.user_form" target="main" >User Form</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li><h4><a href="content.php?page=bdl.management.base" target="main" >Management</a></h4>
+        <ul>
+          <li><a href="content.php?page=bdl.entity.events" target="main" >Events (siehe Entity)</a></li>
+          <li><a href="content.php?page=bdl.management.access" target="main" >Access</a></li>
+          <li><a href="content.php?page=bdl.entity.ui" target="main" >Ui (siehe Entity)</a></li>
+          <li><a href="content.php?page=bdl.management.concepts" target="main" >Concepts</a></li>
+        </ul>
+      </li>
+      
+      
+      <li><h4><a href="content.php?page=bdl.menu.base" target="main" >Menu</a></h4>
+        <ul>
+          <li><a href="content.php?page=bdl.menu.node" target="main" >Node</a></li>
+          <li><a href="content.php?page=bdl.menu.subtree" target="main" >Subtree</a></li>
         </ul>
       </li>
       
@@ -406,102 +513,7 @@
       
       
       
-      <li><h4><a href="content.php?page=bdl.layout.node" target="main" >Layout</a></h4>
-        <ul>
-          <li class="closed" ><a href="content.php?page=bdl.layout.box" target="main" >Boxes</a>
-            <ul>
-              <li><a href="content.php?page=bdl.layout.box.fieldset" target="main" >Fieldset</a></li>
-              <li><a href="content.php?page=bdl.layout.box.tab" target="main" >Tab</a></li>
-            </ul>
-          </li>
-          <li class="closed" ><a href="content.php?page=bdl.layout.tag" target="main" >Tags</a>
-            <ul>
-              <li><a href="content.php?page=bdl.layout.tag.box" target="main" >Box</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.button" target="main" >Button</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.category" target="main" >Category</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.checkbox" target="main" >Checkbox</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.clear" target="main" >Clear</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.div" target="main" >Div</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.dyntext" target="main" >Dyntext</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.field" target="main" >Field</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.fieldset" target="main" >Fieldset</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.form" target="main" >Form</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.group" target="main" >Group</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.h1" target="main" >H1</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.h2" target="main" >H2</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.h3" target="main" >H3</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.h4" target="main" >H4</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.h5" target="main" >H5</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.h6" target="main" >H6</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.html" target="main" >Html</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.icon" target="main" >Icon</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.image" target="main" >Image</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.item" target="main" >Item</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.label" target="main" >Label</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.legend" target="main" >Legend</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.li" target="main" >Li</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.link" target="main" >Link</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.menu" target="main" >Menu</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.html" target="main" >Html</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.nl" target="main" >Nl</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.ol" target="main" >Ol</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.pre" target="main" >Pre</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.radio_button" target="main" >RadioButton</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.ref" target="main" >Ref</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.ref_category" target="main" >Refcategory</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.reference" target="main" >Reference</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.richtext" target="main" >Richtext</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.roles" target="main" >Roles</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.selectbox" target="main" >Selectbox</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.source_code" target="main" >SourceCode</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.space" target="main" >Space</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.span" target="main" >Span</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.strong" target="main" >Strong</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.sub" target="main" >Sub</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.sup" target="main" >Sup</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.tab" target="main" >Tab</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.table" target="main" >Table</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.tabs" target="main" >Tabs</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.tbody" target="main" >Tbody</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.textarea" target="main" >Textarea</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.textblock" target="main" >Textblock</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.tfoot" target="main" >Tfoot</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.thead" target="main" >Thead</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.ul" target="main" >Ul</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.upload" target="main" >Upload</a></li>
-              <li><a href="content.php?page=bdl.layout.tag.value" target="main" >Value</a></li>
-            </ul>
-          </li>
-          <li class="closed" ><a href="content.php?page=bdl.layout.ref" target="main" >References</a>
-            <ul>
-              <li><a href="content.php?page=bdl.layout.ref.block" target="main" >Block</a></li>
-              <li><a href="content.php?page=bdl.layout.ref.blocklist" target="main" >Blocklist</a></li>
-              <li><a href="content.php?page=bdl.layout.ref.matrix" target="main" >Matrix</a></li>
-              <li><a href="content.php?page=bdl.layout.ref.table" target="main" >Table</a></li>
-              <li><a href="content.php?page=bdl.layout.ref.tile" target="main" >Tile</a></li>
-              <li><a href="content.php?page=bdl.layout.ref.tree" target="main" >Tree</a></li>
-              <li><a href="content.php?page=bdl.layout.ref.treetable" target="main" >Treetable</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      
-      <li><h4><a href="content.php?page=bdl.management.base" target="main" >Management</a></h4>
-        <ul>
-          <li><a href="content.php?page=bdl.entity.events" target="main" >Events (siehe Entity)</a></li>
-          <li><a href="content.php?page=bdl.management.access" target="main" >Access</a></li>
-          <li><a href="content.php?page=bdl.entity.ui" target="main" >Ui (siehe Entity)</a></li>
-          <li><a href="content.php?page=bdl.management.concepts" target="main" >Concepts</a></li>
-        </ul>
-      </li>
-      
-      
-      <li><h4><a href="content.php?page=bdl.menu.base" target="main" >Menu</a></h4>
-        <ul>
-          <li><a href="content.php?page=bdl.menu.node" target="main" >Node</a></li>
-          <li><a href="content.php?page=bdl.menu.subtree" target="main" >Subtree</a></li>
-        </ul>
-      </li>
+
       
       <li><h4><a href="content.php?page=bdl.message.node" target="main" >Message</a></h4>
         <ul>
