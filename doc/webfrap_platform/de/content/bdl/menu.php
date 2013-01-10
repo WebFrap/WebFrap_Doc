@@ -131,6 +131,7 @@
               <li><a href="content.php?page=bdl.layout.tag.clear" target="main" >Clear</a></li>
               <li><a href="content.php?page=bdl.layout.tag.div" target="main" >Div</a></li>
               <li><a href="content.php?page=bdl.layout.tag.dyntext" target="main" >Dyntext</a></li>
+              <li><a href="content.php?page=bdl.layout.tag.dyntpl" target="main" >Dyntpl</a></li>
               <li><a href="content.php?page=bdl.layout.tag.field" target="main" >Field</a></li>
               <li><a href="content.php?page=bdl.layout.tag.fieldset" target="main" >Fieldset</a></li>
               <li><a href="content.php?page=bdl.layout.tag.form" target="main" >Form</a></li>

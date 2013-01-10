@@ -1,10 +1,9 @@
-
 <h1>Dyntext</h1>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+<p>Einbinden von beliebigen Texten / HTML inhalten aus der Datenbank.</p>
+<p>Der Inhalt wird über den AccessKey des Textes adressiert</p>
 
-<label>Hier wäre ein super Platz für ein Codebeispiel</label>
+<label>Beispiel</label>
 <?php start_highlight(); ?>
-<_..._>
-</_..._>
+  <dyntext tag="div" class="wgt-box" key="some.text.key" />
 <?php display_highlight( 'xml' ); ?>
