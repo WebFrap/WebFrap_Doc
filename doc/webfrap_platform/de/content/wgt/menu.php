@@ -118,12 +118,15 @@
               <li><a href="content.php?page=wgt.src.wcm.action.appear" target="main" >Appear</a></li>
               <li><a href="content.php?page=wgt.src.wcm.action.conf" target="main" >Conf</a></li>
               <li><a href="content.php?page=wgt.src.wcm.action.del" target="main" >Del</a></li>
+              <li><a href="content.php?page=wgt.src.wcm.action.fill_by_var" target="main" >FillByVar</a></li>
               <li><a href="content.php?page=wgt.src.wcm.action.mainwin" target="main" >Mainwin</a></li>
+              <li><a href="content.php?page=wgt.src.wcm.action.modal" target="main" >Modal</a></li>
               <li><a href="content.php?page=wgt.src.wcm.action.mtab" target="main" >Mtab</a></li>
               <li><a href="content.php?page=wgt.src.wcm.action.page" target="main" >Page</a></li>
               <li><a href="content.php?page=wgt.src.wcm.action.page_size" target="main" >PageSize</a></li>
+              <li><a href="content.php?page=wgt.src.wcm.action.post" target="main" >Post</a></li>
+              <li><a href="content.php?page=wgt.src.wcm.action.put" target="main" >Put</a></li>
               <li><a href="content.php?page=wgt.src.wcm.action.search" target="main" >Search</a></li>
-              <li><a href="content.php?page=wgt.src.wcm.action.win" target="main" >Win</a></li>
             </ul>
           </li>
           <li><a href="content.php?page=wgt.src.wcm.chart.desc" target="main" >Chart</a>
@@ -140,6 +143,7 @@
           </li>
           <li><a href="content.php?page=wgt.src.wcm.control.desc" target="main" >Control</a>
             <ul>
+              <li><a href="content.php?page=wgt.src.wcm.control.access_dataset" target="main" >AccessDataset</a></li>
               <li><a href="content.php?page=wgt.src.wcm.control.check_button" target="main" >CheckButton</a></li>
               <li><a href="content.php?page=wgt.src.wcm.control.confirm" target="main" >Confirm</a></li>
               <li><a href="content.php?page=wgt.src.wcm.control.context_menu" target="main" >ContextMenu</a></li>
