@@ -1,26 +1,19 @@
-<h1>State Form</h1>
+<h1>State Forms</h1>
 
-<p>Das User Form Item.</p>
+<p>Über Stateforms lassen sich basierend auf einem Status key Datensätez von referenzierten
+Tabellen als Form einbinden.</p>
 
-<label>Code Beispiel mit Integration</label>
+<label>Hier wäre ein super Platz für ein Codebeispiel</label>
 <?php start_highlight(); ?>
-<_...>
-  <!--
-    name:
-    type:
-    source:
-    class:
-   -->
+<_..._>
   <item
-    name="actual_phase"
-    type="state_form"
-    class="task_state_data" >
+    name="my_form"
+    type="user_form"
+    source="project_story_rating"
+    source_id="id_story"
+    user_attr="id_user"
+    class="personal_rating" >
 
-    <source path="id_status.id_actual_node.access_key" />
-    <target path="project_phase.state_key" />
-    <user field="id_user" />
-
-    <!-- Standard Layout element  -->
     <layout>
 
       <fieldset>
@@ -42,5 +35,5 @@
     </layout>
 
   </item>
-</_...>
+</_..._>
 <?php display_highlight( 'xml' ); ?>
