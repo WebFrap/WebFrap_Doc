@@ -16,7 +16,7 @@
 
   <!-- Basics -->
   <li>
-    <h2><a href="content.php?page=webfrap.basics" target="main" >Basics</a></h2>
+    <h2><a href="content.php?page=webfrap.core.basics" target="main" >Basics</a></h2>
     <ul>
       <li><a href="content.php?page=webfrap.basics.security" target="main" >Sicherheit</a></li>
       <li><a href="content.php?page=webfrap.basics.fast_start" target="main" >Schnell Start</a></li>
@@ -127,7 +127,7 @@
     </ul>
   </li>
   <li>
-    <h2><a href="content.php?page=webfrap.template" target="main" >Templatesystem</a></h2>
+    <h2><a href="content.php?page=webfrap.core.template" target="main" >Templatesystem</a></h2>
     <ul>
       <li><a href="content.php?page=webfrap.template.conf" target="main" >Conf</a></li>
       <li><a href="content.php?page=webfrap.template.adapter" target="main" >Adapter</a>
@@ -150,7 +150,7 @@
       <li><a href="content.php?page=webfrap.template.no_service_exception" target="main" >TemplateNoService_Exception</a></li>
     </ul>
   </li>
-  <li><h2><a href="content.php?page=webfrap.dao" target="main" >Dao</a></h2>
+  <li><h2><a href="content.php?page=webfrap.core.dao" target="main" >Dao</a></h2>
     <ul>
       <li><a href="content.php?page=webfrap.dao.datasource" target="main" >Datasource</a></li>
       <li><a href="content.php?page=webfrap.dao.db" target="main" >Db</a></li>
@@ -195,10 +195,10 @@
       </li>
     </ul>
   </li>
-  <li><a href="content.php?page=webfrap.state" target="main" >State</a></li>
-  <li><a href="content.php?page=webfrap.encoding" target="main" >Encoding</a></li>
+  <li><a href="content.php?page=webfrap.core.state" target="main" >State</a></li>
+  <li><a href="content.php?page=webfrap.core.encoding" target="main" >Encoding</a></li>
   <li><h2><a href="content.php?page=webfrap.document.base" target="main" >Document</a></h2></li>
-  <li><a href="content.php?page=webfrap.vendor" target="main" >Vendor</a></li>
+  <li><a href="content.php?page=webfrap.vendor.base" target="main" >Vendor</a></li>
   <li><h2><a href="content.php?page=webfrap.data_model.base" target="main" >I/O</a></h2></li>
   <li>
     <h2><a href="content.php?page=webfrap.data_model.base" target="main" >User</a></h2>
@@ -211,12 +211,14 @@
   </li>
   <li><h2><a href="content.php?page=webfrap.data_model.base" target="main" >Debug</a></h2></li>
   <li>
-    <h2><a href="content.php?page=webfrap.data_model.base" target="main" >Cache</a></h2>
+    <h2><a href="content.php?page=webfrap.cache.base" target="main" >Cache</a></h2>
     <ul>
-      <li><a href="content.php?page=webfrap.data_model.base" target="main" >Conf</a></li>
-      <li><a href="content.php?page=webfrap.data_model.base" target="main" >Adapter</a>
+      <li><a href="content.php?page=webfrap.cache.conf" target="main" >Conf</a></li>
+      <li><a href="content.php?page=webfrap.cache.adapter" target="main" >Adapter</a>
         <ul>
-          <li><a href="content.php?page=webfrap.data_model.base" target="main" >Postgresql</a></li>
+          <li><a href="content.php?page=webfrap.cache.adapter.postgresql" target="main" >Postgresql</a></li>
+          <li><a href="content.php?page=webfrap.cache.adapter.memcache" target="main" >Memcache</a></li>
+          <li><a href="content.php?page=webfrap.cache.adapter.file" target="main" >File</a></li>
         </ul>
       </li>
     </ul>
