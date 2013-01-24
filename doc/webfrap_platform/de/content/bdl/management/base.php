@@ -1,9 +1,8 @@
-
 <h1>Management</h1>
 
 <p>
 Die Bedeutung des <span class="bdl" >management</span> Nodes in BDL ist ähnlich wie eine (editierbare) View in einer
-Datenbank. 
+Datenbank.
 Eine Node hat immer einen Hauptdatenquelle auf den er sich bezieht.
 </p>
 
@@ -27,18 +26,18 @@ erweitert werden. Die zusätzlichen Informationen sind immer Relativ zum Eintrag
   <li><a src="content.php?page=bdl.entity.ui" target="main" class="bdl" >ui</a></li>
 </ul>
 
-<h3 class="example" >Beispiel</h3>
+<h2 class="example" >Beispiel</h2>
 <?php start_highlight(); ?>
 <managements>
 
-  <management 
-    name="example_mask" 
-    src="example_entity" 
+  <management
+    name="example_mask"
+    src="example_entity"
     module=""
     relevance="d-1"
     type=""
     >
-    
+
     <label></label>
     <plabel></plabel>
     <description></description>
@@ -53,7 +52,7 @@ erweitert werden. Die zusätzlichen Informationen sind immer Relativ zum Eintrag
 <?php display_highlight( 'xml' ); ?>
 
 
-<h3 class="example" >Erklärung der Attribute</h3>
+<h2 class="example" >Erklärung der Attribute</h2>
 
 <ul class="doc_tree" >
   <li><span class="attribute" >name</span> Domainname der Action</li>
@@ -64,5 +63,77 @@ erweitert werden. Die zusätzlichen Informationen sind immer Relativ zum Eintrag
   <li><span class="attribute opt" >type</span> Type des Managament Nodes. Manche Nodes stellen z.B nur Listen, Exports etc bereit.</li>
 </ul>
 
-<h3 class="example" >Management Types</h3>
+<h2 class="example" >Management Types</h2>
+
+<ul class="doc_tree" >
+  <li><span class="key" >default</span></li>
+  <li><span class="key" >list</span></li>
+  <li><span class="key" >selection</span></li>
+  <li><span class="key" >viewer</span></li>
+  <li><span class="key" >abstract</span></li>
+  <li><span class="key" >view</span></li>
+</ul>
+
+<h3>default</h3>
+
+<div>
+'crud',
+'crud_ref',
+'crud_tab',
+'acl',
+'acl_dset',
+'acl_domain',
+'send_message',
+'meta',
+'meta_access',
+'listing',
+'list',
+'table',
+'treetable',
+'tree',
+'matrix',
+'tile',
+'gantt',
+'calendar',
+'selection',
+'maintenance',
+'export',
+'global_menu',
+'access_protocol_list',
+'access_protocol_dataset'
+</div>
+
+
+<h3>list</h3>
+
+<div>
+'listing',
+'list',
+'table',
+'treetable',
+'tree',
+'matrix',
+'tile',
+'access_protocol_list',
+</div>
+
+<h3>selection</h3>
+
+<div>
+'selection',
+'meta',
+'meta_access',
+</div>
+
+<h3>viewer</h3>
+
+<div>
+'crud',
+'crud_ref',
+'crud_tab',
+'send_message',
+'meta',
+'meta_access',
+</div>
+
 
