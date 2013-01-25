@@ -12,7 +12,7 @@ Die Conf PHP ist die Haupt Konfigurationsdatei des Gateways.
 $this->status->content
 (array
 (
-  
+
   // Informationen zum System
   'sys.name'        => 'WebFrap',
   'sys.version'     => '0.9',
@@ -42,7 +42,7 @@ $this->status->content
   'activ.timezone'    => 'Europe/Berlin',
   'activ.encoding'    => 'utf-8',
   'activ.theme'       => 'default',
-  
+
   // Konfiguration welche Standardlisten geladen werden sollen
   'key.js'            => 'default',
   'key.style'         => 'default',
@@ -63,12 +63,12 @@ $this->status->content
   // Standard Service der bei Annonymen Anfragen ausgeführt wird
   // in diesem Fall das Login Formular
   'default.action.annon'  => 'Webfrap.Auth.Form',
-  
-  // 
+
+  //
   'tripple.desktop'     => 'webfrap.netsktop.display',
   'tripple.annon'       => 'webfrap.netsktop.display',
   'tripple.user'        => 'webfrap.netsktop.display',
-  
+
   // definieren fester services
   'tripple.login'       => 'Webfrap.Auth.Form',
   'tripple.setup'       => 'Webfrap.Base.Setup',
@@ -126,7 +126,7 @@ $this->modules['db'] = array
       'dbpwd'     => 'your_pwd',
       'dbschema'  => 'production',
       'quote'     => 'single'
-      
+
       /* Wenn ausgeklammert ist das System automatisch in Master Slave Modus
       'slave'    => array
       (
@@ -176,7 +176,7 @@ $this->modules['db'] = array
       'dbschema'  => 'test',
       'quote'     => 'single'
     ),
-    
+
   )
 );//end $this->modules['DBCON'] = array
 
@@ -264,7 +264,6 @@ $this->modules['session'] = array
  */
 $this->modules['wgt'] = array
 (
-  'replace_superglobals'  => false,
   'menu_size'             => 3,
 );//end $this->modules['cache'] = array
 
