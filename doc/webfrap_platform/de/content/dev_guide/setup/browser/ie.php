@@ -1,9 +1,9 @@
-<h1>Ie</h1>
+<h1>IE Internet Explorer</h1>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+<p>Support bis Version 8.0 (hoffentlich bald 9.0)</p>
 
-<label>Hier wäre ein super Platz für ein Codebeispiel</label>
-<?php start_highlight(); ?>
-<_..._>
-</_..._>
-<?php display_highlight( 'xml' ); ?>
+<ul>
+  <li><a
+    href="http://msdn.microsoft.com/de-de/library/ee851571%28v=vs.85%29.aspx" >http://msdn.microsoft.com/de-de/library/ee851571%28v=vs.85%29.aspx (Internet Explorer)</a>
+  <li><a href="http://code.msdn.microsoft.com/" >http://code.msdn.microsoft.com/ (Developer Code Samples)</a></li>
+</ul>
