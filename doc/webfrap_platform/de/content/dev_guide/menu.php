@@ -52,6 +52,7 @@
           </li>
         </ul>
       </li>
+      <li><a href="content.php?page=dev_guide.skills.link_list" target="main" >Linkliste Skills</a></li>
     </ul>
   </li>
 
@@ -97,10 +98,9 @@
         <ul>
           <li><a href="content.php?page=dev_guide.setup.browser.firefox" target="main" >Firefox</a></li>
           <li><a href="content.php?page=dev_guide.setup.browser.chrome" target="main" >Chrome</a></li>
-          <li><a href="content.php?page=dev_guide.setup.browser.chromeless" target="main" >Chromeless</a></li>
+          <li><a href="content.php?page=dev_guide.setup.browser.opera" target="main" >Opera</a></li>
           <li><a href="content.php?page=dev_guide.setup.browser.ie" target="main" >IE</a></li>
           <li><a href="content.php?page=dev_guide.setup.browser.safari" target="main" >Safari</a></li>
-          <li><a href="content.php?page=dev_guide.setup.browser.opera" target="main" >Opera</a></li>
         </ul>
       </li>
       <li><a href="content.php?page=dev_guide.setup.core_repo" target="main" >Code Repository</a>
