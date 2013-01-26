@@ -141,7 +141,7 @@
           <li><a href="content.php?page=webfrap.template.adapter.mail" target="main" >Mail</a></li>
           <li><a href="content.php?page=webfrap.template.adapter.page" target="main" >Page</a></li>
           <li><a href="content.php?page=webfrap.template.adapter.service" target="main" >Service</a></li>
-          <li><a href="content.php?page=webfrap.template.adapter.subwindow" target="main" >Subwindow</a></li>
+          <li><a href="content.php?page=webfrap.template.adapter.modal" target="main" >Modal</a></li>
           <li><a href="content.php?page=webfrap.template.adapter.mainwindow" target="main" >Mainwindow</a></li>
           <li><a href="content.php?page=webfrap.template.adapter.maintab" target="main" >Maintab</a></li>
         </ul>

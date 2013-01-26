@@ -80,7 +80,6 @@
       <li><a href="content.php?page=gateway.interface.mainwindow" target="main" >mainwindow.php</a></li>
       <li><a href="content.php?page=gateway.interface.service" target="main" >service.php</a></li>
       <li><a href="content.php?page=gateway.interface.setup" target="main" >setup.php</a></li>
-      <li><a href="content.php?page=gateway.interface.subwindow" target="main" >subwindow.php</a></li>
       <li><a href="content.php?page=gateway.interface.theme" target="main" >theme.php</a></li>
       <li><a href="content.php?page=gateway.interface.thumb" target="main" >thumb.php</a></li>
       <li><a href="content.php?page=gateway.interface.window" target="main" >window.php</a></li>
