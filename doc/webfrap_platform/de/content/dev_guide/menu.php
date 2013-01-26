@@ -136,8 +136,9 @@
   </li>
 
   <li class="closed" >
-    <h2><a href="content.php?page=dev_guide.prj_mgmt.base" target="main" >Project Management</a></h2>
+    <h2><a href="content.php?page=dev_guide.prj_mgmt.base" target="main" >Team &amp; PM</a></h2>
     <ul>
+      <li><a href="content.php?page=dev_guide.prj_mgmt.servers" target="main" >Com Server</a></li>
       <li><a href="content.php?page=dev_guide.prj_mgmt.planning" target="main" >Planung</a></li>
       <li><a href="content.php?page=dev_guide.prj_mgmt.tpl" target="main" >Vorlagen</a>
         <ul>
@@ -146,14 +147,14 @@
       </li>
     </ul>
   </li>
-  
+
   <li class="closed" >
     <h2><a href="content.php?page=dev_guide.soft_test.base" target="main" >Software Tests</a></h2>
     <ul>
       <li><a href="content.php?page=dev_guide.soft_test.def_check_list" target="main" >Standard Checkliste</a></li>
     </ul>
   </li>
-  
+
   <li class="closed" >
     <h2><a href="content.php?page=dev_guide.repositories.desc" target="main" >Repositories</a></h2>
     <ul>
@@ -211,7 +212,7 @@
       </li>
     </ul>
   </li>
-  
+
 <ul>
 
 
