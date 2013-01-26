@@ -193,21 +193,14 @@
           <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_server" target="main" >WebFrap_Server</a></li>
         </ul>
       </li>
-      <li><a href="content.php?page=dev_guide.repositories.demo.desc" target="main" >Demo</a>
+      <li><a href="content.php?page=dev_guide.repositories.vendor_desc" target="main" >Vendor</a>
         <ul>
-          <li><a href="content.php?page=dev_guide.repositories.demo.webfrap_42_demo" target="main" >WebFrap_42_Demo</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.demo.webfrap_gw_example" target="main" >WebFrap_Gw_Demo</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.demo.webfrap_app_example" target="main" >WebFrap_App_Demo</a></li>
-        </ul>
-      </li>
-      <li><a href="content.php?page=dev_guide.repositories.vendor.desc" target="main" >Vendor</a>
-        <ul>
-          <li><a href="content.php?page=dev_guide.repositories.vendor.webfrap_lib_ez" target="main" >WebFrap_Lib_Ez</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.vendor.webfrap_lib_geshi" target="main" >WebFrap_Lib_Geshi</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.vendor.webfrap_lib_htmlpurifier" target="main" >WebFrap_Lib_Htmlpurifier</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.vendor.webfrap_lib_fpdf" target="main" >WebFrap_Lib_FPdf</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.vendor.webfrap_lib_phpexcel" target="main" >WebFrap_Lib_Phpexcel</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.vendor.webfrap_lib_static_reflection" target="main" >WebFrap_Lib_StaticReflection</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_vendor" target="main" >WebFrap_Vendor</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_ez" target="main" >WebFrap_Lib_Ez</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_geshi" target="main" >WebFrap_Lib_Geshi</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_htmlpurifier" target="main" >WebFrap_Lib_Htmlpurifier</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_fpdf" target="main" >WebFrap_Lib_FPdf</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_phpexcel" target="main" >WebFrap_Lib_PHPexcel</a></li>
         </ul>
       </li>
     </ul>
