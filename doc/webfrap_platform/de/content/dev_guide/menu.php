@@ -158,45 +158,40 @@
   <li class="closed" >
     <h2><a href="content.php?page=dev_guide.repositories.desc" target="main" >Repositories</a></h2>
     <ul>
-      <li><a href="content.php?page=dev_guide.repositories.core.desc" target="main" >Core</a>
+      <li><a href="content.php?page=dev_guide.repositories.core_public" target="main" >Core (public)</a>
         <ul>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap" target="main" >WebFrap</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_gaia" target="main" >WebFrap_Gaia</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_pontos" target="main" >WebFrap_Pontos</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_daidalos" target="main" >WebFrap_Daidalos</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_theme_default" target="main" >WebFrap_Theme_Default</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_icons_default" target="main" >WebFrap_Icons_Default</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_wgt" target="main" >WebFrap_Wgt</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_test" target="main" >WebFrap_Test</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.core.webfrap_doc" target="main" >WebFrap_Doc</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap" target="main" >WebFrap</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_tools" target="main" >WebFrap_Tools</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_wgt" target="main" >WebFrap_Wgt</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_genf" target="main" >WebFrap_Genf</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_test" target="main" >WebFrap_Test</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_doc" target="main" >WebFrap_Doc</a></li>
         </ul>
       </li>
-      <li><a href="content.php?page=dev_guide.repositories.core.desc" target="main" >GenF</a>
+      <li><a href="content.php?page=dev_guide.repositories.core_private" target="main" >Core (team private)</a>
         <ul>
-          <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_genf" target="main" >WebFrap_Genf</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_genf_catridge_wbf" target="main" >WebFrap_Genf_Cartridge_Wbf</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_42_core" target="main" >WebFrap_42_Core</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_42_business" target="main" >WebFrap_42_Business</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_genf_wbf" target="main" >WebFrap_Genf_Wbf</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_42_business" target="main" >WebFrap_42_Business</a></li>
         </ul>
       </li>
-      <li><a href="content.php?page=dev_guide.repositories.buiz.desc" target="main" >Buiz</a>
+      <li><a href="content.php?page=dev_guide.repositories.buiz_desc" target="main" >Buiz (team private)</a>
         <ul>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_finance" target="main" >WebFrap_Lib_Finance</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_humlang" target="main" >WebFrap_Lib_Humlang</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_measuring_units" target="main" >WebFrap_Lib_MeasuringUnit</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_physic_base" target="main" >WebFrap_Lib_Physic_Base</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_video" target="main" >WebFrap_Lib_Video</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_audio" target="main" >WebFrap_Lib_Audio</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_speech" target="main" >WebFrap_Lib_Speech</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_backup" target="main" >WebFrap_Lib_Backup</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_lib_xmmp" target="main" >WebFrap_Lib_Xmmp</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.buiz.webfrap_server" target="main" >WebFrap_Server</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_finance" target="main" >WebFrap_Lib_Finance</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_humlang" target="main" >WebFrap_Lib_Humlang</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_measuring_units" target="main" >WebFrap_Lib_MeasuringUnit</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_physic_base" target="main" >WebFrap_Lib_Physic_Base</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_video" target="main" >WebFrap_Lib_Video</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_audio" target="main" >WebFrap_Lib_Audio</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_speech" target="main" >WebFrap_Lib_Speech</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_backup" target="main" >WebFrap_Lib_Backup</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_xmmp" target="main" >WebFrap_Lib_Xmmp</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_ocr" target="main" >WebFrap_Lib_Ocr</a></li>
+          <li><a href="content.php?page=dev_guide.repositories.webfrap_server" target="main" >WebFrap_Server</a></li>
         </ul>
       </li>
-      <li><a href="content.php?page=dev_guide.repositories.vendor_desc" target="main" >Vendor</a>
+      <li><a href="content.php?page=dev_guide.repositories.vendor_desc" target="main" >Vendor (public)</a>
         <ul>
           <li><a href="content.php?page=dev_guide.repositories.webfrap_vendor" target="main" >WebFrap_Vendor</a></li>
-          <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_ez" target="main" >WebFrap_Lib_Ez</a></li>
           <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_geshi" target="main" >WebFrap_Lib_Geshi</a></li>
           <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_htmlpurifier" target="main" >WebFrap_Lib_Htmlpurifier</a></li>
           <li><a href="content.php?page=dev_guide.repositories.webfrap_lib_fpdf" target="main" >WebFrap_Lib_FPdf</a></li>
