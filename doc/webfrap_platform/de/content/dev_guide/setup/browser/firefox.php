@@ -1,9 +1,6 @@
 <h1>Firefox</h1>
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
-
-<label>Hier wäre ein super Platz für ein Codebeispiel</label>
-<?php start_highlight(); ?>
-<_..._>
-</_..._>
-<?php display_highlight( 'xml' ); ?>
+<ul>
+  <li><a href="http://www.mozilla.org/de/firefox/fx/" target="_base" >http://www.mozilla.org/de/firefox/fx/</a></li>
+  <li><a href="https://developer.mozilla.org/de/" target="_base" >https://developer.mozilla.org/de/ (Mozilla Developer Network)</a></li>
+</ul>
