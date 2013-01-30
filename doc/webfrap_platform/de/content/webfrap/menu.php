@@ -463,7 +463,6 @@
           <li><a href="content.php?page=webfrap.exception.security" target="main" >Security_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.ui" target="main" >Ui_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.webfrap" target="main" >Webfrap_Exception</a></li>
-          <li><a href="content.php?page=webfrap.exception.webfrap_flow" target="main" >WebfrapFlow_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.webfrap" target="main" >Webfrap_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.webfrap_user" target="main" >WebfrapUser_Exception</a></li>
         </ul>
