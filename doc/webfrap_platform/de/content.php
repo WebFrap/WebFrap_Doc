@@ -31,6 +31,13 @@ session_start( 'SESS_SBIZ_DOCU' );
       if( file_exists( '../../documentor/core/vendor/geshi/geshi.php' ) )
         include '../../documentor/core/vendor/geshi/geshi.php';
         
+
+      include '../../documentor/core/vendor/dflydev/markdown/IMarkdownParser.php';
+      include '../../documentor/core/vendor/dflydev/markdown/MarkdownParser.php';
+      include '../../documentor/core/vendor/dflydev/markdown/MarkdownExtraParser.php';
+      use dflydev\markdown\MarkdownParser;
+        
+        
       include '../../documentor/core/functions.php';
       include './keywords.php';
       include './access/access.php';
@@ -47,15 +54,10 @@ session_start( 'SESS_SBIZ_DOCU' );
       if( file_exists( $page ) )
       {
 
+        startPage();
         include $page;
-        Access::displayProtectedPage( );
-        
-        if( Access::$login )
-        {
-          include 'login_form.php';
-        }
-        
-        
+        echo renderPage();
+       
       }
       elseif( '127.0.0.1' == $_SERVER['SERVER_NAME'] )
       {
@@ -82,8 +84,11 @@ session_start( 'SESS_SBIZ_DOCU' );
 <?php display_highlight( 'xml' ); ?>
 HTML
         );
-
+        
+        startPage();
         include $page;
+        echo renderPage();
+        
       }
       else 
       {

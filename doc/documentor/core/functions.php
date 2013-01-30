@@ -38,6 +38,28 @@ function display_highlight( $lang = 'php', $code = null )
 
 }//end function display_highlight */
 
+/**
+ * start code
+ */
+function startPage()
+{
+
+  ob_start();
+
+}//end function startPage */
+
+function renderPage( $content = null )
+{
+  
+  if( is_null( $content ) )
+  {
+    $content = trim(ob_get_contents()) ;
+    ob_end_clean();
+  }
+
+  $markdownParser = new \dflydev\markdown\MarkdownParser();
+  return $markdownParser->transformMarkdown( $content );
+}
 
 function renderMenuTree( $fileName )
 {
