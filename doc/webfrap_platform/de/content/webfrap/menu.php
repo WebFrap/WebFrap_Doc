@@ -446,6 +446,13 @@
     	<li>
         <h3><a href="content.php?page=webfrap.exception.base" target="main" >Exceptions</a></h3>
         <ul>
+          <li><a href="content.php?page=webfrap.exception.webfrap" target="main" >Webfrap_Exception</a></li>
+          <li><a href="content.php?page=webfrap.exception.webfrap_sys" target="main" >WebfrapSys_Exception</a></li>
+          <li><a href="content.php?page=webfrap.exception.webfrap_user" target="main" >WebfrapUser_Exception</a></li>
+          <li><a href="content.php?page=webfrap.exception.webfrap_config" target="main" >WebfrapConfig_Exception</a></li>
+          <li><a href="content.php?page=webfrap.exception.webfrap_service" target="main" >WebfrapService_Exception</a></li>
+          <li><a href="content.php?page=webfrap.exception.webfrap_security" target="main" >WebfrapIo_Exception</a></li>
+          <li><a href="content.php?page=webfrap.exception.webfrap_io" target="main" >WebfrapSecurity_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.class_not_found" target="main" >ClassNotFound_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.consistency" target="main" >Consistency_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.constraint" target="main" >Constraint_Exception</a></li>
@@ -460,11 +467,7 @@
           <li><a href="content.php?page=webfrap.exception.not_yet_implemented" target="main" >NotYetImplemented_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.redirect_exception" target="main" >Redirect_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.request_denied" target="main" >RequestDenied_Exception</a></li>
-          <li><a href="content.php?page=webfrap.exception.security" target="main" >Security_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.ui" target="main" >Ui_Exception</a></li>
-          <li><a href="content.php?page=webfrap.exception.webfrap" target="main" >Webfrap_Exception</a></li>
-          <li><a href="content.php?page=webfrap.exception.webfrap" target="main" >Webfrap_Exception</a></li>
-          <li><a href="content.php?page=webfrap.exception.webfrap_user" target="main" >WebfrapUser_Exception</a></li>
         </ul>
     	</li>
     </ul>
