@@ -1,18 +1,37 @@
-<h1><a href="content.php?page=webfrap.start" target="main" >Webfrap</a></h1>
-<p>The Web Frame Application</p>
+[
+  { 
+    "label": "Einführung", 
+    "page": "webfrap.start",
+    "children" : [
+      { 
+        "label": "Features", 
+        "page": "webfrap.introduction.features",
+        "children" : [      
+        ]
+      },
+      { 
+        "label": "Zielgruppe", 
+        "page": "webfrap.introduction.target_group",
+        "children" : [      
+        ]
+      },
+      { 
+        "label": "Vision und Zielsetzung", 
+        "page": "webfrap.introduction.vision",
+        "children" : [      
+        ]
+      }  ,
+      { 
+        "label": "API Doc", 
+        "href": "../../apidoc/webfrap/html",
+        "children" : [      
+        ]
+      }  
+    ]
+  },
+]
 
-<a href="menu.php" target="menu" >nach oben</a>
 
-<ul class="treeMenu menu" >
-  <li>
-    <h2><a href="content.php?page=webfrap.start" target="main" >Einführung</a></h2>
-    <ul>
-      <li><a href="content.php?page=webfrap.introduction.features" target="main" >Features</a></li>
-      <li><a href="content.php?page=webfrap.introduction.target_group" target="main" >Zielgruppe</a></li>
-      <li><a href="content.php?page=webfrap.introduction.vision" target="main" >Vision und Zielsetzung</a></li>
-      <li><a href="../../apidoc/webfrap/html" target="_api_doc" >API Doc</a></li>
-    </ul>
-  </li>
 
   <!-- Basics -->
   <li>

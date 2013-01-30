@@ -36,7 +36,19 @@ function display_highlight( $lang = 'php', $code = null )
     echo '<pre style="width:750px;margin-bottom:10px;" >'.htmlentities($code,ENT_QUOTES,'utf-8').'</pre>';
   }
 
-  
-  
-  
 }//end function display_highlight */
+
+
+function renderMenuTree( $fileName )
+{
+  
+  $jsonTree =  json_decode(file_get_contents($fileName)) ;
+  
+  return renderMenuSubtree( $jsonTree, 1 );
+  
+}
+
+function renderMenuSubtree( $subTree )
+{
+  
+}
