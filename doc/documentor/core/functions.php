@@ -58,7 +58,11 @@ function renderPage( $content = null )
   }
 
   $markdownParser = new \dflydev\markdown\MarkdownParser();
+  
+  $content = preg_replace('#(\A|[^=\]\'"a-zA-Z0-9])(http[s]?://(.+?)/[^()<>\s]+)#i', '\\1<a href="\\2" target="__new" >\\2</a>', $content);
+  
   return $markdownParser->transformMarkdown( $content );
+  
 }
 
 function renderMenuTree( $fileName )

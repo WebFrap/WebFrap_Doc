@@ -1,9 +1,13 @@
-<h1>Messages</h1>
+# Fehlermeldungen
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+Fehlermeldungen müssen primär dazu führen, dass die Zuständige Person 
+die richtigen Informationen bekomment und das Problem beheben kann.
 
-<label>Hier wäre ein super Platz für ein Codebeispiel</label>
-<?php start_highlight(); ?>
-<_..._>
-</_..._>
-<?php display_highlight( 'xml' ); ?>
+Der Benutzer muss im Rahmen seiner Möglichkeiten die Information bekommen
+was er tun kann um den Fehler zu beheben, und ob er das überhaupt kann.
+
+
+
+## Links
+
+- http://msdn.microsoft.com/de-de/magazine/dd347820.aspx

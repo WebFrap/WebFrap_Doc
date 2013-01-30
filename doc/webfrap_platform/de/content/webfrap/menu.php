@@ -447,7 +447,6 @@
   <li class="closed" >
     <h2><a href="content.php?page=webfrap.error.base" target="main" >Error Handling</a></h2>
     <ul>
-    	<li><a href="content.php?page=webfrap.error.location" target="main" >Welcher Fehler wo?</a></li>
     	<li><a href="content.php?page=webfrap.error.messages" target="main" >Fehlermeldungen</a></li>
     	<li>
         <h3><a href="content.php?page=webfrap.exception.base" target="main" >Exceptions</a></h3>
