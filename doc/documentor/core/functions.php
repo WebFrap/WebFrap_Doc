@@ -28,8 +28,9 @@ function display_highlight( $lang = 'php', $code = null )
     $geshi = new GeSHi($code, $lang);
     $geshi->enable_line_numbers(GESHI_FANCY_LINE_NUMBERS, 10);
     $geshi->set_line_style( 'background: #fcfcfc;', 'background: #f0f0f0;' );
-    
-    echo '<div style="width:750px;margin-bottom:10px;" >'.$geshi->parse_code().'</div>';
+    $geshi->set_overall_style( 'width:750px;margin-bottom:10px;', true );
+    echo $geshi->parse_code();
+    //echo '<div style="width:750px;margin-bottom:10px;" >'.$geshi->parse_code().'</div>';
   }
   else 
   {
