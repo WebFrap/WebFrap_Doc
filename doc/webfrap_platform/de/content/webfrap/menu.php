@@ -456,7 +456,6 @@
           <li><a href="content.php?page=webfrap.exception.invalid_request" target="main" >InvalidRequest_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.invalid_route" target="main" >InvalidRoute_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.io" target="main" >Io_Exception</a></li>
-          <li><a href="content.php?page=webfrap.exception.item" target="main" >Item_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.method_not_exists" target="main" >MethodNotExists_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.not_yet_implemented" target="main" >NotYetImplemented_Exception</a></li>
           <li><a href="content.php?page=webfrap.exception.redirect_exception" target="main" >Redirect_Exception</a></li>
