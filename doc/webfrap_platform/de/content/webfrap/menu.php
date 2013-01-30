@@ -42,14 +42,9 @@
       <li>
         <h4><a href="content.php?page=webfrap.architecture.mvc" target="main" >MVC</a></h4>
         <ul>
-          <li><a href="content.php?page=webfrap.architecture.mvc.module" target="main" >Module</a>
-            <ul>
-              <li><a href="content.php?page=webfrap.architecture.mvc.module_exception" target="main" >Module_Exception</a></li>
-            </ul>
-          </li>
+          <li><a href="content.php?page=webfrap.architecture.mvc.module" target="main" >Module</a></li>
           <li><a href="content.php?page=webfrap.architecture.mvc.model" target="main" >Model</a>
             <ul>
-              <li><a href="content.php?page=webfrap.architecture.mvc.model_exception" target="main" >Model_Exception</a></li>
               <li><a href="content.php?page=webfrap.architecture.mvc.model_not_exists_exception" target="main" >ModelNotExists_Exception</a></li>
             </ul>
           </li>
