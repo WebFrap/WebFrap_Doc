@@ -13,6 +13,7 @@ Valid in:
 - entity
 - management
 
+
 <label>Model</label>
 <?php start_highlight(); ?>
 <concepts>
