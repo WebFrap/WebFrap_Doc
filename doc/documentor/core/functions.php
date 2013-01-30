@@ -48,7 +48,7 @@ function renderMenuTree( $fileName )
   
 }
 
-function renderMenuSubtree( $subTree )
+function renderMenuSubtree( $subTree, $headLevel )
 {
   
 }

@@ -88,6 +88,7 @@
           <li><a href="content.php?page=webfrap.architecture.dependency_inheritance.base_class" target="main" >Die Base Klassen</a></li>
         </ul>
       </li>
+      <li><a href="content.php?page=webfrap.architecture.userinput" target="main" >Benutzereingaben</a></li>
     </ul>
   </li>
   <li><h2><a href="content.php?page=webfrap.webfrap" target="main" >Die Webfrap Klasse</a></h2></li>
