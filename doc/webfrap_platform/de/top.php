@@ -22,7 +22,11 @@ function show_chapter( chapter ){
 
 </script>
 
-<link href="../../documentor/style/doc.css" rel="stylesheet" type="text/css" />
+<link href="../../documentor/css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="../../documentor/css/main.css" rel="stylesheet" type="text/css" />
+<link href="../../documentor/css/doc.css" rel="stylesheet" type="text/css" />
+<link href="../../documentor/css/jquery.treeview.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body class="top" >
@@ -33,7 +37,7 @@ function show_chapter( chapter ){
         <a href="menu.php" target="menu" >Web<span>Frap</span></a>  
         <a href="menu.php" target="menu" class="erDoc" >The Web Frame Application</a> 
       </h1>
-      <h3>&nbsp;<!-- just a placeholder for the space here --></h3>
+      <!-- <h3>&nbsp; just a placeholder for the space here </h3>-->
     </div>
     
     <ul class="topMenu" >

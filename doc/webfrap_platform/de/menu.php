@@ -13,9 +13,14 @@ include './access/access.php';
 <meta http-equiv="content-Style-Type" content="text/css" />
 <meta http-equiv="content-language" content="de" />
 
-<link href="../../documentor/style/doc.css" rel="stylesheet" type="text/css" />
-<link href="../../documentor/style/jquery.treeview.css" rel="stylesheet" type="text/css" />
-<script type="application/javascript" src="../../documentor/js/jquery.js"></script>
+<link href="../../documentor/css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="../../documentor/css/main.css" rel="stylesheet" type="text/css" />
+<link href="../../documentor/css/doc.css" rel="stylesheet" type="text/css" />
+<link href="../../documentor/css/jquery.treeview.css" rel="stylesheet" type="text/css" />
+<script type="application/javascript" src="../../documentor/js/vendor/jquery-1.9.0.min.js"></script>
+<script type="application/javascript" src="../../documentor/js/vendor/modernizr-2.6.2.min.js"></script>
+<script type="application/javascript" src="../../documentor/js/plugins.js"></script>
+<script type="application/javascript" src="../../documentor/js/main.js"></script>
 <script type="application/javascript" src="../../documentor/js/jquery.treeview.js"></script>
 
 <script type="application/javascript" >
