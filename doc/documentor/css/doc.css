@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-* 
+*
 {
   margin:0;
   padding:0;
@@ -55,12 +55,12 @@ strike
 
 .headBox h1
 {
-  margin-left:150px;  
+  margin-left:150px;
 }
 
 .headBox h1 , h1 a
 {
-  color:#1A6F9A;  
+  color:#1A6F9A;
   font-family:"Arial Black";
   margin-bottom:5px;
   font-size:24px;
@@ -84,102 +84,102 @@ h1, h1 a
 {
   font-family:"Arial Black";
   font-size:20px;
-  margin-bottom:15px;  
-  color:#64B824;  
+  margin-bottom:15px;
+  color:#64B824;
 }
 
 h2, h2 a
 {
   font-family:"Arial Black";
   font-size:18px;
-  margin-bottom:15px;  
-  color:#64B824;  
+  margin-bottom:15px;
+  color:#64B824;
 }
 
 h3, h3 a
 {
   font-size:16px;
   margin-bottom:15px;
-  color:#64B824;  
+  color:#64B824;
 }
 
 h4, h4 a
 {
   font-size:14px;
   margin-bottom:15px;
-  color:#64B824;  
+  color:#64B824;
 }
 
 h5, h5 a
 {
   font-size:12px;
   margin-bottom:15px;
-  color:#64B824;  
+  color:#64B824;
 }
 
-ul h1, 
+ul h1,
 ul h1 a,
-ul h2, 
+ul h2,
 ul h2 a,
-ul h3, 
+ul h3,
 ul h3 a,
-ul h4, 
+ul h4,
 ul h4 a,
-ul h5, 
+ul h5,
 ul h5 a
 {
-  margin-bottom:5px;  
+  margin-bottom:5px;
   margin-top:15px;
 }
 
-ul.menu h2, 
+ul.menu h2,
 ul.menu h2 a,
-ul.menu h3, 
+ul.menu h3,
 ul.menu h3 a,
-ul.menu h4, 
+ul.menu h4,
 ul.menu h4 a,
-ul.menu h5, 
+ul.menu h5,
 ul.menu h5 a
 {
-  font-family: Verdana , Arial , Helvetica , sans-serif;  
-  margin-bottom:2px;  
+  font-family: Verdana , Arial , Helvetica , sans-serif;
+  margin-bottom:2px;
   margin-top:2px;
-  color:#303030;
-  font-weight:bold;    
-}
-
-.menu h1, 
-.menu h1 a
-{
-  font-size:16px;  
   color:#303030;
   font-weight:bold;
 }
 
-ul.menu h2, 
+.menu h1,
+.menu h1 a
+{
+  font-size:16px;
+  color:#303030;
+  font-weight:bold;
+}
+
+ul.menu h2,
 ul.menu h2 a
 {
   font-size:13px;
   font-weight:bold;
 }
 
-ul.menu h3, 
+ul.menu h3,
 ul.menu h3 a
 {
   font-size:12px;
-  font-weight:bold;  
+  font-weight:bold;
 }
 
-ul.menu h4, 
+ul.menu h4,
 ul.menu h4 a
 {
   font-size:12px;
-  font-weight:bold;  
+  font-weight:bold;
 }
 
 ul.menu p
 {
-  color:#1A6F9A;  
+  color:#1A6F9A;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////
@@ -197,20 +197,26 @@ div.content a
 //////////////////////////////////////////////////////////////////////////////*/
 
 
-pre 
+pre
 {
   border:1px solid #39aecf;
-  padding:5px;  
+  padding:5px;
   padding-left:20px;
-  font-family:sans-serif courier;
+  font-family:courier;
   margin-bottom:7px;
-  border-radius: 5px;  
+  border-radius: 5px;
+}
+
+pre span,
+pre li
+{
+  font-family:courier;
 }
 
 pre a
 {
   color: #4D4D4D;
-  font-family:sans-serif courier;
+  font-family:courier;
 }
 
 ol
@@ -223,10 +229,10 @@ ul
   margin-left:15px;
 }
 
-ul.menu li, 
+ul.menu li,
 ul.menu li > a
 {
-  color:#303030;  
+  color:#303030;
 }
 
 p
@@ -255,7 +261,7 @@ label,
 {
   display:block;
   font-weight:bold;
-  color:#1A6F9A;  
+  color:#1A6F9A;
 }
 
 div.box.image
@@ -351,7 +357,7 @@ div.box.image
 
 .data_grid label
 {
-  color:#64b824; 
+  color:#64b824;
   font-weight:bold;
   margin-bottom:5px;
 }
@@ -359,7 +365,7 @@ div.box.image
 .data_grid thead
 {
   background-color:#64b824;
-  color:#1A6F9A; 
+  color:#1A6F9A;
   border-bottom:2px solid silver;
   border-right:1px solid silver;
   font-weight:bold;
@@ -370,7 +376,7 @@ div.box.image
 .data_grid thead th
 {
   background-color:#1A6F9A;
-  color:white; 
+  color:white;
 	border-bottom:1px solid silver;
 	border-right:1px solid silver;
 	font-weight:bold;
@@ -379,7 +385,7 @@ div.box.image
 .dataTable .head td > a,
 .data_grid .head td > a
 {
-  color:#64b824; 
+  color:#64b824;
   font-weight:bold;
 }
 
@@ -476,7 +482,7 @@ iframe.doc_big, div.doc_big
 }
 
 
-  
+
 
 /*
  green:  #64b824;
@@ -558,12 +564,12 @@ ul > li > ul {
 
 
 /*******************************************************************************
-* Einfacher Baum im Content 
+* Einfacher Baum im Content
 *******************************************************************************/
 
 .docTree,
 .doc_tree ,
-.doc-tree 
+.doc-tree
 {
   margin-bottom:8px;
 }
@@ -605,7 +611,7 @@ ul.doc_tree.cells,
 ul.doc-tree.cells
 {
   width:700px;
-  border-bottom: 1px dotted silver;	
+  border-bottom: 1px dotted silver;
 }
 
 ul.doc_tree.cells li.
@@ -624,12 +630,12 @@ ul.doc-tree.cells li div.cell
 
 
 /*******************************************************************************
-* Keywords 
+* Keywords
 *******************************************************************************/
 
 span.opt
 {
-  font-style:italic;  
+  font-style:italic;
 }
 
 span.key_word,
@@ -665,16 +671,16 @@ a.domain
 
 span.dir
 {
-  font-style:italic;  
-  color:#004000 !important;  
+  font-style:italic;
+  color:#004000 !important;
   font-weight:normal;
 }
 
 span.file
 {
-  font-style:italic;  
-  color:#0000C0 !important;  
-  font-weight:normal;  
+  font-style:italic;
+  color:#0000C0 !important;
+  font-weight:normal;
 }
 
 span.command,
@@ -729,12 +735,12 @@ a.bad
 span.important,
 a.important
 {
-  font-weight:bold;  
+  font-weight:bold;
 }
 
 span.access_public,
 a.access_public
 {
-  border-bottom: 2px dotted brown;  
+  border-bottom: 2px dotted brown;
 }
 
