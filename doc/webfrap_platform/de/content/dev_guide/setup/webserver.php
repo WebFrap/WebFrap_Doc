@@ -1,9 +1,17 @@
-<h1>dev_guide.setup.webserver</h1>
+# Webserver
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+Im Prinzip ist egal welchen Webserver du verwendest, du kannst jeden beliebigen
+Webserver installieren, solange es einen Möglichkeit gibt diesen mit PHP zu betreiben.
 
-<h3>Hier wäre ein super Platz für ein Codebeispiel</h3>
-<?php start_highlight(); ?>
-<_..._>
-</_..._>
-<?php display_highlight( 'xml' ); ?>
+Standardmäßig verwenden wir jedoch den Apachewebserver, da dieser zumindest momentan
+in der Zielgruppe am verbreitesten ist. (Eine Version für den IIS wäre auch nicht schlecht.)
+
+(Wenn das Setup dieses Webservers hier nicht beschrieben ist, erweitere bitte die Dokumentation.)
+
+
+# Linux
+
+
+
+# Windows
+
