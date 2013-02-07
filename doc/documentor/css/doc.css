@@ -61,7 +61,6 @@ strike
 .headBox h1 , h1 a
 {
   color:#1A6F9A;
-  font-family:"Arial Black";
   margin-bottom:5px;
   font-size:24px;
   letter-spacing: 0.1em;
@@ -70,7 +69,6 @@ strike
 
 .headBox h1 span, h1 a > span
 {
-  font-family:"Arial Black";
   color:#64B824;
   font-size:24px;
 }
@@ -80,41 +78,40 @@ strike
   color:#64B824;
 }
 
-h1, h1 a
+h1, h1 a,
+h2, h2 a,
+h3, h3 a,
+h4, h4 a,
+h5, h5 a
 {
-  font-family:"Arial Black";
-  font-size:20px;
   margin-bottom:15px;
   color:#64B824;
+  font-weight:bold;	
+}
+	
+h1, h1 a
+{
+  font-size:20px;
 }
 
 h2, h2 a
 {
-  font-family:"Arial Black";
   font-size:18px;
-  margin-bottom:15px;
-  color:#64B824;
 }
 
 h3, h3 a
 {
   font-size:16px;
-  margin-bottom:15px;
-  color:#64B824;
 }
 
 h4, h4 a
 {
   font-size:14px;
-  margin-bottom:15px;
-  color:#64B824;
 }
 
 h5, h5 a
 {
   font-size:12px;
-  margin-bottom:15px;
-  color:#64B824;
 }
 
 ul h1,
@@ -141,11 +138,9 @@ ul.menu h4 a,
 ul.menu h5,
 ul.menu h5 a
 {
-  font-family: Verdana , Arial , Helvetica , sans-serif;
   margin-bottom:2px;
   margin-top:2px;
   color:#303030;
-  font-weight:bold;
 }
 
 .menu h1,
@@ -218,10 +213,6 @@ pre a
   font-family:courier;
 }
 
-ul
-{
-  margin-left:15px;
-}
 
 ul.menu li,
 ul.menu li > a
