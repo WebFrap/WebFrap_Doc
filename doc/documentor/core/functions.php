@@ -7,6 +7,7 @@
 function start_highlight()
 {
 
+  render_md();
   ob_start();
 
 }//end function start_highlight */
@@ -36,22 +37,25 @@ function display_highlight( $lang = 'php', $code = null )
   {
     echo '<pre style="width:750px;margin-bottom:10px;" >'.htmlentities($code,ENT_QUOTES,'utf-8').'</pre>';
   }
+  
+  start_md();
 
 }//end function display_highlight */
 
 /**
- * start code
+ * Start a MD Render area
  */
-function startPage()
+function start_md()
 {
-
   ob_start();
+}//end function start_md */
 
-}//end function startPage */
-
-function renderPage( $content = null )
+/**
+ * Render the markdown
+ */
+function render_md( $content = null )
 {
-  
+
   if( is_null( $content ) )
   {
     $content = trim(ob_get_contents()) ;
@@ -62,9 +66,9 @@ function renderPage( $content = null )
   
   $content = preg_replace('#(\A|[^=\]\'"a-zA-Z0-9])(http[s]?://(.+?)/[^()<>\s]+)#i', '\\1<a href="\\2" target="__new" >\\2</a>', $content);
   
-  return $markdownParser->transformMarkdown( $content );
-  
-}
+  echo $markdownParser->transformMarkdown( $content );
+
+}//end function render_md */
 
 function renderMenuTree( $fileName )
 {
@@ -78,4 +82,9 @@ function renderMenuTree( $fileName )
 function renderMenuSubtree( $subTree, $headLevel )
 {
   
+}
+
+function renderGlosar( $data )
+{
+  //$data = jspn
 }

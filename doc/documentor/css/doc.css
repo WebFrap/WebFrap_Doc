@@ -201,7 +201,6 @@ pre
 {
   border:1px solid #39aecf;
   padding:5px;
-  padding-left:20px;
   font-family:courier;
   margin-bottom:7px;
   border-radius: 5px;
@@ -217,11 +216,6 @@ pre a
 {
   color: #4D4D4D;
   font-family:courier;
-}
-
-ol
-{
-  margin-left:20px;
 }
 
 ul

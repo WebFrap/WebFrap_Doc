@@ -1,5 +1,5 @@
 <h1><a href="content.php?page=genf.start" target="main" >GenF</a></h1>
-<p>WebFrap Generator & Compiler Framework</p>
+<p>WebFrap Generator &amp; Compiler Framework</p>
 
 <a href="menu.php" target="menu" >nach oben</a>
 
@@ -10,6 +10,7 @@
       <li><a href="content.php?page=genf.introduction.features" target="main" >Features</a></li>
       <li><a href="content.php?page=genf.introduction.architectures" target="main" >Architekturen</a></li>
       <li><a href="content.php?page=genf.introduction.konventionen" target="main" >Konventionen</a></li>
+      <li><a href="content.php?page=genf.introduction.definitions" target="main" >Begriffserklärung</a></li>
     </ul>
   </li>
   <li>
