@@ -1,23 +1,18 @@
-<h1>Command Line Generator Interface</h1>
+#Command Line Generator Interface
 
-<p>Beschreibung wie der Generator über das CLI bedient werden kann.</p>
+Beschreibung wie der Generator über das CLI bedient werden kann.
 
 <label>Liste benötigter Projekte</label>
 
 <ul class="doc_tree" >
   <li><a href="content.php?page=dev_guide.repositories.core.webfrap" target="main" >WebFrap</a></li>
-  <li><a href="content.php?page=dev_guide.repositories.core.webfrap_pontos" target="main" >WebFrap_Pontos</a></li>
-  <li><a href="content.php?page=dev_guide.repositories.core.webfrap_daidalos" target="main" >WebFrap_Daidalos</a></li>
   <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_genf" target="main" >WebFrap_Genf</a></li>
-  <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_genf_cartridge_wbf" target="main" >WebFrap_Genf_Cartridge_Wbf</a></li>
+  <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_genf_wbf" target="main" >WebFrap_Genf_Wbf</a></li>
   <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_42_business" target="main" >WebFrap_42_Business</a></li>
-  <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_42_core" target="main" >WebFrap_42_Core</a></li>
-  <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_kb_base" target="main" >WebFrap_Kb_Base</a></li>
-  <li><a href="content.php?page=dev_guide.repositories.genf.webfrap_lib_bdl" target="main" >WebFrap_Lib_BDL</a></li>
 </ul>
 
 
-<p>Ein einfach anpassbares Buildscript zum starten des Compilers</p>
+Ein einfach anpassbares Buildscript zum starten des Compilers
 
 <label>Build Script</label>
 <?php start_highlight(); ?>
