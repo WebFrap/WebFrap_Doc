@@ -8,7 +8,7 @@
 * @projectUrl  : http://webfrap.net
 *
 * @licence     : BSD License see: LICENCE/BSD Licence.txt
-* 
+*
 * @version: @package_version@  Revision: @package_revision@
 *
 * Changes:
@@ -42,20 +42,20 @@
   <div class="content" style="width:800px;"  >
     <?php
       ///TODO secure this little up
-      
+
       define( 'PHP_TAG', '<?php' );
 
       // geshi einbinden
       if( file_exists( '../../documentor/core/vendor/geshi/geshi.php' ) )
         include '../../documentor/core/vendor/geshi/geshi.php';
-        
+
 
       include '../../documentor/core/vendor/dflydev/markdown/IMarkdownParser.php';
       include '../../documentor/core/vendor/dflydev/markdown/MarkdownParser.php';
       include '../../documentor/core/vendor/dflydev/markdown/MarkdownExtraParser.php';
       use dflydev\markdown\MarkdownParser;
-        
-        
+
+
       include '../../documentor/core/functions.php';
       include './keywords.php';
       include './access/access.php';
@@ -75,47 +75,47 @@
         start_md();
         include $page;
         echo render_md();
-       
+
       }
       elseif( '127.0.0.1' == $_SERVER['SERVER_NAME'] )
       {
-        
+
         if( !is_dir(dirname($page)) )
           mkdir( dirname($page), 0777, true );
-        
+
         $tmp = explode( '.', $_GET['page'] );
-          
+
         $key = ucfirst(array_pop($tmp));
-          
+
         file_put_contents
         (
-          $page, 
+          $page,
           <<<HTML
-<h1>{$key}</h1>
+#{$key}
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...
 
-<label>Hier wäre ein super Platz für ein Codebeispiel</label>
+## Codebeispiel
 <?php start_highlight(); ?>
 <_..._>
 </_..._>
 <?php display_highlight( 'xml' ); ?>
 HTML
         );
-        
+
         start_md();
         include $page;
         render_md();
-        
+
       }
-      else 
+      else
       {
         include 'errors/404.php';
       }
-      
+
     ?>
   </div>
-  
+
   <script type="application/javascript" >
     $(document).ready(function(){
       $('ul.treeMenu').treeview();

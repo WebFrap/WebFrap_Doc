@@ -71,13 +71,15 @@
         </ul>
       </li>
 
-      <li class="closed" ><a href="content.php?page=bdl.ui" target="main" ><h4>UI</h4></a>
+      <li class="closed" >
+        <a href="content.php?page=bdl.ui" target="main" ><h4>UI</h4></a>
       <ul>
         <li><a href="content.php?page=bdl.ui.menu" target="main" >Menu</a></li>
         <li><a href="content.php?page=bdl.ui.visibility" target="main" >Visibility</a></li>
         <li><a href="content.php?page=bdl.ui.actions" target="main" >Actions</a></li>
         <li><a href="content.php?page=bdl.ui.list" target="main" >List</a>
           <ul>
+            <li><a href="content.php?page=bdl.ui.list.layout" target="main" >Layout</a></li>
             <li><a href="content.php?page=bdl.ui.list.types" target="main" >Types</a>
               <ul>
                 <li><a href="content.php?page=bdl.ui.list.types.calendar" target="main" >Calendar</a></li>
@@ -90,17 +92,18 @@
                 <li><a href="content.php?page=bdl.ui.list.types.tree" target="main" >Tree</a></li>
               </ul>
             </li>
+            <li><a href="content.php?page=bdl.ui.list.search" target="main" >Search</a></li>
+            <li><a href="content.php?page=bdl.ui.list.order" target="main" >Order</a></li>
+            <li><a href="content.php?page=bdl.ui.list.edit_mode" target="main" >Edit mode</a></li>
+            <li><a href="content.php?page=bdl.ui.list.multi_body" target="main" >Multi Body</a></li>
+            <li><a href="content.php?page=bdl.filter.node" target="main" >Filter (Siehe Filter)</a></li>
             <li><a href="content.php?page=bdl.ui.list.actions" target="main" >Actions</a></li>
             <li><a href="content.php?page=bdl.ui.list.color_source" target="main" >Color Source</a></li>
             <li><a href="content.php?page=bdl.ui.list.controls" target="main" >Controls</a></li>
-            <li><a href="content.php?page=bdl.filter.node" target="main" >Filter (Siehe Filter)</a></li>
             <li><a href="content.php?page=bdl.ui.list.context_filter" target="main" >Context Filter</a></li>
-            <li><a href="content.php?page=bdl.ui.list.layout" target="main" >Layout</a></li>
             <li><a href="content.php?page=bdl.ui.list.menu" target="main" >Menu</a></li>
-            <li><a href="content.php?page=bdl.ui.list.order" target="main" >Order</a></li>
             <li><a href="content.php?page=bdl.ui.list.panel" target="main" >Panel</a></li>
             <li><a href="content.php?page=bdl.ui.list.properties" target="main" >Properties</a></li>
-            <li><a href="content.php?page=bdl.ui.list.search" target="main" >Search</a></li>
             <li><a href="content.php?page=bdl.ui.list.visibility" target="main" >Visibility</a></li>
           </ul>
         </li>
