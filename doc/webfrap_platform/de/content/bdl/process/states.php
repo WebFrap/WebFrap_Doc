@@ -1,8 +1,9 @@
-<h1>States</h1>
+# Checklists
 
-<p>States sind Status flags welche global oder auf Process Nodes abgelegt werden können.</p>
+States sind Status flags welche global oder auf Process Nodes abgelegt werden können.
 
-<label>Globale states</label>
+## Globale states
+
 <?php start_highlight(); ?>
 <processes>
   
@@ -31,7 +32,7 @@
 
 
 
-<label>Beispiel Process Node</label>
+## Beispiel Process Node 
 <?php start_highlight(); ?>
 <processes>
   

@@ -553,9 +553,9 @@
           <li><a href="content.php?page=bdl.process.data_sources" target="main" >Data Sources</a></li>
           <li><a href="content.php?page=bdl.process.messages" target="main" >Messages</a></li>
           <li><a href="content.php?page=bdl.process.phases" target="main" >Phases</a></li>
-          <li><a href="content.php?page=bdl.process.states" target="main" >States</a></li>
           <li><a href="content.php?page=bdl.process.nodes" target="main" >Nodes</a></li>
           <li><a href="content.php?page=bdl.process.edges" target="main" >Edges</a></li>
+          <li><a href="content.php?page=bdl.process.states" target="main" >Checklist</a></li>
           <li><a href="content.php?page=bdl.process.responsibles" target="main" >Responsible</a></li>
           <li><a href="content.php?page=bdl.process.slices" target="main" >Slices</a></li>
         </ul>
