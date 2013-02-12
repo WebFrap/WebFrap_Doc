@@ -11,66 +11,72 @@
   <list>
 
     <matrix>
+			<cells>
 
-      <!-- definieren der zell typen -->
-      <cells>
+				<cell type="counter" >
+					<icon src="control/sum.png" alt="Sum" />
+					<action type="edit" />
+					<tooltip>
+					  <text lang="de" >Summe der XY in relation zur aktuellen Wahl.</text>
+					</tooltip>
+					<field name="rowid" />
+				</cell>
 
-        <cell type="counter" >
-          <icon src="control/sum.png" alt="Sum" />
-          <action type="edit" />
-          <tooltip>
-            <text lang="de" >Summe der XY in relation zur aktuellen Wahl.</text>
-          </tooltip>
-          <field name="rowid" />
-        </cell>
+				<cell type="value" >
+					<icon src="control/text.png" alt="Title list" />
+					<action type="edit" />
+						<tooltip>
+						 <text lang="de" >Kurzstext liste</text>
+						</tooltip>
+					<fields>
+						<key name="rowid" />
+						<label name="title" />
+					</fields>
+				</cell>
 
-        <cell type="value" >
-          <icon src="control/text.png" alt="Title list"  />
-          <action type="edit" />
-          <tooltip>
-            <text lang="de" >Kurzstext liste</text>
-          </tooltip>
-          <fields>
-            <key name="rowid" />
-            <label name="title" />
-          </fields>
-        </cell>
+				<cell type="tile" >
+					<icon src="control/tile.png" />
+					<action type="edit" />
+					<tooltip>
+						<text lang="de" >Kacheln</text>
+					</tooltip>
+					<fields>
 
-        <cell type="tile" >
-          <icon src="control/tile.png" />
-          <action type="edit" />
-          <tooltip>
-            <text lang="de" >Kacheln</text>
-          </tooltip>
-          <fields>
+						<key name="rowid" />
 
-            <key name="rowid" />
+						<title name="title" />
 
-            <title name="title" />
+						<left>
+							<field name="id_project.name" />
+							<field name="id_milestone.name" />
+						</left>
 
-            <left>
-              <field name="f1" />
-              <field name="f2" />
-            </left>
+						<right>
+							<field name="id_develop_status.label" />
+							<field name="id_category.name" />
+						</right>
 
-            <right>
-              <field name="f3" />
-              <field name="f4" />
-            </right>
+						<bottom name="description" />
 
-            <content>
-              <field name="f1" />
-              <field name="f2" />
-              <field name="f3" />
-              <field name="f4" />
-            </content>
+					</fields>
+				</cell>
 
-            <bottom name="title" />
+			</cells>
 
-          </fields>
-        </cell>
+			<x_axis
+			  name="id_project.name"
+			  label_attr="id_project.name"  ></x_axis>
+      <y_axis
+        name="id_develop_status.label"
+        label_attr="id_develop_status.label" ></y_axis>
 
-      </cells>
+      <group>
+        <field name="id_project" />
+        <field name="id_milestone" />
+        <field name="id_develop_status" />
+        <field name="id_category" />
+      </group>
+
     </matrix>
 
   </list>
