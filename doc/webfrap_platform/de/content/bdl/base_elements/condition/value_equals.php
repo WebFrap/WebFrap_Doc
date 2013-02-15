@@ -1,9 +1,25 @@
-<h1>bdl.base_elements.condition.value_equals</h1>
+# Value equals 
 
-<p>Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...</p>
+Eine einfache == condition. 
 
-<h3>Hier wäre ein super Platz für ein Codebeispiel</h3>
+## Interfaces
+
+- Process
+- SwitchCheck
+
+## Example
 <?php start_highlight(); ?>
-<_..._>
-</_..._>
+<conditions>
+	
+  <condition type="value_equals" key="category" >
+		
+		<!-- Das attribute, name in der gewohnten pfad syntax -->
+    <attribute 
+      name="id_category.access_key" 
+      value="product"  />
+      
+    <not />
+    
+  </condition>
+</conditions>
 <?php display_highlight( 'xml' ); ?>
