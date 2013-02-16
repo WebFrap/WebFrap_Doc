@@ -48,6 +48,28 @@ strike
 // captions
 //////////////////////////////////////////////////////////////////////////////*/
 
+#docu-head
+{
+  height:120px;
+}
+
+#docu-menu
+{
+  width:150px;
+  float:left;
+}
+
+#docu-content
+{
+  float:left;
+}
+
+#docu-footer
+{
+  height:60px;
+  clear:both;
+}
+
 .headBox
 {
   height:60px;
@@ -86,9 +108,9 @@ h5, h5 a
 {
   margin-bottom:15px;
   color:#64B824;
-  font-weight:bold;	
+  font-weight:bold;
 }
-	
+
 h1, h1 a
 {
   font-size:20px;
