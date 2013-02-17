@@ -95,10 +95,22 @@ function renderGlosar($data)
 }
 
 
-function renderTopMenu($data)
+function renderTopMenu( $modules, $data)
 {
 
-  //$data = jspn
+  $code = '';
+  $stack = array();
+
+  foreach( $modules as $key ){
+
+  $stack[] = <<<HTML
+      <li><a onclick="show_chapter( '{$key}' );" href="#{$key}" >{$data[$key][0]}</a></li>
+HTML;
+
+  }
+
+  return implode( '<li>|</li>', $stack );
+
 }
 
 function renderPageMenu($key)

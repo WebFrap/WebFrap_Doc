@@ -15,6 +15,7 @@
 *
 *******************************************************************************/
 
+define( 'DOC_ROOT', realpath(__DIR__.'/../../../').'/' );
 
 function kw( $key ){
 
@@ -25,3 +26,29 @@ function kw( $key ){
   echo isset( $kw[$key] )? $kw[$key] : '??'.$key.'??';
 }
 
+class Conf
+{
+
+  public static $topMenu = array();
+
+  public static $mainMenu = array();
+
+  public static $modules = array(
+    'WebFrap_Doc:admin_guide',
+    'WebFrap_Doc:dev_guide',
+    'WebFrap_Doc:user_guide',
+    'WebFrap:webfrap'
+  );
+
+}
+
+foreach( Conf::$modules as $module ){
+
+  $tkn   = explode( ':', $module );
+  $fName = DOC_ROOT.$tkn[0].'/doc/de/'.$tkn[1].'/conf.php';
+
+  // inkludieren der confs soweit vorhanden
+  if( file_exists( DOC_ROOT.$tkn[0].'/doc/de/'.$tkn[1].'/conf.php' ) )
+    include $fName;
+
+}

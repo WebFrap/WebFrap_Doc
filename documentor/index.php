@@ -65,6 +65,8 @@ include './core/functions.php';
     </div>
 
     <ul class="topMenu" >
+      <?php echo renderTopMenu( Conf::$modules, Conf::$topMenu ) ?>
+      <!--
       <li><a onclick="show_chapter( 'admin_guide' );" href="#admin_guide" >Admin Guide</a></li>
       <li>|</li>
       <li><a onclick="show_chapter( 'user_guide' );" href="#user_guide" >User Guide</a></li>
@@ -88,6 +90,7 @@ include './core/functions.php';
       <li><a onclick="show_chapter( 'tools' );" href="#gaia" >Tools</a></li>
       <li>|</li>
       <li><a onclick="show_chapter( 'vendor_lib' );" href="#vendor_lib" >Vendor</a></li>
+       -->
     </ul>
   </div>
 
@@ -149,7 +152,7 @@ HTML
   </div>
 
   <div id="docu-footer" class="lbox" >
-  footer
+Copyright usw.
   </div>
 
 

@@ -15,12 +15,17 @@ include './conf/conf.php';
 include './core/functions.php';
 
 if (isset($_GET ['page'])) {
-  $page = '../doc/de/' . str_replace(array (
+
+  $tkn = explode( ':' , $_GET ['page']);
+
+  $page = DOC_ROOT.$tkn[0].'/doc/de/'. str_replace(array (
     '/', '.'
   ), array (
     '', '/'
-  ), $_GET ['page']) . '.php';
+  ), $tkn[1]) . '.php';
+
 } else {
+
   $page = '../doc/de/start.php';
 }
 
@@ -35,7 +40,7 @@ if (file_exists($page)) {
   if (!is_dir(dirname($page)))
     mkdir(dirname($page), 0777, true);
 
-  $tmp = explode('.', $_GET['page']);
+  $tmp = explode('.', $_GET ['page']);
 
   $key = ucfirst(array_pop($tmp));
 
