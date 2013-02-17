@@ -55,7 +55,7 @@ include './core/functions.php';
     Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
-  <div id="docu-head" >
+  <div id="docu-head" class="lbox" >
     <div class="headBox" >
       <h1>
         <a href="menu.php" target="menu" >Web<span>Frap</span></a>
@@ -91,12 +91,12 @@ include './core/functions.php';
     </ul>
   </div>
 
-  <div id="docu-menu" >
+  <div id="docu-menu" class="lbox" >
   <?php echo renderPageMenu( isset($_GET['page'])?$_GET['page']:null ); ?>
   </div>
 
 
-  <div id="docu-content" class="content" style="width: 800px;">
+  <div id="docu-content" class="content lbox" >
 <?php
 
 if (isset($_GET ['page'])) {
@@ -148,7 +148,7 @@ HTML
 ?>
   </div>
 
-  <div id="docu-footer" >
+  <div id="docu-footer" class="lbox" >
   footer
   </div>
 
@@ -184,7 +184,6 @@ function show_content( page ){
 
 	$('#docu-content').load("content.php?page="+page, function(){
     $('#docu-content').find('a.clink').each( function(){
-		  console.log("found "+this.href);
       $(this).click( function(){
 				load_content(this);
     		return false;
@@ -195,7 +194,6 @@ function show_content( page ){
 
 function load_content( link ){
 
-  console.log( "load content "+link.href );
 	$('#docu-content').load( link.href, function(){
 
     $('#docu-content').find('a.clink').each( function(){

@@ -1,7 +1,7 @@
 <h1><a href="content.php?page=admin_guide.start" target="main" class="clink" >Admin Guide</a></h1>
 <p>Admin Guidance Framework</p>
 
-<a href="menu.php" target="menu" >nach oben</a>
+<a href="index.php">nach oben</a>
 
 
 <ul class="treeMenu menu" >

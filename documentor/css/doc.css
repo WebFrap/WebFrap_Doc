@@ -55,6 +55,7 @@ strike
   left:0px;
   right:0px;
   height:80px;
+  padding:5px;
 }
 
 #docu-menu
@@ -67,15 +68,19 @@ strike
   float:left;
   overflow:auto;
   height:auto;
+  padding:5px;
 }
 
 #docu-content
 {
   position:absolute;
+  overflow:auto;
   left:200px;
+  right:0px;
   top:80px;
   bottom:40px;
   float:left;
+  padding:5px;
 }
 
 #docu-footer
@@ -85,6 +90,13 @@ strike
   bottom:0px;
   height:40px;
   clear:both;
+  padding:5px;
+}
+
+.lbox{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .headBox

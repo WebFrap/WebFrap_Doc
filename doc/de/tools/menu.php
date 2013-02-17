@@ -1,7 +1,7 @@
 <h1><a href="content.php?page=tools.start" target="main" >Gaia</a></h1>
 <p>WebFrap Setup&Maintenance System</p>
 
-<a href="menu.php" target="menu" >nach oben</a>
+<a href="index.php">nach oben</a>
 
 <ul class="treeMenu menu" >
   <li>
