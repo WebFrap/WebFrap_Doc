@@ -34,10 +34,23 @@ class Conf
   public static $mainMenu = array();
 
   public static $modules = array(
+    'Buiznodes_42:idea',
+    'Buiznodes_42:buiz',
+    'Buiznodes_42:org',
+    'Buiznodes_42:architecture',
+    'Buiznodes_42:pm',
+    'Buiznodes_42:team',
+    'WebFrap:webfrap',
+    'WebFrap_Wgt:wgt',
+    'WebFrap:gateway',
+    'WebFrap_Genf:bdl',
+    'WebFrap_Genf:genf',
+    'WebFrap_Genf_Wbf:genf_wbf',
+    'WebFrap_Vendor:vendor_lib',
     'WebFrap_Doc:admin_guide',
     'WebFrap_Doc:dev_guide',
+    'WebFrap_Tools:tools',
     'WebFrap_Doc:user_guide',
-    'WebFrap:webfrap'
   );
 
 }

@@ -103,13 +103,17 @@ function renderTopMenu( $modules, $data)
 
   foreach( $modules as $key ){
 
+    // ignore nonloaded repos
+    if( !isset($data[$key]) )
+      continue;
+
   $stack[] = <<<HTML
       <li><a onclick="show_chapter( '{$key}' );" href="#{$key}" >{$data[$key][0]}</a></li>
 HTML;
 
   }
 
-  return implode( '<li>|</li>', $stack );
+  return implode( ' <li>|</li> ', $stack );
 
 }
 
@@ -120,11 +124,13 @@ function renderPageMenu($key)
 
   if ($key) {
 
-    $page = '../doc/de/' . str_replace(
-      array ('/', '.'),
-      array ('', '/'),
-      $key
-    ) . '/menu.php';
+    $tkn = explode( ':' , $key);
+
+    $page = DOC_ROOT.$tkn[0].'/doc/de/'. str_replace(array (
+      '/', '.'
+    ), array (
+      '', '/'
+    ), $tkn[1]) . '/menu.php';
 
   } else {
 

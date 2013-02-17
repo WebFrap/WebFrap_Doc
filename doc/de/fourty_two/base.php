@@ -1,1 +1,0 @@
-<h1>42er Datenmodell</h1>
