@@ -50,29 +50,46 @@ strike
 
 #docu-head
 {
-  height:120px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:80px;
 }
 
 #docu-menu
 {
-  width:150px;
+  position:absolute;
+  left:0px;
+  top:80px;
+  bottom:40px;
+  width:200px;
   float:left;
+  overflow:auto;
+  height:auto;
 }
 
 #docu-content
 {
+  position:absolute;
+  left:200px;
+  top:80px;
+  bottom:40px;
   float:left;
 }
 
 #docu-footer
 {
-  height:60px;
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  height:40px;
   clear:both;
 }
 
 .headBox
 {
-  height:60px;
+  height:40px;
 }
 
 .headBox h1

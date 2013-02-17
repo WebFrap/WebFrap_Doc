@@ -14,8 +14,22 @@
  * Changes:
  *
  *******************************************************************************/
-?><?xml version=
-"1.0"?>
+
+define('PHP_TAG', '<?php');
+
+// geshi einbinden
+if (file_exists('./core/vendor/geshi/geshi.php'))
+  include './core/vendor/geshi/geshi.php';
+
+include './core/vendor/dflydev/markdown/IMarkdownParser.php';
+include './core/vendor/dflydev/markdown/MarkdownParser.php';
+include './core/vendor/dflydev/markdown/MarkdownExtraParser.php';
+use dflydev\markdown\MarkdownParser;
+
+include './conf/conf.php';
+include './core/functions.php';
+
+?><?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -35,67 +49,82 @@
 <link type="text/plain" rel="author" href="./humans.txt" />
 
 </head>
-
 <body>
-<!--[if lt IE 7]>
+  <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser.
     Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
-<div id="docu-head" >
-head
-</div>
+  <div id="docu-head" >
+    <div class="headBox" >
+      <h1>
+        <a href="menu.php" target="menu" >Web<span>Frap</span></a>
+        <a href="menu.php" target="menu" class="erDoc" >The Web Frame Application</a>
+      </h1>
+      <!-- <h3>&nbsp; just a placeholder for the space here </h3>-->
+    </div>
 
-<div id="docu-menu" >
-menu
-</div>
+    <ul class="topMenu" >
+      <li><a onclick="show_chapter( 'admin_guide' );" href="#admin_guide" >Admin Guide</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'user_guide' );" href="#user_guide" >User Guide</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'dev_guide' );" href="#dev_guide" >Developer Guide</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'webfrap' );" href="#webfrap" >WebFrap</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'projects' );" href="#webfrap" >Projekte</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'gateway' );" href="#gateway" >Gateway</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'wgt' );" href="#wgt" >WGT</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'genf' );" href="#genf" >GenF</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'bdl' );"" href="#bdl" >BDL</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'fourty_two' );" href="#fourty_two" >42 Datenmodell</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'tools' );" href="#gaia" >Tools</a></li>
+      <li>|</li>
+      <li><a onclick="show_chapter( 'vendor_lib' );" href="#vendor_lib" >Vendor</a></li>
+    </ul>
+  </div>
+
+  <div id="docu-menu" >
+  <?php echo renderPageMenu( isset($_GET['page'])?$_GET['page']:null ); ?>
+  </div>
 
 
-<div id="docu-content" class="content" style="width: 800px;">
-    <?php
-    ///TODO secure this little up
+  <div id="docu-content" class="content" style="width: 800px;">
+<?php
 
+if (isset($_GET ['page'])) {
+  $page = '../doc/de/' . str_replace(array (
+    '/', '.'
+  ), array (
+    '', '/'
+  ), $_GET ['page']) . '.php';
+} else {
+  $page = '../doc/de/start.php';
+}
 
-    define('PHP_TAG', '<?php');
+if (file_exists($page)) {
 
-    // geshi einbinden
-    if (file_exists('./core/vendor/geshi/geshi.php'))
-      include './core/vendor/geshi/geshi.php';
+  start_md();
+  include $page;
+  echo render_md();
 
-    include './core/vendor/dflydev/markdown/IMarkdownParser.php';
-    include './core/vendor/dflydev/markdown/MarkdownParser.php';
-    include './core/vendor/dflydev/markdown/MarkdownExtraParser.php';
-    use dflydev\markdown\MarkdownParser;
+} elseif ('127.0.0.1' == $_SERVER ['SERVER_NAME']) {
 
-    include './conf/conf.php';
-    include './core/functions.php';
+  if (!is_dir(dirname($page)))
+    mkdir(dirname($page), 0777, true);
 
-    if (isset($_GET ['page'])) {
-      $page = '../doc/de/' . str_replace(array (
-        '/', '.'
-      ), array (
-        '', '/'
-      ), $_GET ['page']) . '.php';
-    } else {
-      $page = '../doc/de/start.php';
-    }
+  $tmp = explode('.', $_GET['page']);
 
-    if (file_exists($page)) {
+  $key = ucfirst(array_pop($tmp));
 
-      start_md();
-      include $page;
-      echo render_md();
-
-    } elseif ('127.0.0.1' == $_SERVER ['SERVER_NAME']) {
-
-      if (!is_dir(dirname($page)))
-        mkdir(dirname($page), 0777, true);
-
-      $tmp = explode('.', $_GET['page']);
-
-      $key = ucfirst(array_pop($tmp));
-
-      file_put_contents( $page, <<<HTML
+  file_put_contents( $page, <<<HTML
 #{$key}
 
 Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben würde...
@@ -108,20 +137,20 @@ Hier könnte ihre Dokumentation stehen... Wenn sie endlich jemand schreiben wür
 HTML
 );
 
-      start_md();
-      include $page;
-      render_md();
+  start_md();
+  include $page;
+  render_md();
 
-    } else {
-      include '../doc/de/errors/404.php';
-    }
+} else {
+  include '../doc/de/errors/404.php';
+}
 
-    ?>
-</div>
+?>
+  </div>
 
-<div id="docu-footer" >
-footer
-</div>
+  <div id="docu-footer" >
+  footer
+  </div>
 
 
 
@@ -132,9 +161,51 @@ footer
   <script type="application/javascript" src="./js/jquery.treeview.js"></script>
   <script type="application/javascript" src="./js/documentor.js"></script>
   <script type="application/javascript">
-    $(document).ready(function(){
-      $('ul.treeMenu').treeview();
-    });
+$(document).ready(function(){
+	$('ul.treeMenu').treeview();
+});
+
+function show_chapter( chapter ){
+
+	$('#docu-menu').load("menu.php?page="+chapter, function(){
+    $('#docu-menu').find('a.clink').each( function(){
+		  console.log("found "+this.href);
+      $(this).click( function(){
+				load_content(this);
+    		return false;
+			});
+		});
+	});
+	show_content( chapter+".start" );
+}
+
+function show_content( page ){
+
+	$('#docu-content').load("content.php?page="+page, function(){
+    $('#docu-content').find('a.clink').each( function(){
+		  console.log("found "+this.href);
+      $(this).click( function(){
+				load_content(this);
+    		return false;
+			});
+		});
+	});
+}
+
+function load_content( link ){
+
+  console.log( "load content "+link.href );
+	$('#docu-content').load( link.href, function(){
+
+    $('#docu-content').find('a.clink').each( function(){
+			$(this).click( function(){
+				load_content(this);
+    		return false;
+			});
+		});
+	});
+}
+
   </script>
 </body>
 

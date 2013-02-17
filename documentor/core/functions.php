@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * start code
  */
@@ -10,81 +9,117 @@ function start_highlight()
   render_md();
   ob_start();
 
-}//end function start_highlight */
+} //end function start_highlight */
+
 
 /**
  * start code
  */
-function display_highlight( $lang = 'php', $code = null )
+function display_highlight($lang = 'php', $code = null)
 {
 
-  if( is_null( $code ) )
-  {
-    $code = trim(ob_get_contents()) ;
+  if (is_null($code)) {
+    $code = trim(ob_get_contents());
     ob_end_clean();
   }
-  
-  if( class_exists('GeSHi') )
-  {
+
+  if (class_exists('GeSHi')) {
     $geshi = new GeSHi($code, $lang);
     $geshi->enable_line_numbers(GESHI_FANCY_LINE_NUMBERS, 10);
-    $geshi->set_line_style( 'background: #fcfcfc;', 'background: #f0f0f0;' );
-    $geshi->set_overall_style( 'width:750px;margin-bottom:10px;', true );
+    $geshi->set_line_style('background: #fcfcfc;', 'background: #f0f0f0;');
+    $geshi->set_overall_style('width:750px;margin-bottom:10px;', true);
     echo $geshi->parse_code();
-    //echo '<div style="width:750px;margin-bottom:10px;" >'.$geshi->parse_code().'</div>';
+
+   //echo '<div style="width:750px;margin-bottom:10px;" >'.$geshi->parse_code().'</div>';
+  } else {
+    echo '<pre style="width:750px;margin-bottom:10px;" >' . htmlentities($code, ENT_QUOTES, 'utf-8') . '</pre>';
   }
-  else 
-  {
-    echo '<pre style="width:750px;margin-bottom:10px;" >'.htmlentities($code,ENT_QUOTES,'utf-8').'</pre>';
-  }
-  
+
   start_md();
 
-}//end function display_highlight */
+} //end function display_highlight */
+
 
 /**
  * Start a MD Render area
  */
 function start_md()
 {
+
   ob_start();
-}//end function start_md */
+} //end function start_md */
+
 
 /**
  * Render the markdown
  */
-function render_md( $content = null )
+function render_md($content = null)
 {
 
-  if( is_null( $content ) )
-  {
-    $content = trim(ob_get_contents()) ;
+  if (is_null($content)) {
+    $content = trim(ob_get_contents());
     ob_end_clean();
   }
 
   $markdownParser = new \dflydev\markdown\MarkdownParser();
-  
-  $content = preg_replace('#(\A|[^=\]\'"a-zA-Z0-9])(http[s]?://(.+?)/[^()<>\s]+)#i', '\\1<a href="\\2" target="__new" >\\2</a>', $content);
-  
-  echo $markdownParser->transformMarkdown( $content );
 
-}//end function render_md */
+  $content = preg_replace(
+  	'#(\A|[^=\]\'"a-zA-Z0-9])(http[s]?://(.+?)/[^()<>\s]+)#i',
+  	'\\1<a href="\\2" target="__new" >\\2</a>',
+    $content
+  );
 
-function renderMenuTree( $fileName )
+  echo $markdownParser->transformMarkdown($content);
+
+} //end function render_md */
+
+
+function renderMenuTree($fileName)
 {
-  
-  $jsonTree =  json_decode(file_get_contents($fileName)) ;
-  
-  return renderMenuSubtree( $jsonTree, 1 );
-  
+
+  $jsonTree = json_decode(file_get_contents($fileName));
+
+  return renderMenuSubtree($jsonTree, 1);
+
 }
 
-function renderMenuSubtree( $subTree, $headLevel )
+function renderMenuSubtree($subTree, $headLevel)
 {
-  
+
 }
 
-function renderGlosar( $data )
+function renderGlosar($data)
 {
+
   //$data = jspn
+}
+
+
+function renderTopMenu($data)
+{
+
+  //$data = jspn
+}
+
+function renderPageMenu($key)
+{
+
+  start_md();
+
+  if ($key) {
+
+    $page = '../doc/de/' . str_replace(
+      array ('/', '.'),
+      array ('', '/'),
+      $key
+    ) . '/menu.php';
+
+  } else {
+
+    $page = '../doc/de/menu.php';
+  }
+
+  include $page;
+
+  return render_md();
 }
