@@ -168,6 +168,7 @@ $(document).ready(function(){
 function show_chapter( chapter ){
 
 	$('#docu-menu').load("menu.php?page="+chapter, function(){
+		$('ul.treeMenu').treeview();
     $('#docu-menu').find('a.clink').each( function(){
 		  console.log("found "+this.href);
       $(this).click( function(){
