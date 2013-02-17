@@ -66,31 +66,6 @@ include './core/functions.php';
 
     <ul class="topMenu" >
       <?php echo renderTopMenu( Conf::$modules, Conf::$topMenu ) ?>
-      <!--
-      <li><a onclick="show_chapter( 'admin_guide' );" href="#admin_guide" >Admin Guide</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'user_guide' );" href="#user_guide" >User Guide</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'dev_guide' );" href="#dev_guide" >Developer Guide</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'webfrap' );" href="#webfrap" >WebFrap</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'projects' );" href="#webfrap" >Projekte</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'gateway' );" href="#gateway" >Gateway</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'wgt' );" href="#wgt" >WGT</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'genf' );" href="#genf" >GenF</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'bdl' );"" href="#bdl" >BDL</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'fourty_two' );" href="#fourty_two" >42 Datenmodell</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'tools' );" href="#gaia" >Tools</a></li>
-      <li>|</li>
-      <li><a onclick="show_chapter( 'vendor_lib' );" href="#vendor_lib" >Vendor</a></li>
-       -->
     </ul>
   </div>
 
@@ -100,6 +75,7 @@ include './core/functions.php';
 
 
   <div id="docu-content" class="content lbox" >
+    <div style="width:900px;" >
 <?php
 
 if (isset($_GET ['page'])) {
@@ -149,6 +125,7 @@ HTML
 }
 
 ?>
+    </div>
   </div>
 
   <div id="docu-footer" class="lbox" >

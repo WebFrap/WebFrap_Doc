@@ -1,3 +1,4 @@
+<div style="width:900px;" >
 <?php
 ///TODO secure this little up
 define('PHP_TAG', '<?php');
@@ -65,3 +66,5 @@ HTML
 
   include '../doc/de/errors/404.php';
 }
+?>
+</div>
