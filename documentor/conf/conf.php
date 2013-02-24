@@ -37,8 +37,6 @@ class Conf
     'Buiznodes_42:buiz',
     'Buiznodes_42:org',
     'Buiznodes_42:architecture',
-    'Buiznodes_42:pm',
-    'Buiznodes_42:team',
     'WebFrap:webfrap',
     'WebFrap_Wgt:wgt',
     'WebFrap:gateway',
