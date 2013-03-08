@@ -99,7 +99,7 @@ jQuery.fn.singleLineChart = function(){
   
   var jNode = $(this);
 
-  var margin = {top: 20, right: 20, bottom: 30, left: 50},
+  var margin = {top: 20, right: 20, bottom: 40, left: 70},
       width = jNode.innerWidth() - margin.left - margin.right,
       height = jNode.innerHeight() - margin.top - margin.bottom;
   
