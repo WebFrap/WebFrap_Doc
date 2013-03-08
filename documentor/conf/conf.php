@@ -33,6 +33,8 @@ class Conf
 
   public static $mainMenu = array();
 
+  public static $data = array();
+
   public static $modules = array(
     'Buiznodes_42:buiz',
     'Buiznodes_42:org',

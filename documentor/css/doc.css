@@ -781,3 +781,33 @@ a.access_public
   border-bottom: 2px dotted brown;
 }
 
+
+/* Graphs */
+
+svg{
+  font-size:10px;  
+}
+
+.axis path,
+.axis line 
+{
+  font-size:10px;
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path 
+{
+  font-size:10px;  
+  display: none;
+}
+
+.line 
+{
+  font-size:10px;  
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+

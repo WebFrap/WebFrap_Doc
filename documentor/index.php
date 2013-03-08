@@ -139,6 +139,7 @@ Copyright usw.
   <script type="application/javascript" src="./js/main.js"></script>
   <script type="application/javascript" src="./js/jquery.treeview.js"></script>
   <script type="application/javascript" src="./js/d3.min.js"></script>
+  <script type="application/javascript" src="./js/graphs.js"></script>
   <script type="application/javascript" src="./js/documentor.js"></script>
 </body>
 
