@@ -133,59 +133,13 @@ Copyright usw.
   </div>
 
 
-
   <script type="application/javascript" src="./js/vendor/jquery-1.9.0.min.js"></script>
   <script type="application/javascript" src="./js/vendor/modernizr-2.6.2.min.js"></script>
   <script type="application/javascript" src="./js/plugins.js"></script>
   <script type="application/javascript" src="./js/main.js"></script>
   <script type="application/javascript" src="./js/jquery.treeview.js"></script>
+  <script type="application/javascript" src="./js/d3.min.js"></script>
   <script type="application/javascript" src="./js/documentor.js"></script>
-  <script type="application/javascript">
-$(document).ready(function(){
-	$('ul.treeMenu').treeview();
-});
-
-function show_chapter( chapter ){
-
-	$('#docu-menu').load("menu.php?page="+chapter, function(){
-		$('ul.treeMenu').treeview();
-    $('#docu-menu').find('a.clink').each( function(){
-		  console.log("found "+this.href);
-      $(this).click( function(){
-				load_content(this);
-    		return false;
-			});
-		});
-	});
-	show_content( chapter+".start" );
-}
-
-function show_content( page ){
-
-	$('#docu-content').load("content.php?page="+page, function(){
-    $('#docu-content').find('a.clink').each( function(){
-      $(this).click( function(){
-				load_content(this);
-    		return false;
-			});
-		});
-	});
-}
-
-function load_content( link ){
-
-	$('#docu-content').load( link.href, function(){
-
-    $('#docu-content').find('a.clink').each( function(){
-			$(this).click( function(){
-				load_content(this);
-    		return false;
-			});
-		});
-	});
-}
-
-  </script>
 </body>
 
 </html>
