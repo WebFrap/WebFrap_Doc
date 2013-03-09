@@ -38,8 +38,11 @@ jQuery.fn.lineChart = function(  ){
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var graphData = jQuery.parseJSON(jNode.find('var').text());
+  console.log(graphData.values);
   var data = d3.csv.parse(graphData.values);
   jNode.find('var').remove();
+  
+  console.dir(data);
   
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 

@@ -5250,6 +5250,12 @@ d3 = function() {
       });
     };
     dsv.parseRows = function(text, f) {
+      
+      if(undefined === text){
+        console.error("text was undefined");
+        text = '';
+      }
+      
       var EOL = {}, EOF = {}, rows = [], N = text.length, I = 0, n = 0, t, eol;
       function token() {
         if (I >= N) return EOF;
