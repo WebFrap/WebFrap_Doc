@@ -1,9 +1,9 @@
 
-jQuery.fn.lineChart = function(){
-  
-  var jNode = $(this);
+jQuery.fn.lineChart = function(  ){
 
-  var margin = {top: 20, right: 20, bottom: 30, left: 50},
+  var jNode = jQuery(this);
+
+  var margin = {top: 20, right: 80, bottom: 30, left: 50},
       width = jNode.innerWidth() - margin.left - margin.right,
       height = jNode.innerHeight() - margin.top - margin.bottom;
 
@@ -16,7 +16,7 @@ jQuery.fn.lineChart = function(){
       .range([height, 0]);
 
   var color = d3.scale.category10();
-  
+
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom");
@@ -28,7 +28,7 @@ jQuery.fn.lineChart = function(){
   var line = d3.svg.line()
       .interpolate("basis")
       .x(function(d) { return x(d.date); })
-      .y(function(d) { return y(d.value); });
+      .y(function(d) { return y(d.val); });
 
   var svg = d3.select('#'+jNode.attr('id'))
       .append("svg")
@@ -37,18 +37,21 @@ jQuery.fn.lineChart = function(){
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var data = jQuery.parseJSON(jNode.find('var').text());
+  var graphData = jQuery.parseJSON(jNode.find('var').text());
+  var data = d3.csv.parse(graphData.values);
   jNode.find('var').remove();
+  
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
-  data.forEach( function(d) {
+  data.forEach(function(d) {
     d.date = parseDate(d.date);
   });
-  
+
   var gValues = color.domain().map(function(name) {
     return {
       name: name,
       values: data.map(function(d) {
-        return {date: d.date, value: +d[name]};
+        return {date: d.date, val: parseFloat(d[name])};
       })
     };
   });
@@ -56,8 +59,8 @@ jQuery.fn.lineChart = function(){
   x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y.domain([
-    d3.min(gValues, function(c) { return d3.min(c.values, function(v) { return v.value; }); }),
-    d3.max(gValues, function(c) { return d3.max(c.values, function(v) { return v.value; }); })
+    d3.min(gValues, function(c) { return d3.min(c.values, function(v) { return v.val; }); }),
+    d3.max(gValues, function(c) { return d3.max(c.values, function(v) { return v.val; }); })
   ]);
 
   svg.append("g")
@@ -73,7 +76,7 @@ jQuery.fn.lineChart = function(){
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Amount €");
+      .text(graphData.ly);
 
   var value = svg.selectAll(".value")
       .data(gValues)
@@ -87,17 +90,18 @@ jQuery.fn.lineChart = function(){
 
   value.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.value) + ")"; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.val) + ")"; })
       .attr("x", 3)
       .attr("dy", ".35em")
       .text(function(d) { return d.name; });
+
 };
 
 
 
 jQuery.fn.singleLineChart = function(){
   
-  var jNode = $(this);
+  var jNode = jQuery(this);
 
   var margin = {top: 20, right: 20, bottom: 40, left: 70},
       width = jNode.innerWidth() - margin.left - margin.right,
@@ -161,5 +165,4 @@ jQuery.fn.singleLineChart = function(){
       .attr("class", "line")
       .attr("d", line);
 
-
-}
+};
