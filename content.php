@@ -1,6 +1,5 @@
 <div style="width:900px;" >
 <?php
-///TODO secure this little up
 define('PHP_TAG', '<?php');
 
 // geshi einbinden
@@ -15,7 +14,7 @@ use dflydev\markdown\MarkdownParser;
 include './conf/conf.php';
 include './core/functions.php';
 include './core/grid/SimpleGrid.php';
-include './core/grid/TreeSimple.php';
+include './core/tree/TreeSimple.php';
 
 if (isset($_GET ['page'])) {
 

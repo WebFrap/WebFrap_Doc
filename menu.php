@@ -28,7 +28,8 @@ use dflydev\markdown\MarkdownParser;
 
 include './conf/conf.php';
 include './core/functions.php';
-include './core/grid/TreeSimple.php';
+include './core/grid/SimpleGrid.php';
+include './core/tree/TreeSimple.php';
 
 echo renderPageMenu($_GET['page']);
 

@@ -135,7 +135,7 @@ function renderPageMenu($key)
 
   } else {
 
-    $page = '../doc/de/menu.php';
+    $page = './doc/de/menu.php';
   }
 
   include $page;

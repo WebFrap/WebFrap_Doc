@@ -29,7 +29,7 @@ use dflydev\markdown\MarkdownParser;
 include './conf/conf.php';
 include './core/functions.php';
 include './core/grid/SimpleGrid.php';
-include './core/grid/TreeSimple.php';
+include './core/tree/TreeSimple.php';
 
 ?><?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -123,7 +123,12 @@ HTML
   render_md();
 
 } else {
-  include '../doc/de/errors/404.php';doc/de/errors/404.phpv>
+  include '../doc/de/errors/404.php';
+}
+
+?>
+    </div>
+  </div>
 
   <div id="docu-footer" class="lbox" >
 Copyright usw.
