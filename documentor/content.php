@@ -15,6 +15,7 @@ use dflydev\markdown\MarkdownParser;
 include './conf/conf.php';
 include './core/functions.php';
 include './core/grid/SimpleGrid.php';
+include './core/grid/TreeSimple.php';
 
 if (isset($_GET ['page'])) {
 
