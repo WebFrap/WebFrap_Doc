@@ -13,12 +13,30 @@ class TreeSimple
    *  sub:[]
    * @param boolean $out, direkt per echo ausgeben?
    */
+  public static function renderByJson( $data, $out = true )
+  {
+    
+    $jsonData =json_decode($data);
+
+    return self::render($jsonData, $out);
+    
+  }//end public static function render */
+  
+  /**
+   * @param stdClass
+   *  class:string
+   *  sub:[]
+   * @param boolean $out, direkt per echo ausgeben?
+   */
   public static function render( $data, $out = true )
   {
     
-    $html = '<ul class="doc_tree" >';
+    if( !$data )
+      return '<span>Invalid Input</span>';
     
-    if( isset($data->sub)){
+    $html = '<ul class="'.$data->class.'" >';
+    
+    if (isset($data->sub)){
       foreach ( $data->sub as $subNode ){
         $html .= self::renderSubNode( $subNode );
       }
