@@ -19,17 +19,14 @@ define('PHP_TAG', '<?php');
 
 // geshi einbinden
 if (file_exists('./core/vendor/geshi/geshi.php'))
-  include './core/vendor/geshi/geshi.php';
+  include 'documentor/core/vendor/geshi/geshi.php';
 
-include './core/vendor/dflydev/markdown/IMarkdownParser.php';
-include './core/vendor/dflydev/markdown/MarkdownParser.php';
-include './core/vendor/dflydev/markdown/MarkdownExtraParser.php';
-use dflydev\markdown\MarkdownParser;
+include '../core/IMarkdownParser.php';
+../core/MarkdownParser.phpMarkdownParser.php';
+include 'documentor/core/vendor/dflydev/markdown/MarkdownExtraParser.php\MarkdownParser;
 
-include './conf/conf.php';
-include './core/functions.php';
-include './core/grid/SimpleGrid.php';
-include './core/grid/TreeSimple.php';
+inclu../conf/conf.php.php';
+includocumentor/conf/conf.phpctions.php';documentor/core/functions.phpmpleGrid.phpdocumentor/core/grid/SimpleGrid.phpeeSimple.php';
 
 ?><?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -123,12 +120,7 @@ HTML
   render_md();
 
 } else {
-  include '../doc/de/errors/404.php';
-}
-
-?>
-    </div>
-  </div>
+  include '../doc/de/errors/404.php';doc/de/errors/404.phpv>
 
   <div id="docu-footer" class="lbox" >
 Copyright usw.

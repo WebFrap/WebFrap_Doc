@@ -21,13 +21,13 @@ define('PHP_TAG', '<?php');
 if (file_exists('./core/vendor/geshi/geshi.php'))
   include './core/vendor/geshi/geshi.php';
 
-include './core/vendor/dflydev/markdown/IMarkdownParser.php';
-include './core/vendor/dflydev/markdown/MarkdownParser.php';
-include './core/vendor/dflydev/markdown/MarkdownExtraParser.php';
+include '../core/IMarkdownParser.php';
+include '../core/MarkdownParser.php';
+include '../core/MarkdownExtraParser.php';
 use dflydev\markdown\MarkdownParser;
 
 include './conf/conf.php';
-include './core/functions.php';
+inclu../conf/conf.phpctions.php';
 
 echo renderPageMenu($_GET['page']);
 

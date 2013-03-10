@@ -5,16 +5,15 @@ define('PHP_TAG', '<?php');
 
 // geshi einbinden
 if (file_exists('./core/vendor/geshi/geshi.php'))
-  include './core/vendor/geshi/geshi.php';
+  include 'documentor/core/vendor/geshi/geshi.php';
 
-include './core/vendor/dflydev/markdown/IMarkdownParser.php';
-include './core/vendor/dflydev/markdown/MarkdownParser.php';
-include './core/vendor/dflydev/markdown/MarkdownExtraParser.php';
+include '../core/IMarkdownParser.php';
+../core/MarkdownParser.phpMarkdownPars../core/MarkdownExtraParser.phpown/MarkdownExtraParser.php';
 use dflydev\markdown\MarkdownParser;
 
-include './conf/conf.php';
-include './core/functions.php';
-include './core/grid/SimpleGrid.php';
+inclu../conf/conf.phpctions.php.php';
+inclu../core/SimpleGrid.phpons.php';
+include 'documentor/core/grid/SimpleGrid.php';
 include './core/grid/TreeSimple.php';
 
 if (isset($_GET ['page'])) {
@@ -66,7 +65,7 @@ HTML
 
 } else {
 
-  include '../doc/de/errors/404.php';
+  include 'doc/de/errors/404.php';
 }
 ?>
 </div>
