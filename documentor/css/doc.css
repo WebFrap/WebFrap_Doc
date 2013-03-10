@@ -383,8 +383,7 @@ div.box.image
   padding-left:7px;
 }
 
-.dataTable,
-.data_grid
+.doc_grid
 {
   width:950px;
 	border-left:1px solid silver;
@@ -392,14 +391,14 @@ div.box.image
 	margin-bottom:7px;
 }
 
-.data_grid label
+.doc_grid label
 {
   color:#64b824;
   font-weight:bold;
   margin-bottom:5px;
 }
 
-.data_grid thead
+.doc_grid thead
 {
   background-color:#64b824;
   color:#1A6F9A;
@@ -408,9 +407,8 @@ div.box.image
   font-weight:bold;
 }
 
-.dataTable .head td,
-.data_grid .head td,
-.data_grid thead th
+.doc_grid .head td,
+.doc_grid thead th
 {
   background-color:#1A6F9A;
   color:white;
@@ -419,15 +417,13 @@ div.box.image
 	font-weight:bold;
 }
 
-.dataTable .head td > a,
-.data_grid .head td > a
+.doc_grid .head td > a
 {
   color:#64b824;
   font-weight:bold;
 }
 
-.dataTable .head th,
-.data_grid .head th
+.doc_grid .head th
 {
   background-color:#1A6F9A;
   color:white;
@@ -438,8 +434,7 @@ div.box.image
   margin:0px;
 }
 
-.dataTable .meta td,
-.data_grid .meta td
+.doc_grid .meta td
 {
   background-color:#d3e5f5;
   border-bottom:1px solid silver;
@@ -448,13 +443,12 @@ div.box.image
 	margin:0px;
 }
 
-.data_grid.centered td
+.doc_grid.centered td
 {
   text-align:center;
 }
 
-.dataTable td,
-.data_grid td
+.doc_grid td
 {
   border-bottom:1px solid silver;
   border-right:1px solid silver;
@@ -462,14 +456,12 @@ div.box.image
 	margin:0px;
 }
 
-.dataTable td a,
-.data_grid td a
+.doc_grid td a
 {
   color:#64B824;
 }
 
-.dataTable td a,
-.data_grid td.num
+.doc_grid td.num
 {
   text-align:right;
 }
