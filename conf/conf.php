@@ -46,10 +46,10 @@ class Conf
     'WebFrap_Genf:genf',
     'WebFrap_Genf_Wbf:genf_wbf',
     'WebFrap_Vendor:vendor_lib',
-    'WebFrap_Doc:admin_guide',
-    'WebFrap_Doc:dev_guide',
+    'WebFrap:admin_guide',
+    'WebFrap:dev_guide',
     'WebFrap_Tools:tools',
-    'WebFrap_Doc:user_guide',
+    'WebFrap:user_guide',
   );
 
 }
