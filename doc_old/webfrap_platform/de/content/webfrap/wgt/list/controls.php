@@ -98,12 +98,12 @@
     {
       
       $numUsers = $access->numExplicitUsers( $id, 'project_manager' );
-      if( ! $numUsers == 0  )
+      if ( ! $numUsers == 0  )
       {
         return false;
       }
                 
-      if( !$access->hasRole( 'project_manager' ) )
+      if ( !$access->hasRole( 'project_manager' ) )
       {
         return false;
       }

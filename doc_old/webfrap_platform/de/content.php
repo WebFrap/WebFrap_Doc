@@ -46,11 +46,11 @@
       define( 'PHP_TAG', '<?php' );
 
       // geshi einbinden
-      if( file_exists( '../../documentor/core/vendor/geshi/geshi.php' ) )
+      if ( file_exists( '../../documentor/core/vendor/geshi/geshi.php' ) )
         include '../../doc/documentor/core/vendor/geshi/geshi.php    include '../../../../doc_old/documentor/IMarkdownParser.phprser.php  include '../../d../../doc/documentor/core/vendor/dflydev/markdown/MarkdownParser.phpocumentor/core/ven../../doc/documentor/core/vendor/dflydev/markdown/MarkdownExtraParser.phpr;
 
 
-      include '../../../doc_old/documentor/functions.php';../../doc/documentor/core/functions.phpbfrap_platform/key../../doc/webfrap_platform/de/keywords.php    include './acc../../doc/webfrap_platform/de/access/access.phpbfrap_platform/access.php     if( isset( $_GET['page'] )  )
+      include '../../../doc_old/documentor/functions.php';../../doc/documentor/core/functions.phpbfrap_platform/key../../doc/webfrap_platform/de/keywords.php    include './acc../../doc/webfrap_platform/de/access/access.phpbfrap_platform/access.php     if ( isset( $_GET['page'] )  )
       {
         $page = 'content/'.str_replace(array('/','.'),array('','/'),$_GET['page']).'.php';
       }
@@ -59,7 +59,7 @@
         $page = 'content/start.php';
       }
 
-      if( file_exists( $page ) )
+      if ( file_exists( $page ) )
       {
 
         start_md();
@@ -67,10 +67,10 @@
         echo render_md();
 
       }
-      elseif( '127.0.0.1' == $_SERVER['SERVER_NAME'] )
+      elseif ( '127.0.0.1' == $_SERVER['SERVER_NAME'] )
       {
 
-        if( !is_dir(dirname($page)) )
+        if ( !is_dir(dirname($page)) )
           mkdir( dirname($page), 0777, true );
 
         $tmp = explode( '.', $_GET['page'] );

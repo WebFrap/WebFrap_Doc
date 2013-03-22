@@ -42,11 +42,11 @@ Die Properties können nach Bedarf frei definiert werden.
 // Bsp: LibGenfEnvManagement, LibGenfEnvPage
 $formUi = $env->getFormUi( 'create' );
 
-if( $formUi )
+if ( $formUi )
 {
 
   $rqtContext->prop1  = $formUi->property( 'prop_name' );
-  if( !$rqtContext->prop1 )
+  if ( !$rqtContext->prop1 )
   {
     $rqtContext->prop1 = 'Def Value';
   }

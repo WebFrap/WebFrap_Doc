@@ -60,7 +60,7 @@ foreach( Conf::$modules as $module ){
   $fName = DOC_ROOT.$tkn[0].'/doc/de/'.$tkn[1].'/conf.php';
 
   // inkludieren der confs soweit vorhanden
-  if( file_exists( DOC_ROOT.$tkn[0].'/doc/de/'.$tkn[1].'/conf.php' ) )
+  if ( file_exists( DOC_ROOT.$tkn[0].'/doc/de/'.$tkn[1].'/conf.php' ) )
     include $fName;
 
 }

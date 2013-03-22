@@ -48,10 +48,10 @@ class Access
   public static function login( $login, $password )
   {
     
-    if( !isset( self::$userList[$login] ) )
+    if ( !isset( self::$userList[$login] ) )
       return false;
       
-    if( self::$userList[$login] == sha1($password) )
+    if ( self::$userList[$login] == sha1($password) )
     {
       $_SESSION['login'] = true;
       $_SESSION['user']  = $login;
@@ -82,10 +82,10 @@ class Access
   public static function groupMember( $groupName )
   {
     
-    if( !isset( $_SESSION['user'] ) )
+    if ( !isset( $_SESSION['user'] ) )
       return false;
     
-    if( !isset( self::$groupList[$groupName] ) )
+    if ( !isset( self::$groupList[$groupName] ) )
       return false;
       
     return in_array( $groupName , self::$groupList[$groupName] );
@@ -111,9 +111,9 @@ class Access
   public static function endProtection( $groups = array(), $showLogin = false )
   {
     
-    if( !isset( $_SESSION['user'] ) )
+    if ( !isset( $_SESSION['user'] ) )
     {
-      if( !Access::$login )
+      if ( !Access::$login )
         Access::$login = $showLogin;
       
       ob_get_contents();
@@ -121,7 +121,7 @@ class Access
       return;
     }
     
-    if( !$groups )
+    if ( !$groups )
     {
       ob_end_flush();
       return;
@@ -129,10 +129,10 @@ class Access
 
     foreach( $groups as $groupName )
     {
-      if( !isset( self::$groupList[$groupName] ) )
+      if ( !isset( self::$groupList[$groupName] ) )
         continue;
 
-      if( in_array( $_SESSION['user'], self::$groupList[$groupName] ) )
+      if ( in_array( $_SESSION['user'], self::$groupList[$groupName] ) )
       {
         ob_end_flush();
         return;
@@ -140,7 +140,7 @@ class Access
         
     }
     
-    if( !Access::$login )
+    if ( !Access::$login )
       Access::$login = $showLogin;
     
     ob_get_contents();
@@ -155,7 +155,7 @@ class Access
   public static function protectPage( $groups, $appendGroups = array() )
   {
     
-    if( $appendGroups )
+    if ( $appendGroups )
       $groups = array_merge( $groups, $appendGroups );
     
     self::$protectedPageGroups = $groups;
@@ -172,7 +172,7 @@ class Access
   {
     
     // prüfen ob die seite gesichert wurde
-    if( !self::$protectedPageGroups )
+    if ( !self::$protectedPageGroups )
       return;
     
     self::endProtection( self::$protectedPageGroups, true );

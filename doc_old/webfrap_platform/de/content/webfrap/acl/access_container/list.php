@@ -34,7 +34,7 @@
 
     $criteria->select( array( 'project_task.rowid as rowid' )  );
 
-    if( !$this->defLevel )
+    if ( !$this->defLevel )
     {
     
       $greatest = <<<SQL

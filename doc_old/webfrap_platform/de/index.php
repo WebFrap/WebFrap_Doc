@@ -28,7 +28,7 @@
 
 <frameset cols="200px,*">
   <frame src="menu.php<?php
-  if( isset($_GET['page']) )
+  if ( isset($_GET['page']) )
   {
     $tmp = explode( '.', $_GET['page'] );
     echo "?page=".$tmp[0];
@@ -37,7 +37,7 @@
   <frameset rows="100px,*">
   <frame src="top.php" name="top">
   <frame src="content.php<?php
-  if( isset($_GET['page']) )
+  if ( isset($_GET['page']) )
   {
     echo "?page=".$_GET['page'];
   }

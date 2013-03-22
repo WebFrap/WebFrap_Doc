@@ -50,7 +50,7 @@ Acronym
     
     $simpelNode  = simplexml_import_dom( $statement);
     
-    if( isset( $simpelNode->currency ) )
+    if ( isset( $simpelNode->currency ) )
     {
       $xml = <<<XMLS
 

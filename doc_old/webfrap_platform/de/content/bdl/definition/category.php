@@ -43,19 +43,19 @@ Acronym
       return array();
     }
 
-    if( isset( $statement->properties->sortable )  )
+    if ( isset( $statement->properties->sortable )  )
     {
       $codeStack->codeSortable = '      <attribute is_a="meta_sort" ></attribute>';
     }
 
-    if($vars->target)
+    if ($vars->target)
       $typeName = $vars->target;
     else
       $typeName = $vars->entity->name.'_category';
 
     $modName = SParserString::getDomainName( $vars->target, true );
     
-    if( isset( $simpelNode->properties->stain_able ) )
+    if ( isset( $simpelNode->properties->stain_able ) )
     {
       $codeStack->concepts = <<<CODE
         <concept name="color_source" ></concept>

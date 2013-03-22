@@ -24,7 +24,7 @@ Acronym
 
     // check if it is specified wich base attributes the node should have
     // if there are no base attributes use name and description as default
-    if(  !$infos->count() )
+    if (  !$infos->count() )
     {
 
       $xml = <<<XMLS
@@ -43,7 +43,7 @@ XMLS;
     }
     else // check what nodes are given
     {
-      if( isset($infos->name) )
+      if ( isset($infos->name) )
       {
         $xml = <<<XMLS
     <attribute is_a="name"   ></attribute>
@@ -52,7 +52,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->label) )
+      if ( isset($infos->label) )
       {
         $xml = <<<XMLS
     <attribute is_a="label"   ></attribute>
@@ -61,7 +61,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->title) )
+      if ( isset($infos->title) )
       {
         $xml = <<<XMLS
     <attribute is_a="title"   ></attribute>
@@ -70,7 +70,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->description) )
+      if ( isset($infos->description) )
       {
         $xml = <<<XMLS
     <attribute is_a="description"   ></attribute>
@@ -79,7 +79,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->status) )
+      if ( isset($infos->status) )
       {
         $xml = <<<XMLS
     <attribute is_a="status"   ></attribute>
@@ -88,7 +88,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->type) )
+      if ( isset($infos->type) )
       {
         $xml = <<<XMLS
     <attribute is_a="type"   ></attribute>
@@ -97,7 +97,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->order) )
+      if ( isset($infos->order) )
       {
         $xml = <<<XMLS
     <attribute is_a="metaOrder"   ></attribute>
@@ -106,7 +106,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->comment) )
+      if ( isset($infos->comment) )
       {
         $xml = <<<XMLS
     <attribute is_a="comment"   ></attribute>
@@ -115,7 +115,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->parent) )
+      if ( isset($infos->parent) )
       {
         $xml = <<<XMLS
     <attribute is_a="parent"   ></attribute>
@@ -124,7 +124,7 @@ XMLS;
         $nodes[] = $this->addNode($xml, $parentNode);
       }
 
-      if( isset($infos->uuid) )
+      if ( isset($infos->uuid) )
       {
         $xml = <<<XMLS
     <attribute is_a="uuid"   ></attribute>

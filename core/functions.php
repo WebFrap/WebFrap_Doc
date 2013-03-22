@@ -105,7 +105,7 @@ function renderTopMenu( $modules, $data)
   foreach( $modules as $key ){
 
     // ignore nonloaded repos
-    if( !isset($data[$key]) )
+    if ( !isset($data[$key]) )
       continue;
 
   $stack[] = <<<HTML

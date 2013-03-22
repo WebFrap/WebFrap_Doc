@@ -29,7 +29,7 @@ Acronym
 
       $vars->uiElement->type  = 'selectbox';
 
-      if( 'id_amount' != $vars->name )
+      if ( 'id_amount' != $vars->name )
       {
         $vars->label->de  = $this->builder->interpreter->nameToLabel($vars->name);
         $vars->label->en  = $this->builder->interpreter->nameToLabel($vars->name, true);

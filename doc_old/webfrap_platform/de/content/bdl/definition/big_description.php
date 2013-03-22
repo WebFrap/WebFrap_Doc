@@ -47,10 +47,10 @@ Acronym
       $vars->uiElement->position->priority  = '5';
       $vars->uiElement->position->valign    = 'bottom';
     
-      if( isset( $statement->size ) )
+      if ( isset( $statement->size ) )
       {
         
-        if( isset( $statement->size['width'] ) )
+        if ( isset( $statement->size['width'] ) )
         {
           $vars->uiElement->size->width   = trim( $statement->size['width'] );
         }
@@ -59,7 +59,7 @@ Acronym
           $vars->uiElement->size->width   = "full";
         }
         
-        if( isset( $statement->size['height'] ) )
+        if ( isset( $statement->size['height'] ) )
         {
           $vars->uiElement->size->height  = trim( $statement->size['height'] );
         }

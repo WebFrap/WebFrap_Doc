@@ -31,7 +31,7 @@ class TreeSimple
   public static function render( $data, $out = true )
   {
     
-    if( !$data )
+    if ( !$data )
       return '<span>Invalid Input</span>';
     
     $html = '<ul class="'.$data->class.'" >';
@@ -44,7 +44,7 @@ class TreeSimple
     
     $html .= '</ul>';
     
-    if($out)
+    if ($out)
       echo $html;
       
     return $html;
@@ -64,7 +64,7 @@ class TreeSimple
     
     $html = '<li>';
     $html .= $data->text;
-    if( isset($data->sub)){
+    if ( isset($data->sub)){
       $html .= '<ul>';
       foreach ( $data->sub as $subNode ){
         $html .= self::renderSubNode( $subNode );

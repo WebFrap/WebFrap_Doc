@@ -51,7 +51,7 @@ function show_chapter( chapter ){
 
 <?php
 
-  if( isset( $_GET['page'] )  )
+  if ( isset( $_GET['page'] )  )
   {
     $page = 'content/'.str_replace(array('/','.'),array('','/'),$_GET['page']).'/menu.php';
   }

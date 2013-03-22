@@ -29,9 +29,9 @@ $this->keyJs    = 'default';
   <div id="wbf-menu">
 
     <!-- menu -->
-    <?php echo PHP_TAG ?>  if( is_string($this->menu) ){ ?>
+    <?php echo PHP_TAG ?>  if ( is_string($this->menu) ){ ?>
       <?php echo PHP_TAG ?> echo $this->includeTemplate( $this->menu , 'menu' )?>
-    <?php echo PHP_TAG ?>  } elseif( is_object($this->menu) ) { ?>
+    <?php echo PHP_TAG ?>  } elseif ( is_object($this->menu) ) { ?>
       <?php echo PHP_TAG ?> echo $this->menu?>
     <?php echo PHP_TAG ?>  }?>
     <!-- end menu -->

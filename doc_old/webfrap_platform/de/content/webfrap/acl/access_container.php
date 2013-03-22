@@ -39,7 +39,7 @@ class ProjectMilestone_Crud_Access_Edit
     $acl = $this->getAcl();
     
     $entityId = null;
-    if( is_object( $entity ) )
+    if ( is_object( $entity ) )
       $entityId = $entity->getId();
     else 
       $entityId = $entity;
@@ -48,7 +48,7 @@ class ProjectMilestone_Crud_Access_Edit
     // dann befinden wir uns im root und brauchen keine pfadafrage
     // um potentielle fehler abzufangen wird auch direkt der richtige Root gesetzt
     // nicht das hier einer einen falschen pfad injected
-    if( is_null($rqtContext->aclRoot) || 1 == $rqtContext->aclLevel )
+    if ( is_null($rqtContext->aclRoot) || 1 == $rqtContext->aclLevel )
     {
       $rqtContext->isAclRoot     = true;
       $rqtContext->aclRoot       = 'mgmt-project_milestone';
@@ -60,7 +60,7 @@ class ProjectMilestone_Crud_Access_Edit
 
     // wenn wir in keinem pfad sind nehmen wir einfach die normalen
     // berechtigungen
-    if( $rqtContext->isAclRoot )
+    if ( $rqtContext->isAclRoot )
     {
       // da wir die zugriffsrechte mehr als nur einmal brauchen holen wir uns
       // direkt einen acl container
