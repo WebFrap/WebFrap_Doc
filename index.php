@@ -62,8 +62,8 @@ include './core/tree/TreeSimple.php';
   <div id="docu-head" class="lbox" >
     <div class="headBox" >
       <h1>
-        <a href="menu.php" target="menu" >Web<span>Frap</span></a>
-        <a href="menu.php" target="menu" class="erDoc" >The Web Frame Application</a>
+        <a href="index.php" target="menu" >Web<span>Frap</span></a>
+        <a href="index.php" target="menu" class="erDoc" >The Web Frame Application</a>
       </h1>
       <!-- <h3>&nbsp; just a placeholder for the space here </h3>-->
     </div>
