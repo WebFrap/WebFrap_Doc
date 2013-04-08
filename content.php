@@ -28,7 +28,7 @@ if (isset($_GET ['page'])) {
 
 } else {
 
-  $page = '../doc/de/start.php';
+  $page = './doc/de/start.php';
 }
 
 if (file_exists($page)) {
