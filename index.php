@@ -17,6 +17,8 @@
 
 define('PHP_TAG', '<?php');
 
+define('BUIZ',false);
+
 // geshi einbinden
 if (file_exists('./core/vendor/geshi/geshi.php'))
   include './core/vendor/geshi/geshi.php';

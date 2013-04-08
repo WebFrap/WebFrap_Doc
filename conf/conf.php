@@ -35,24 +35,31 @@ class Conf
 
   public static $data = array();
 
-  public static $modules = array(
-    'Buiznodes_42:buiz',
-    'Buiznodes_42:org',
-    'Buiznodes_42:architecture',
-    'WebFrap:webfrap',
-    'WebFrap_Wgt:wgt',
-    'WebFrap:gateway',
-    'WebFrap_Genf:bdl',
-    'WebFrap_Genf:genf',
-    'WebFrap_Genf_Wbf:genf_wbf',
-    'WebFrap_Vendor:vendor_lib',
-    'WebFrap:admin_guide',
-    'WebFrap:dev_guide',
-    'WebFrap_Tools:tools',
-    'WebFrap:user_guide',
-  );
+  public static $modules = array();
 
 }
+
+if ('127.0.0.1' == $_SERVER ['SERVER_NAME'] ){
+  Conf::$modules = array(
+    'Buiznodes_42:buiz',
+    'Buiznodes_42:org',
+    'Buiznodes_42:architecture'
+  );
+}
+
+Conf::$modules = array_merge(Conf::$modules,array(
+  'WebFrap:webfrap',
+  'WebFrap_Wgt:wgt',
+  'WebFrap:gateway',
+  'WebFrap_Genf:bdl',
+  'WebFrap_Genf:genf',
+  'WebFrap_Genf_Wbf:genf_wbf',
+  'WebFrap_Vendor:vendor_lib',
+  'WebFrap:admin_guide',
+  'WebFrap:dev_guide',
+  'WebFrap_Tools:tools',
+  'WebFrap:user_guide',
+));
 
 foreach( Conf::$modules as $module ){
 
