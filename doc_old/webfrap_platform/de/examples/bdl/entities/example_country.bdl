@@ -11,9 +11,9 @@
 
     <attributes>
 
-	    <attribute is_a="name" required="true" ></attribute>
+      <attribute is_a="name" required="true" ></attribute>
       
-	    <attribute is_a="access_key" required="true" ></attribute>
+      <attribute is_a="access_key" required="true" ></attribute>
       
       <attribute is_a="access_key" name="key3" ></attribute>
       
@@ -30,15 +30,15 @@
       
       </attribute>
 
-	    <attribute name="short" type="text" size="5" >
+      <attribute name="short" type="text" size="5" >
         <label>
           <text lang="de" >Kürzel</text>
           <text lang="en" >Shortname</text>
         </label>
       
-				<display type="exclude" />
-				<search type="true"  />
-	    </attribute>
+        <display type="exclude" />
+        <search type="true"  />
+      </attribute>
 
 
     </attributes>

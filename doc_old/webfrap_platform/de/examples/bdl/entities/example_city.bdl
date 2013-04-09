@@ -9,15 +9,15 @@
       <text lang="en" >City</text>
     </label>
 
-		<description>
-		  <text lang="de" >Alle Städte</text>
-		  <text lang="en" >list with all existing cities</text>
-		</description>
+    <description>
+      <text lang="de" >Alle Städte</text>
+      <text lang="en" >list with all existing cities</text>
+    </description>
 
     <attributes>
 
-	    <attribute is_a="name" required="true" ></attribute>
-	    
+      <attribute is_a="name" required="true" ></attribute>
+      
       <attribute name="postalcode" type="text" size="10"    >
 
         <display>

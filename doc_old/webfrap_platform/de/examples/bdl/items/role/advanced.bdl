@@ -15,25 +15,25 @@
                     <label>
                       <text lang="en" >Master Data</text>
                     </label>
-	                  <body>
-	                 
-		                  <item name="roles" type="role_list" source="project_activity" >
-		                    
-		                    <area name="project_activity" />
-		                  
-		                    <roles>
-		                      <role name="manager_l3" >
-		                        <constraints>
-		                          <cardinality min="0" max="1" />
-		                        </constraints>
-		                        <access>
-		                          <roles>
-		                            <role name="pmo_admin" />
-		                          </roles>
-		                        </access>
-		                      </role>
-		                      
-		                      <role name="manager_l3_deputy" >
+                    <body>
+                   
+                      <item name="roles" type="role_list" source="project_activity" >
+                        
+                        <area name="project_activity" />
+                      
+                        <roles>
+                          <role name="manager_l3" >
+                            <constraints>
+                              <cardinality min="0" max="1" />
+                            </constraints>
+                            <access>
+                              <roles>
+                                <role name="pmo_admin" />
+                              </roles>
+                            </access>
+                          </role>
+                          
+                          <role name="manager_l3_deputy" >
                             <constraints>
                               <cardinality min="0" max="1" />
                             </constraints>
@@ -42,20 +42,20 @@
                                 <role name="manager_l3" />
                               </roles>
                             </access>
-		                      </role>
-		                      
-		                      <role name="project_manager" ></role>
-		                      <role name="project_manager_deputy" ></role>
-		                      <role name="cmo" ></role>
-		                      <role name="pmo_support" >
-		                        <comment>Wird impliziet über die practice initial zugewiesen</comment>
-		                      </role>
-		                      <role name="staff" ></role>
-		                    </roles>
-		                  </item>
-	
-	                  </body>
-	                </tab>
+                          </role>
+                          
+                          <role name="project_manager" ></role>
+                          <role name="project_manager_deputy" ></role>
+                          <role name="cmo" ></role>
+                          <role name="pmo_support" >
+                            <comment>Wird impliziet über die practice initial zugewiesen</comment>
+                          </role>
+                          <role name="staff" ></role>
+                        </roles>
+                      </item>
+  
+                    </body>
+                  </tab>
                 </body>
               </tabs>
             </layout>
