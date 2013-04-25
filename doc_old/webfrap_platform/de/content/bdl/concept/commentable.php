@@ -1,7 +1,7 @@
-<h1>Commentable</h1>
+<h1>CommentAble</h1>
 
 <p>
-  Commentable bewirkt, dass eine Comment Reference an die Entity angehängt
+  CommentAble bewirkt, dass eine Comment Reference an die Entity angehängt
   wird.<br />
   Wenn keine weiteren UI Informationen vorhanden sind, wird die Reference 
   Standardmäßig als Comments Tab angezeigt.
@@ -13,7 +13,7 @@
   <entity name="name" >
     
     <concepts>
-      <concept name="commentable" />
+      <concept name="commen_table" />
     </concepts>
 
   </entity>
