@@ -41,8 +41,8 @@ class Conf
 
 if ('127.0.0.1' == $_SERVER ['SERVER_NAME'] ){
   Conf::$modules = array(
-    'Buiznodes_42:buiz',
     'Buiznodes_42:org',
+    'Buiznodes_42:buiz',
     'Buiznodes_42:architecture'
   );
 }
